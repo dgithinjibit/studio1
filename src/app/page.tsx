@@ -19,6 +19,7 @@ import { handleTutorQuery, handleAssessment } from "@/app/actions";
 import type { AssessTeacherResponseOutput } from "@/ai/flows/assess-teacher-response";
 import { ChatMessage, type Message } from "@/components/chat-message";
 import { AssessmentResult } from "@/components/assessment-result";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const assessmentSchema = z.object({
   question: z.string().min(10, "Please enter a more detailed question."),
@@ -89,9 +90,12 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-4 md:p-8 bg-background">
       <Card className="w-full max-w-3xl h-[90vh] flex flex-col shadow-2xl">
-        <CardHeader className="text-center">
+        <CardHeader className="text-center relative">
           <CardTitle className="font-headline text-3xl tracking-tight">CurriculumAI</CardTitle>
           <CardDescription className="font-body">Your AI-Powered DPTE Co-Pilot</CardDescription>
+          <div className="absolute top-4 right-4">
+            <ThemeToggle />
+          </div>
         </CardHeader>
         <Tabs defaultValue="tutor" className="flex-1 flex flex-col overflow-hidden">
           <div className="px-6">
