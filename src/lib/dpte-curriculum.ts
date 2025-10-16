@@ -5,6 +5,7 @@ import microteachingGuide from './dpte-curriculum-guide.json';
 import childDevelopmentGuide from './dpte-child-development-guide.json';
 import homeScienceGuide from './dpte-home-science-guide.json';
 import learningTechniquesGuide from './learning-techniques-guide.json';
+import artAndCraftGuide from './dpte-art-and-craft-guide.json';
 
 // Function to recursively extract text from a JSON object
 function extractText(obj: any): string[] {
@@ -38,9 +39,10 @@ const microteachingKnowledgeBase: string[] = extractText(microteachingGuide);
 const childDevelopmentKnowledgeBase: string[] = extractText(childDevelopmentGuide);
 const homeScienceKnowledgeBase: string[] = extractText(homeScienceGuide);
 const learningTechniquesKnowledgeBase: string[] = extractText(learningTechniquesGuide);
+const artAndCraftKnowledgeBase: string[] = extractText(artAndCraftGuide);
 
 // Combine knowledge bases
-export const dpteKnowledgeBase: string[] = [...new Set([...microteachingKnowledgeBase, ...childDevelopmentKnowledgeBase, ...homeScienceKnowledgeBase, ...learningTechniquesKnowledgeBase])];
+export const dpteKnowledgeBase: string[] = [...new Set([...microteachingKnowledgeBase, ...childDevelopmentKnowledgeBase, ...homeScienceKnowledgeBase, ...learningTechniquesKnowledgeBase, ...artAndCraftKnowledgeBase])];
 
 
 /**
