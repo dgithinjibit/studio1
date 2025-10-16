@@ -20,7 +20,9 @@ const chartConfig = {
 } satisfies ChartConfig;
 
 export function AssessmentResult({ result }: AssessmentResultProps) {
-  const chartData = [{ name: "Score", score: result.score, fill: "var(--color-score)" }];
+  // Multiply score by 10 to fit the 0-100 scale of the chart
+  const chartScore = result.score * 10;
+  const chartData = [{ name: "Score", score: chartScore, fill: "var(--color-score)" }];
 
   return (
     <Card className="bg-secondary/50">
@@ -35,7 +37,7 @@ export function AssessmentResult({ result }: AssessmentResultProps) {
         <div className="flex flex-col sm:flex-row items-center justify-around gap-6 rounded-lg border bg-card p-6">
           <div className="flex flex-col items-center">
             <p className="text-sm font-medium text-muted-foreground">Your Score</p>
-            <p className="text-5xl font-bold text-primary">{result.score}<span className="text-2xl text-muted-foreground">/100</span></p>
+            <p className="text-5xl font-bold text-primary">{result.score}<span className="text-2xl text-muted-foreground">/10</span></p>
           </div>
           <ChartContainer config={chartConfig} className="mx-auto aspect-square h-32 w-32">
             <RadialBarChart
@@ -51,7 +53,11 @@ export function AssessmentResult({ result }: AssessmentResultProps) {
               <RadialBar dataKey="score" background cornerRadius={5} />
               <ChartTooltip
                 cursor={false}
-                content={<ChartTooltipContent hideLabel />}
+                content={<ChartTooltipContent 
+                    hideLabel 
+                    formatter={(value) => `${(Number(value) / 10).toFixed(1)} / 10`}
+                  />
+                }
               />
             </RadialBarChart>
           </ChartContainer>

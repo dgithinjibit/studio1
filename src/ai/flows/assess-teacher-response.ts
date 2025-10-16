@@ -20,7 +20,7 @@ export type AssessTeacherResponseInput = z.infer<typeof AssessTeacherResponseInp
 
 const AssessTeacherResponseOutputSchema = z.object({
   assessment: z.string().describe('The assessment of the teacher trainee response, including strengths, weaknesses, and areas for improvement.'),
-  score: z.number().describe('A numerical score representing the quality of the response (e.g., 0-100).'),
+  score: z.number().describe('A numerical score representing the quality of the response on a scale of 1 to 10.'),
   feedback: z.string().describe('Specific feedback for the teacher trainee to improve their understanding and application of the curriculum.'),
 });
 export type AssessTeacherResponseOutput = z.infer<typeof AssessTeacherResponseOutputSchema>;
@@ -41,7 +41,7 @@ const prompt = ai.definePrompt({
   Teacher Trainee Response: {{{teacherResponse}}}
   Curriculum Context: {{{relevantContext}}}
 
-  Provide a detailed assessment, including strengths, weaknesses, and specific feedback for improvement. Assign a numerical score (0-100) reflecting the quality of the response.
+  Provide a detailed assessment, including strengths, weaknesses, and specific feedback for improvement. Assign a numerical score (1-10) reflecting the quality of the response.
   Ensure the assessment is pedagogically sound and aligned with the DPTE curriculum goals.
 
   Output format should be JSON with keys assessment, score, and feedback.

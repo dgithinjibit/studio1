@@ -2,6 +2,7 @@
 
 import { generateDPTEResponse } from "@/ai/flows/generate-dpte-response";
 import { assessTeacherResponse, type AssessTeacherResponseOutput } from "@/ai/flows/assess-teacher-response";
+import { generateAssessmentQuestion } from "@/ai/flows/generate-assessment-question";
 import { retrieveContext } from "@/lib/dpte-curriculum";
 
 /**
@@ -19,6 +20,20 @@ export async function handleTutorQuery(query: string): Promise<string> {
   } catch (error) {
     console.error("Error in handleTutorQuery:", error);
     return "I'm sorry, but I encountered an error while generating a response. Please try again.";
+  }
+}
+
+/**
+ * Generates a new assessment question for the user.
+ * @returns The AI-generated question.
+ */
+export async function handleGenerateQuestion(): Promise<string> {
+  try {
+    const result = await generateAssessmentQuestion();
+    return result.question;
+  } catch (error) {
+    console.error("Error in handleGenerateQuestion:", error);
+    throw new Error("Failed to generate a new question.");
   }
 }
 

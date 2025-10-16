@@ -4,7 +4,7 @@ import { useState, useRef, useEffect, useTransition } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
-import { BookCopy, GraduationCap, Loader2, Send } from "lucide-react";
+import { BookCopy, GraduationCap, Loader2, Send, WandSparkles } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -14,17 +14,23 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Textarea } from "@/components/ui/textarea";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
-import { handleTutorQuery, handleAssessment } from "@/app/actions";
+import { handleTutorQuery, handleAssessment, handleGenerateQuestion } from "@/app/actions";
 import type { AssessTeacherResponseOutput } from "@/ai/flows/assess-teacher-response";
 import { ChatMessage, type Message } from "@/components/chat-message";
 import { AssessmentResult } from "@/components/assessment-result";
 import { ThemeToggle } from "@/components/theme-toggle";
 
 const assessmentSchema = z.object({
-  question: z.string().min(10, "Please enter a more detailed question."),
   teacherResponse: z.string().min(20, "Please provide a comprehensive response for assessment."),
 });
+
+type AssessmentSession = {
+  question: string;
+  response?: string;
+  result?: AssessTeacherResponseOutput;
+}
 
 export default function Home() {
   const [messages, setMessages] = useState<Message[]>([
@@ -35,8 +41,12 @@ export default function Home() {
   ]);
   const [input, setInput] = useState("");
   const [isTutorLoading, startTutorTransition] = useTransition();
-  const [isAssessmentLoading, startAssessmentTransition] = useTransition();
+
+  const [assessmentQuestion, setAssessmentQuestion] = useState<string | null>(null);
   const [assessmentResult, setAssessmentResult] = useState<AssessTeacherResponseOutput | null>(null);
+  const [isGeneratingQuestion, startQuestionGenerationTransition] = useTransition();
+  const [isAssessing, startAssessmentTransition] = useTransition();
+  const isAssessmentLoading = isGeneratingQuestion || isAssessing;
   
   const scrollAreaViewport = useRef<HTMLDivElement>(null);
   const { toast } = useToast();
@@ -44,7 +54,6 @@ export default function Home() {
   const form = useForm<z.infer<typeof assessmentSchema>>({
     resolver: zodResolver(assessmentSchema),
     defaultValues: {
-      question: "",
       teacherResponse: "",
     },
   });
@@ -69,12 +78,36 @@ export default function Home() {
       setMessages((prev) => [...prev, assistantMessage]);
     });
   };
+  
+  const onGenerateQuestion = () => {
+    setAssessmentQuestion(null);
+    setAssessmentResult(null);
+    form.reset();
+    startQuestionGenerationTransition(async () => {
+      try {
+        const question = await handleGenerateQuestion();
+        setAssessmentQuestion(question);
+      } catch (error) {
+         toast({
+          variant: "destructive",
+          title: "Failed to Generate Question",
+          description: "There was an error generating a new question. Please try again.",
+        });
+        console.error(error);
+      }
+    });
+  };
 
   const onAssessmentSubmit = (values: z.infer<typeof assessmentSchema>) => {
+    if (!assessmentQuestion) return;
+
     setAssessmentResult(null);
     startAssessmentTransition(async () => {
       try {
-        const result = await handleAssessment(values);
+        const result = await handleAssessment({
+          question: assessmentQuestion,
+          teacherResponse: values.teacherResponse
+        });
         setAssessmentResult(result);
       } catch (error) {
         toast({
@@ -133,49 +166,65 @@ export default function Home() {
           <TabsContent value="assessment" className="flex-1 overflow-hidden mt-0">
             <ScrollArea className="h-full">
               <CardContent className="p-6 space-y-6">
-                <p className="text-sm text-muted-foreground">
-                  Test your knowledge. Enter a curriculum question and your response. Our AI will assess your answer based on the official DPTE documents.
-                </p>
-                <Form {...form}>
-                  <form onSubmit={form.handleSubmit(onAssessmentSubmit)} className="space-y-4">
-                    <FormField
-                      control={form.control}
-                      name="question"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Curriculum Question</FormLabel>
-                          <FormControl>
-                            <Input placeholder="e.g., Explain the role of play in early childhood education." {...field} />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                    <FormField
-                      control={form.control}
-                      name="teacherResponse"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel>Your Response</FormLabel>
-                          <FormControl>
-                            <Textarea
-                              placeholder="Write your detailed response here..."
-                              className="min-h-[150px]"
-                              {...field}
-                            />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                    <Button type="submit" disabled={isAssessmentLoading} className="w-full">
-                      {isAssessmentLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-                      Submit for Assessment
-                    </Button>
-                  </form>
-                </Form>
+                <div className="flex flex-col items-center text-center">
+                  <p className="text-sm text-muted-foreground mb-4">
+                    Ready to test your knowledge? The AI will generate a question for you based on the DPTE curriculum.
+                  </p>
+                  <Button onClick={onGenerateQuestion} disabled={isAssessmentLoading}>
+                    {isGeneratingQuestion ? (
+                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                    ) : (
+                      <WandSparkles className="mr-2 h-4 w-4" />
+                    )}
+                    Generate New Question
+                  </Button>
+                </div>
 
-                {isAssessmentLoading && (
+                {isGeneratingQuestion && (
+                  <div className="flex items-center justify-center pt-8">
+                    <Loader2 className="h-8 w-8 animate-spin text-primary" />
+                    <p className="ml-4 text-muted-foreground">Generating question...</p>
+                  </div>
+                )}
+                
+                {assessmentQuestion && (
+                  <div className="space-y-6 pt-4">
+                    <Alert>
+                      <AlertTitle className="font-semibold">Your Question:</AlertTitle>
+                      <AlertDescription className="text-foreground">
+                        {assessmentQuestion}
+                      </AlertDescription>
+                    </Alert>
+
+                    <Form {...form}>
+                      <form onSubmit={form.handleSubmit(onAssessmentSubmit)} className="space-y-4">
+                        <FormField
+                          control={form.control}
+                          name="teacherResponse"
+                          render={({ field }) => (
+                            <FormItem>
+                              <FormLabel>Your Response</FormLabel>
+                              <FormControl>
+                                <Textarea
+                                  placeholder="Write your detailed response here..."
+                                  className="min-h-[150px]"
+                                  {...field}
+                                />
+                              </FormControl>
+                              <FormMessage />
+                            </FormItem>
+                          )}
+                        />
+                        <Button type="submit" disabled={isAssessing} className="w-full">
+                          {isAssessing && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+                          Submit for Assessment
+                        </Button>
+                      </form>
+                    </Form>
+                  </div>
+                )}
+
+                {isAssessing && (
                   <div className="flex items-center justify-center pt-8">
                     <Loader2 className="h-8 w-8 animate-spin text-primary" />
                     <p className="ml-4 text-muted-foreground">Analyzing your response...</p>
