@@ -1,0 +1,757 @@
+{
+"document_title": "Diploma in Teacher Education - Art and Craft Curriculum",
+"modules": [
+{
+"strand": "1.0 Introduction to Creative Arts",
+"sub_strands": [
+{
+"name": "1.1 Meaning of Creative Arts",
+"specific_learning_outcomes": [
+"Explain the meaning of creative arts",
+"Identify components of creative arts: visual arts, music, dance, drama",
+"Appreciate the value of creative arts in education"
+],
+"suggested_learning_experiences": [
+"Discussion on the definition and scope of creative arts.",
+"View multimedia presentations showcasing examples from visual arts, music, dance, and drama.",
+"Reflective writing on personal experiences with creative arts."
+],
+"core_competencies": [
+"Communication and collaboration",
+"Creativity and imagination"
+],
+"values": [
+"Respect",
+"Love"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to explain the meaning of creative arts",
+"levels": {
+"Exceeds Expectation": "Comprehensively explains the meaning of creative arts",
+"Meets Expectation": "Explains the meaning of creative arts",
+"Approaches Expectation": "Partially explains the meaning of creative arts",
+"Below Expectation": "Only with support, explains the meaning of creative arts"
+}
+},
+{
+"ability": "Ability to identify components of creative arts: visual arts, music, dance, drama",
+"levels": {
+"Exceeds Expectation": "Accurately identifies all components of creative arts with examples",
+"Meets Expectation": "Identifies components of creative arts",
+"Approaches Expectation": "Identifies some components of creative arts",
+"Below Expectation": "Only with assistance, identifies components of creative arts"
+}
+},
+{
+"ability": "Ability to appreciate the value of creative arts in education",
+"levels": {
+"Exceeds Expectation": "Clearly articulates the multifaceted value of creative arts in education",
+"Meets Expectation": "Appreciates the value of creative arts in education",
+"Approaches Expectation": "Partially appreciates the value of creative arts in education",
+"Below Expectation": "Only with guidance, appreciates the value of creative arts in education"
+}
+}
+]
+},
+{
+"name": "1.2 The Interconnection of Creative Arts Components",
+"specific_learning_outcomes": [
+"Illustrate the interconnection between visual arts, music, dance, and drama",
+"Demonstrate how integrated arts enhance learning"
+],
+"suggested_learning_experiences": [
+"Create a performance piece that combines drawing (visual art), song (music), movement (dance), and storytelling (drama).",
+"Analyze lesson plans or videos where multiple art forms are used together.",
+"Group discussion on the benefits of an integrated approach to teaching creative arts."
+],
+"core_competencies": [
+"Communication and collaboration",
+"Creativity and imagination"
+],
+"values": [
+"Unity",
+"Respect"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to illustrate the interconnection of the components of creative arts in the Creating Strand",
+"levels": {
+"Exceeds Expectation": "Illustrates the interconnection of the components of creative arts in the Creating Strand in depth with valid examples",
+"Meets Expectation": "Illustrates the interconnection of the components of creative arts in the Creating Strand",
+"Approaches Expectation": "Illustrates the interconnection of the components of creative arts in the Creating Strand while missing out on few details",
+"Below Expectation": "Illustrates the interconnection of the components of creative arts in the Creating Strand while missing out on a lot of details"
+}
+}
+]
+}
+]
+},
+{
+"strand": "2.0 Drawing",
+"sub_strands": [
+{
+"name": "2.1 Basic Drawing Skills",
+"specific_learning_outcomes": [
+"Demonstrate basic drawing skills: line, shape, form, space, texture",
+"Use appropriate tools and materials for drawing"
+],
+"suggested_learning_experiences": [
+"Practice contour drawing, gesture drawing, and still-life sketching.",
+"Experiment with pencils, charcoal, pastels, and ink.",
+"Peer critique sessions focusing on use of elements of art."
+],
+"core_competencies": [
+"Creativity and imagination",
+"Learning to learn and reflective practice"
+],
+"values": [
+"Respect",
+"Responsibility"
+],
+"assessment_rubric": []
+},
+{
+"name": "2.2 Smudge Technique",
+"specific_learning_outcomes": [
+"Illustrate smudging to create value/tone",
+"Create a value gradation strip using smudging technique",
+"Apply smudge technique in artwork"
+],
+"suggested_learning_experiences": [
+"Demonstration and practice of smudging with fingers, stumps, and cloth.",
+"Create smooth transitions from light to dark on paper.",
+"Incorporate smudging into a finished drawing of a simple object."
+],
+"core_competencies": [
+"Creativity and imagination"
+],
+"values": [
+"Respect",
+"Responsibility"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to illustrate smudging to create value/tone",
+"levels": {
+"Exceeds Expectation": "Creatively illustrates smudging to create value/tone",
+"Meets Expectation": "Illustrates smudging to create value/tone",
+"Approaches Expectation": "Illustrates smudging to create value/tone with few errors",
+"Below Expectation": "Illustrates smudging to create value/tone with many errors"
+}
+},
+{
+"ability": "Ability to create value gradation strip using smudging technique",
+"levels": {
+"Exceeds Expectation": "Neatly creates value gradation strip using smudging technique",
+"Meets Expectation": "Creates value gradation strip using smudging technique",
+"Approaches Expectation": "Creates value gradation strip using smudging technique with minor errors",
+"Below Expectation": "Creates value gradation strip using smudging technique with major errors"
+}
+},
+{
+"ability": "Ability to facilitate a lesson on smudge technique using scaffolding pedagogy",
+"levels": {
+"Exceeds Expectation": "Innovatively facilitates a lesson on smudge technique using scaffolding pedagogy",
+"Meets Expectation": "Facilitates a lesson on smudge technique using scaffolding pedagogy",
+"Approaches Expectation": "Facilitates a lesson on smudge technique using scaffolding pedagogy with few errors",
+"Below Expectation": "Facilitates a lesson on smudge technique using scaffolding pedagogy with many errors"
+}
+},
+{
+"ability": "Ability to apply appropriate methods and tools for assessing smudge technique",
+"levels": {
+"Exceeds Expectation": "Innovatively applies appropriate methods and tools for assessing smudge technique",
+"Meets Expectation": "Applies appropriate methods and tools for assessing smudge technique",
+"Approaches Expectation": "Applies appropriate methods and tools for assessing smudge technique while missing out on minor details",
+"Below Expectation": "Applies methods and tools for assessing smudge technique while missing out on major details"
+}
+}
+]
+},
+{
+"name": "2.3 Stippling Technique",
+"specific_learning_outcomes": [
+"Create a value gradation strip by stippling to show light and dark effect",
+"Apply stippling technique in artwork"
+],
+"suggested_learning_experiences": [
+"Practice making dots of varying density to create tone.",
+"Create a stippled portrait or still life.",
+"Compare stippling with other tonal techniques like hatching."
+],
+"core_competencies": [
+"Creativity and imagination",
+"Patience and perseverance"
+],
+"values": [
+"Diligence",
+"Attention to detail"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to create a value gradation strip by stippling to show light and dark effect",
+"levels": {
+"Exceeds Expectation": "Neatly creates a value gradation strip by stippling to show light and dark effect",
+"Meets Expectation": "Creates a value gradation strip by stippling to show light and dark effect",
+"Approaches Expectation": "Creates a value gradation strip by stippling to show light and dark effect with minor errors",
+"Below Expectation": "Creates a value gradation strip by stippling to show light and dark effect with major errors"
+}
+}
+]
+},
+{
+"name": "2.4 Facilitating Drawing Lessons",
+"specific_learning_outcomes": [
+"Facilitate a lesson using song on basic drawing activities",
+"Facilitate lessons on different drawing techniques"
+],
+"suggested_learning_experiences": [
+"Design and deliver a micro lesson incorporating song to teach lines or shapes.",
+"Use real objects or digital images as references for drawing exercises."
+],
+"core_competencies": [
+"Communication and collaboration",
+"Creativity and imagination"
+],
+"values": [
+"Joy",
+"Encouragement"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to facilitate a lesson using song on basic drawing activities",
+"levels": {
+"Exceeds Expectation": "Creatively facilitates a lesson using song on basic drawing activities",
+"Meets Expectation": "Facilitates a lesson using song on basic drawing activities",
+"Approaches Expectation": "Facilitates a lesson using song on basic drawing activities while missing out on few details",
+"Below Expectation": "Facilitates a lesson using song on basic drawing activities missing out on many details"
+}
+}
+]
+}
+]
+},
+{
+"strand": "3.0 Painting",
+"sub_strands": [
+{
+"name": "3.1 Painted Decorative Effects on Fabric",
+"specific_learning_outcomes": [
+"Apply painted decorative effect on fabric using varied tools",
+"Use appropriate dyes and paints for fabric decoration"
+],
+"suggested_learning_experiences": [
+"Experiment with brushes, sponges, stamps, and spray bottles on cotton fabric.",
+"Test different fabric paints and dyes for wash-fastness and texture.",
+"Create a decorated textile piece (e.g., tote bag, apron)."
+],
+"core_competencies": [
+"Creativity and imagination",
+"Resourcefulness"
+],
+"values": [
+"Creativity",
+"Responsibility"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to apply painted decorative effect on fabric using varied tools",
+"levels": {
+"Exceeds Expectation": "Creatively applies painted decorative effect on fabric using varied tools",
+"Meets Expectation": "Applies painted decorative effect on fabric using varied tools",
+"Approaches Expectation": "Applies painted decorative effect on fabric using varied tools with minor errors",
+"Below Expectation": "Applies painted decorative effect on fabric using varied tools with major errors"
+}
+}
+]
+},
+{
+"name": "3.2 Tie and Dye Techniques",
+"specific_learning_outcomes": [
+"Apply varied tie and dye resist techniques to decorate a fabric",
+"Demonstrate folding, binding, and stitching methods for resist dyeing"
+],
+"suggested_learning_experiences": [
+"Practice spiral, accordion fold, shibori, and stitch-resist techniques.",
+"Use natural dyes (e.g., onion skins) and commercial dyes.",
+"Compare results of different tying methods and dye concentrations."
+],
+"core_competencies": [
+"Creativity and imagination",
+"Planning and organization"
+],
+"values": [
+"Creativity",
+"Environmental stewardship"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to apply varied tie and dye resist techniques to decorate a fabric",
+"levels": {
+"Exceeds Expectation": "Applies varied tie and dye resist techniques to decorate a fabric skilfully",
+"Meets Expectation": "Applies varied tie and dye resist techniques to decorate a fabric",
+"Approaches Expectation": "Applies varied tie and dye resist techniques to decorate a fabric with minor errors",
+"Below Expectation": "Applies varied tie and dye resist techniques to decorate a fabric with major errors"
+}
+}
+]
+}
+]
+},
+{
+"strand": "4.0 Creating 2D Artwork",
+"sub_strands": [
+{
+"name": "4.1 Collage",
+"specific_learning_outcomes": [
+"Create collage compositions for self-expression",
+"Use appropriate adhesives and mounting techniques"
+],
+"suggested_learning_experiences": [
+"Collect and sort materials (paper, fabric, leaves, etc.) for collage.",
+"Create thematic collages (e.g., identity, dreams, community).",
+"Learn safe use of scissors, glue, and mounting boards."
+],
+"core_competencies": [
+"Creativity and imagination",
+"Self-efficacy"
+],
+"values": [
+"Self-expression",
+"Respect for diversity"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to create a collage composition for self-expression",
+"levels": {
+"Exceeds Expectation": "Skilfully makes a collage composition for self-expression",
+"Meets Expectation": "Creates a collage composition for self-expression",
+"Approaches Expectation": "Creates a collage composition for self-expression with few errors",
+"Below Expectation": "Creates a collage composition for self-expression with many errors"
+}
+}
+]
+},
+{
+"name": "4.2 Mosaic",
+"specific_learning_outcomes": [
+"Facilitate mosaic lessons in pre-primary and primary levels",
+"Use safe and appropriate materials for mosaics (e.g., paper, tiles, beads)"
+],
+"suggested_learning_experiences": [
+"Design and assemble a mosaic using colored paper or recycled materials.",
+"Observe a demonstration on grouting techniques (if using tiles).",
+"Plan and deliver a micro lesson on mosaic art for young learners."
+],
+"core_competencies": [
+"Communication and collaboration",
+"Creativity and imagination"
+],
+"values": [
+"Perseverance",
+"Beauty"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to facilitate mosaic lessons in pre-primary and primary levels",
+"levels": {
+"Exceeds Expectation": "Flawlessly facilitates mosaic lessons in lower and upper primary levels",
+"Meets Expectation": "Facilitates mosaic lessons in lower and upper primary levels",
+"Approaches Expectation": "Facilitates mosaic lessons in lower and upper primary levels while missing on minor points",
+"Below Expectation": "Facilitates mosaic lessons in lower and upper primary levels while missing on major points"
+}
+}
+]
+}
+]
+},
+{
+"strand": "5.0 Sculpture",
+"sub_strands": [
+{
+"name": "5.1 Assemblage",
+"specific_learning_outcomes": [
+"Assemble materials to make a play item",
+"Use found and recycled objects creatively and safely"
+],
+"suggested_learning_experiences": [
+"Collect natural and recycled materials (sticks, cardboard, bottles).",
+"Construct three-dimensional forms like animals or vehicles.",
+"Discuss the environmental benefits of upcycling in art."
+],
+"core_competencies": [
+"Creativity and imagination",
+"Environmental stewardship"
+],
+"values": [
+"Resourcefulness",
+"Care for environment"
+],
+"assessment_rubric": []
+},
+{
+"name": "5.2 Carving",
+"specific_learning_outcomes": [
+"Discuss strategies of facilitating carving in lower and upper primary",
+"Make a form using carving technique"
+],
+"suggested_learning_experiences": [
+"Watch demonstrations on safe carving techniques using soap, soft wood, or clay.",
+"Practice carving simple shapes under supervision.",
+"Deliver a simulated lesson on introducing carving to children."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Safety awareness"
+],
+"values": [
+"Responsibility",
+"Safety"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to discuss strategies of facilitating carving in lower and upper primary",
+"levels": {
+"Exceeds Expectation": "Articulately discusses strategies of facilitating carving in lower and upper primary",
+"Meets Expectation": "Discusses strategies of facilitating carving in lower and upper primary",
+"Approaches Expectation": "Fairly discusses strategies of facilitating carving in lower and upper primary",
+"Below Expectation": "Hardly discusses any strategies of facilitating carving in lower and upper primary"
+}
+},
+{
+"ability": "Ability to make a form using carving technique",
+"levels": {
+"Exceeds Expectation": "Creatively and competently applies the technique of carving",
+"Meets Expectation": "Applies the technique of carving competently",
+"Approaches Expectation": "Fairly applies the technique of carving",
+"Below Expectation": "Hardly applies the technique of carving"
+}
+}
+]
+},
+{
+"name": "5.3 Casting",
+"specific_learning_outcomes": [
+"Prepare materials and tools for casting",
+"Use papier mâché to make a form using casting technique"
+],
+"suggested_learning_experiences": [
+"Learn the process of mixing paper pulp and adhesive.",
+"Create moulds using balloons or wire frames.",
+"Build and dry papier mâché sculptures (e.g., masks, bowls)."
+],
+"core_competencies": [
+"Creativity and imagination",
+"Patience and perseverance"
+],
+"values": [
+"Diligence",
+"Teamwork"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to prepare materials and tools for casting",
+"levels": {
+"Exceeds Expectation": "Consistently and correctly prepares materials and tools",
+"Meets Expectation": "Correctly prepares materials and tools",
+"Approaches Expectation": "Fairly prepares materials and tools",
+"Below Expectation": "Hardly prepares the materials and tools"
+}
+}
+]
+}
+]
+},
+{
+"strand": "6.0 Printmaking",
+"sub_strands": [
+{
+"name": "6.1 Regular Repeat Patterns",
+"specific_learning_outcomes": [
+"Discuss regular repeat patterns for printing and pattern making",
+"Create prints using block printing, stamping, or stencil techniques"
+],
+"suggested_learning_experiences": [
+"Design a motif and transfer it onto a potato, rubber, or foam block.",
+"Print repeating patterns on paper or fabric.",
+"Experiment with color combinations and alignment."
+],
+"core_competencies": [
+"Creativity and imagination",
+"Precision and attention to detail"
+],
+"values": [
+"Order",
+"Beauty"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to discuss regular repeat patterns for printing and pattern making",
+"levels": {
+"Exceeds Expectation": "Discusses regular repeat patterns for printing and pattern making in depth",
+"Meets Expectation": "Discusses regular repeat patterns for printing and pattern making",
+"Approaches Expectation": "Discusses regular repeat patterns for printing and pattern making while missing out on minor details",
+"Below Expectation": "Discusses regular repeat patterns for printing and pattern making while missing out on major details"
+}
+}
+]
+},
+{
+"name": "6.2 Animation",
+"specific_learning_outcomes": [
+"Discuss strategies of facilitating animation in upper primary",
+"Make a flipbook animating a walking stick figure"
+],
+"suggested_learning_experiences": [
+"Study the principles of motion and frame-by-frame animation.",
+"Create a flipbook showing a simple action (e.g., bouncing ball, walking).",
+"Use digital tools (optional) to create short animations."
+],
+"core_competencies": [
+"Digital literacy",
+"Creativity and imagination"
+],
+"values": [
+"Innovation",
+"Fun in learning"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to discuss strategies of facilitating animation in upper primary",
+"levels": {
+"Exceeds Expectation": "Extensively discusses strategies of facilitating animation in upper primary",
+"Meets Expectation": "Discusses strategies of facilitating animation in upper primary",
+"Approaches Expectation": "Fairly discusses strategies of facilitating animation in upper primary",
+"Below Expectation": "Hardly discusses any strategy of facilitating animation in upper primary"
+}
+},
+{
+"ability": "Ability to make a flipbook animating a walking stick figure",
+"levels": {
+"Exceeds Expectation": "Easily and accurately draws the sequence of the image, producing a consistent shift from one page to the next creating an illusion of movement. Uses sufficient frequency of the image, producing smoother movement",
+"Meets Expectation": "Clearly draws the sequence of the image, producing a consistent illusion of movement. Uses adequate frequency of the image, producing smooth movement",
+"Approaches Expectation": "Fairly draws the sequence of the image, producing an inconsistent illusion of movement",
+"Below Expectation": "Struggles to draw the sequence of the image, failing to produce an illusion of movement"
+}
+}
+]
+}
+]
+},
+{
+"strand": "7.0 Materials and Tools",
+"sub_strands": [
+{
+"name": "7.1 Preparation of Materials",
+"specific_learning_outcomes": [
+"Use appropriate preparation methods for soft and stiff materials",
+"Ensure safety when preparing art materials"
+],
+"suggested_learning_experiences": [
+"Practice soaking paper for papier mâché, stretching canvas, or softening clay.",
+"Learn how to condition different types of paint and adhesive.",
+"Discuss storage and disposal of hazardous materials."
+],
+"core_competencies": [
+"Safety awareness",
+"Practical skills"
+],
+"values": [
+"Responsibility",
+"Care"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to use appropriate preparation methods for soft and stiff materials",
+"levels": {
+"Exceeds Expectation": "Skilfully uses appropriate preparation methods for soft and stiff materials",
+"Meets Expectation": "Uses appropriate preparation methods for soft and stiff materials",
+"Approaches Expectation": "Uses some inappropriate preparation methods for either soft or stiff materials",
+"Below Expectation": "Uses inappropriate preparation methods for soft and stiff materials"
+}
+}
+]
+},
+{
+"name": "7.2 Tool Handling and Safety",
+"specific_learning_outcomes": [
+"Demonstrate safe handling of art tools (scissors, knives, needles)",
+"Maintain and store tools properly"
+],
+"suggested_learning_experiences": [
+"Practice passing scissors safely, using cutting mats, and storing sharp tools.",
+"Inspect tools for damage and learn basic maintenance.",
+"Develop classroom rules for tool use and sharing."
+],
+"core_competencies": [
+"Safety awareness",
+"Responsibility"
+],
+"values": [
+"Safety",
+"Respect"
+],
+"assessment_rubric": []
+}
+]
+},
+{
+"strand": "8.0 Pedagogy of Art and Craft",
+"sub_strands": [
+{
+"name": "8.1 Lesson Planning for Art and Craft",
+"specific_learning_outcomes": [
+"Develop a lesson plan for an Art and Craft practical lesson",
+"Integrate creativity, skill development, and safety"
+],
+"suggested_learning_experiences": [
+"Analyse sample lesson plans for structure and clarity.",
+"Draft a lesson plan including objectives, resources, activities, differentiation, and assessment.",
+"Peer-review lesson plans for feasibility and inclusivity."
+],
+"core_competencies": [
+"Planning and organization",
+"Critical thinking and problem solving"
+],
+"values": [
+"Responsibility",
+"Professionalism"
+],
+"assessment_rubric": []
+},
+{
+"name": "8.2 Demonstration Techniques",
+"specific_learning_outcomes": [
+"Demonstrate art techniques clearly and safely",
+"Sequence demonstrations logically for learner understanding"
+],
+"suggested_learning_experiences": [
+"Practice demonstrating a technique (e.g., tie-dye, smudging) step-by-step.",
+"Use visual aids, models, and slow-motion actions.",
+"Receive feedback on clarity and pacing of demonstrations."
+],
+"core_competencies": [
+"Communication and collaboration",
+"Creativity and imagination"
+],
+"values": [
+"Clarity",
+"Supportiveness"
+],
+"assessment_rubric": []
+},
+{
+"name": "8.3 Assessment in Art and Craft",
+"specific_learning_outcomes": [
+"Use diverse methods to assess creativity, skill, and effort",
+"Provide constructive feedback on artistic work"
+],
+"suggested_learning_experiences": [
+"Design rubrics for specific projects (e.g., collage, sculpture).",
+"Practice giving verbal and written feedback that is specific and encouraging.",
+"Engage in peer assessment activities."
+],
+"core_competencies": [
+"Assessment literacy",
+"Communication and collaboration"
+],
+"values": [
+"Fairness",
+"Encouragement"
+],
+"assessment_rubric": []
+}
+]
+}
+],
+"course_structure": {
+"total_hours": 3000,
+"content_and_pedagogy_hours": 1680,
+"practicum_hours": 600,
+"microteaching_hours": 414,
+"subjects": [
+{
+"name": "Art and Craft",
+"total_hours": 120,
+"terms": [10, 30, 30, 10, 20, 20]
+},
+{
+"name": "English",
+"total_hours": 186,
+"terms": [30, 30, 36, 30, 30, 30]
+},
+{
+"name": "Kiswahili/KSL",
+"total_hours": 120,
+"terms": [20, 20, 20, 20, 20, 20]
+},
+{
+"name": "Mathematics",
+"total_hours": 180,
+"terms": [30, 30, 30, 30, 30, 30]
+},
+{
+"name": "Science and Technology",
+"total_hours": 120,
+"terms": [20, 20, 20, 20, 20, 20]
+},
+{
+"name": "Agriculture",
+"total_hours": 120,
+"terms": [20, 20, 20, 20, 20, 20]
+},
+{
+"name": "Home Science",
+"total_hours": 120,
+"terms": [20, 20, 20, 20, 20, 20]
+},
+{
+"name": "Religious Education (CRE/IRE/HRE)",
+"total_hours": 120,
+"terms": [20, 20, 20, 20, 20, 20]
+},
+{
+"name": "Social Studies",
+"total_hours": 120,
+"terms": [20, 20, 20, 20, 20, 20]
+},
+{
+"name": "Physical and Health Education",
+"total_hours": 120,
+"terms": [10, 10, 10, 30, 30, 30]
+},
+{
+"name": "Music",
+"total_hours": 120,
+"terms": [10, 20, 20, 20, 20, 30]
+},
+{
+"name": "Indigenous Languages",
+"total_hours": 120,
+"terms": [10, 20, 20, 20, 30, 20]
+},
+{
+"name": "Foreign Languages (French/Arabic/German/Mandarin (Chinese)/KSL)",
+"total_hours": 120,
+"terms": [10, 10, 10, 30, 30, 30]
+}
+],
+"term_totals": [350, 350, 350, 350, 350, 350],
+"practicum_distribution": [300, 300, 300]
+},
+"national_goals_of_education": [
+"Foster national unity, patriotism, and promote national cohesion.",
+"Increase the level of knowledge of all people to enhance national capacity and strengthen the economy.",
+"Affirm and promote the culture of all Kenyan people.",
+"Provide education and training that enables learners to become self-reliant and contribute to national development.",
+"Promote holistic well-being—physical, emotional, spiritual—for self-reliance.",
+"Enable learners to recognize values, ethics, and morals from religious and cultural perspectives and integrate them with their environment.",
+"Enable learners to use language efficiently as a communication, thinking, and learning tool.",
+"Develop learners’ ability to seek, use, and disseminate information using communication technology.",
+"Develop learners’ ability to solve problems using knowledge, skills, and attitudes.",
+"Enable learners to recognize their potential and harness it for the benefit of family and society."
+],
+"essence_statement": "Education is a critical instrument for economic growth, national unity, and cultural affirmation. It aims to produce citizens capable of contributing to national development through knowledge, skills, and attitudes, while instilling values, ethics, and morals derived from religious and cultural heritage."
+}
+I've pushed the changes. Go ahead and try out the new "Self Assessment" tab. Click the "Generate New Question" button to get started
