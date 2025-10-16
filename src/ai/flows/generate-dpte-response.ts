@@ -9,9 +9,8 @@
  */
 
 import {ai} from '@/ai/genkit';
-import {generate} from 'genkit/ai';
 import {z} from 'genkit';
-import {createStreamableValue} from 'ai/rsc';
+import {createStreamableValue, StreamableValue} from 'ai/rsc';
 
 const GenerateDPTEResponseInputSchema = z.object({
   query: z.string().describe('The question from the DPTE teacher trainee.'),
@@ -20,11 +19,11 @@ const GenerateDPTEResponseInputSchema = z.object({
 export type GenerateDPTEResponseInput = z.infer<typeof GenerateDPTEResponseInputSchema>;
 
 export type GenerateDPTEResponseOutput = {
-  response: string;
+  response: StreamableValue<string>;
 };
 
 
-export async function generateDPTEResponse(input: GenerateDPTEResponseInput) {
+export async function generateDPTEResponse(input: GenerateDPTEResponseInput): Promise<GenerateDPTEResponseOutput> {
   const stream = createStreamableValue('');
 
   (async () => {

@@ -1,29 +1,8 @@
 "use server";
 
-import { generateDPTEResponse } from "@/ai/flows/generate-dpte-response";
 import { assessTeacherResponse, type AssessTeacherResponseOutput } from "@/ai/flows/assess-teacher-response";
 import { generateAssessmentQuestion } from "@/ai/flows/generate-assessment-question";
 import { retrieveContext } from "@/lib/dpte-curriculum";
-import { createStreamableValue } from 'ai/rsc';
-
-/**
- * Handles a query from the AI Tutor chat.
- * It retrieves context and generates a response using an AI flow.
- * @param query The user's question.
- * @returns The AI-generated response string.
- */
-export async function handleTutorQuery(query: string) {
-  const context = retrieveContext(query);
-  
-  try {
-    const result = await generateDPTEResponse({ query, context });
-    return result.response;
-  } catch (error) {
-    console.error("Error in handleTutorQuery:", error);
-    const stream = createStreamableValue("I'm sorry, but I encountered an error while generating a response. Please try again.");
-    return stream.value;
-  }
-}
 
 /**
  * Generates a new assessment question for the user based on a subject.
