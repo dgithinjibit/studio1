@@ -1,0 +1,1303 @@
+{
+"document_title": "Diploma in Teacher Education - Home Science Curriculum",
+"modules": [
+{
+"strand": "1.0 Introduction to Home Science",
+"sub_strands": [
+{
+"name": "1.1 Meaning of Home Science",
+"specific_learning_outcomes": [],
+"suggested_learning_experiences": [],
+"suggested_key_inquiry_questions": []
+},
+{
+"name": "1.2 Areas Covered Under Home Science",
+"specific_learning_outcomes": [],
+"suggested_learning_experiences": [],
+"suggested_key_inquiry_questions": []
+},
+{
+"name": "1.3 Importance of Studying Home Science",
+"specific_learning_outcomes": [],
+"suggested_learning_experiences": [],
+"suggested_key_inquiry_questions": []
+}
+]
+},
+{
+"strand": "2.0 Food and Nutrition",
+"sub_strands": [
+{
+"name": "2.1 Meaning of Food and Nutrition",
+"specific_learning_outcomes": [
+"Define food and nutrition"
+],
+"suggested_learning_experiences": [
+"Discussion on the definitions of food and nutrition."
+],
+"core_competencies": [],
+"values": [],
+"assessment_rubric": []
+},
+{
+"name": "2.2 Classification of Foods",
+"specific_learning_outcomes": [
+"Classify foods according to energy-giving, body-building, and protective functions"
+],
+"suggested_learning_experiences": [
+"Group learners into three groups; each group classifies foods based on function.",
+"Present findings using a chart."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Respect"
+],
+"assessment_rubric": []
+},
+{
+"name": "2.3 Nutrients and Their Functions",
+"specific_learning_outcomes": [
+"Identify the six major nutrients: carbohydrates, proteins, fats and oils, vitamins, minerals, and water",
+"State the functions of each nutrient",
+"List sources of each nutrient"
+],
+"suggested_learning_experiences": [
+"Learners work in groups to research and present on one nutrient using charts or digital presentations.",
+"Create flashcards for nutrients, their functions, and sources."
+],
+"core_competencies": [
+"Digital literacy",
+"Communication and collaboration"
+],
+"values": [
+"Responsibility",
+"Unity"
+],
+"assessment_rubric": []
+},
+{
+"name": "2.4 Balanced Diet",
+"specific_learning_outcomes": [
+"Define a balanced diet",
+"Explain the importance of a balanced diet",
+"Construct a balanced meal using locally available foods"
+],
+"suggested_learning_experiences": [
+"Analyze sample daily meals and assess their balance.",
+"Plan and present a balanced menu for a day."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Self-efficacy"
+],
+"values": [
+"Love",
+"Respect"
+],
+"assessment_rubric": []
+},
+{
+"name": "2.5 Methods of Cooking",
+"specific_learning_outcomes": [
+"Describe various methods of cooking: boiling, steaming, roasting, baking, grilling, frying, etc.",
+"Demonstrate appropriate cooking methods for different foods",
+"Observe safety during cooking"
+],
+"suggested_learning_experiences": [
+"Oral Q&A to review previous lesson.",
+"Discussion, demonstration, group work, and practical sessions.",
+"Learners observe appearance and taste of cooked foods."
+],
+"lesson_objectives": [
+"Define boiling.",
+"Identify tools.",
+"Identify foods that can be boiled.",
+"Boil foods.",
+"Observe safety."
+],
+"approaches_to_teach": [
+"Oral question and answer",
+"Discussion",
+"Demonstration",
+"Group work",
+"Practical work"
+],
+"evaluation_methods": [
+"Asking questions",
+"Inviting questions",
+"Assess products",
+"Assess acquisition of skills",
+"Assess proper use of equipment",
+"Check whether lesson ended on time",
+"Give written work"
+],
+"cooking_methods": {
+"boiling": {
+"definition": "Cooking food in boiling water."
+},
+"steaming": {
+"definition": "Cooking food using steam from boiling water, often in a container placed over boiling water."
+},
+"dry_heat_methods": {
+"types": [
+"Roasting",
+"Baking",
+"Grilling",
+"Smoking"
+],
+"roasting": {
+"definition": "Cooking food near an intense source of heat such as in an oven, over charcoal, or a three-stone fire.",
+"suitable_foods": [
+"Meat",
+"Maize",
+"Potatoes",
+"Bananas",
+"Chicken",
+"Sausages"
+],
+"advantages": [
+"Cooks appetizing dishes.",
+"Oven can cook multiple foods at once.",
+"Surface hardens, sealing in juices and tenderizing food."
+],
+"disadvantages": []
+}
+}
+},
+"core_competencies": [
+"Creativity and imagination",
+"Learning to learn and reflective practice"
+],
+"values": [
+"Responsibility",
+"Peace"
+],
+"assessment_rubric": []
+},
+{
+"name": "2.6 Meal Planning and Management",
+"specific_learning_outcomes": [],
+"suggested_learning_experiences": [],
+"suggested_key_inquiry_questions": []
+},
+{
+"name": "2.7 Food Hygiene and Safety",
+"specific_learning_outcomes": [],
+"suggested_learning_experiences": [],
+"suggested_key_inquiry_questions": []
+},
+{
+"name": "2.8 Nutrition Through the Life Cycle",
+"specific_learning_outcomes": [],
+"suggested_learning_experiences": [],
+"suggested_key_inquiry_questions": []
+},
+{
+"name": "2.9 Nutrition Disorders",
+"specific_learning_outcomes": [
+"Identify common nutrition disorders: kwashiorkor, marasmus, rickets, scurvy, obesity, anemia",
+"Explain causes and symptoms of each disorder",
+"Suggest preventive measures"
+],
+"suggested_learning_experiences": [
+"Research and present case studies on nutrition disorders.",
+"Discuss dangers of anemia during pregnancy: difficulty carrying pregnancy, complications during birth, poor breastfeeding, newborn anemia."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Love",
+"Respect"
+],
+"assessment_rubric": []
+},
+{
+"name": "2.10 Non-Communicable Diseases",
+"specific_learning_outcomes": [
+"Identify non-communicable diseases related to diet: diabetes, cardiovascular diseases, hypertension, cancer",
+"Discuss contributing factors: tobacco use, physical inactivity, harmful alcohol use, unhealthy diets",
+"Explain effects: increased healthcare costs, restricted ability to work, financial strain on households"
+],
+"diseases": {
+"cardiovascular_diseases": {},
+"diabetes": {
+"causes": [
+"Hereditary",
+"Sickness"
+],
+"signs_and_symptoms": [
+"Pain",
+"Swelling",
+"Body weakness"
+],
+"management": [
+"Surgery if not spread",
+"Seek medication"
+]
+},
+"high_blood_pressure": {},
+"asthma": {
+"definition": "A condition where airways narrow, swell, and produce extra mucus.",
+"causes": [
+"Hereditary",
+"Tobacco smoke",
+"Dust mites",
+"Outdoor air pollution",
+"Pests (cockroaches, mice)",
+"Cleaning and disinfectants"
+],
+"types": [
+"Allergic",
+"Non-allergic (develops later in life)",
+"Cough-variant (dry cough main symptom)",
+"Noctal (due to pre-existing diagnosis)",
+"Exercise-induced"
+]
+}
+},
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Respect",
+"Peace"
+],
+"assessment_rubric": []
+}
+]
+},
+{
+"strand": "3.0 Clothing and Textiles",
+"sub_strands": [
+{
+"name": "3.1 Fibres and Fabrics",
+"specific_learning_outcomes": [
+"Differentiate between natural and synthetic fibres",
+"Identify sources of various fibres",
+"Describe properties of different fabrics"
+],
+"suggested_learning_experiences": [
+"Examine fabric samples and classify them by fibre type.",
+"Conduct burn tests to identify fibres (if safe and supervised)."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Responsibility"
+],
+"assessment_rubric": []
+},
+{
+"name": "3.2 Care of Clothes and Household Articles",
+"specific_learning_outcomes": [
+"Identify appropriate methods for cleaning different fabrics",
+"Demonstrate stain removal techniques",
+"Practice correct ironing and storage methods"
+],
+"teaching_and_learning_resources": [
+"Water",
+"Basins",
+"Detergents",
+"Brushes",
+"Clothes line",
+"Pegs",
+"Hangers",
+"Irons",
+"Ironing surface",
+"Stain removal agents"
+],
+"learners_activities": [
+"Listening",
+"Observing the demonstration",
+"Asking questions",
+"Answering questions",
+"Collecting materials",
+"Participate in removing stains"
+],
+"methods_to_soften_hard_water": [
+"Adding borax",
+"Boiling",
+"Adding ash",
+"Adding soda",
+"Adding ammonia",
+"Distillation",
+"Salting",
+"Adding caustic soda",
+"Using sodium carbonate"
+],
+"core_competencies": [
+"Learning to learn and reflective practice"
+],
+"values": [
+"Responsibility",
+"Unity"
+],
+"assessment_rubric": []
+},
+{
+"name": "3.3 Sewing Tools and Equipment",
+"specific_learning_outcomes": [
+"Identify sewing tools and equipment",
+"Demonstrate proper handling and care of sewing tools"
+],
+"suggested_learning_experiences": [
+"Display and name various sewing tools.",
+"Practice threading needles, winding bobbins, and machine operation."
+],
+"core_competencies": [
+"Digital literacy",
+"Creativity and imagination"
+],
+"values": [
+"Respect"
+],
+"assessment_rubric": []
+},
+{
+"name": "3.4 Basic Sewing Techniques",
+"specific_learning_outcomes": [
+"Demonstrate basic hand and machine stitches",
+"Perform simple repairs and alterations on garments"
+],
+"suggested_learning_experiences": [
+"Practice running stitch, backstitch, hemming stitch, etc.",
+"Sew on buttons, mend tears."
+],
+"core_competencies": [
+"Creativity and imagination",
+"Self-efficacy"
+],
+"values": [
+"Responsibility"
+],
+"assessment_rubric": []
+},
+{
+"name": "3.5 Pattern Drafting and Garment Construction",
+"specific_learning_outcomes": [
+"Take body measurements accurately",
+"Interpret commercial patterns and symbols",
+"Construct a simple garment from a pattern"
+],
+"body_measurements": [
+"Chest width (widest part)",
+"Shoulder length (across shoulder)",
+"Skirt length (waist to desired length)",
+"Outer arm length (shoulder to waist with elbow bent)",
+"Inner arm length (armpit to wrist)",
+"Trouser outer length (crotch to desired length)",
+"Crotch depth (sitting position, waist to chair top)"
+],
+"pattern_symbols": {
+"cutting_line": "Outermost bold continuous line, 1.5 cm from fitting line, marked with scissors symbol.",
+"notches_balance_marks": "Marks along cutting line to match pieces together. Used at gathers, darts, shoulder seams, collar points, sleeve heads.",
+"straight_grain": "Solid line with arrows at both ends, parallel to selvedge/warp grain.",
+"place_on_fold": "Line with bent arrows toward edge; indicates fabric should be folded and cut on fold without cutting the fold.",
+"flow_direction_arrows": "Small arrows on seam lines showing stitching direction to prevent stretching.",
+"seam_allowance": "Distance between cutting line and fitting line."
+},
+"core_competencies": [
+"Critical thinking and problem solving",
+"Creativity and imagination"
+],
+"values": [
+"Respect",
+"Responsibility"
+],
+"assessment_rubric": []
+},
+{
+"name": "3.6 Laundry Practices",
+"specific_learning_outcomes": [
+"Describe the steps in laundry: sorting, soaking, washing, rinsing, drying, ironing, storing",
+"Use appropriate detergents and methods for different fabrics"
+],
+"detergents": {
+"meaning": "Substances that assist in removing dirt.",
+"how_they_work": [
+"Emulsify greasy dirt.",
+"Reduce water's surface tension for better penetration.",
+"Keep loosened dirt in suspension."
+],
+"types": [
+"Soap",
+"Soapless"
+],
+"soap_detergents": {
+"made_from": "Reaction between fats/oils (animal or plant) and alkalis (sodium/potassium hydroxide).",
+"sources": {
+"animal": [
+"Mutton",
+"Beef"
+],
+"vegetable_oils": [
+"Peanut",
+"Soya beans",
+"Palm",
+"Coconut"
+]
+}
+}
+},
+"care_of_laundry_utensils": {
+"basins_buckets_karais": [
+"Clean after use.",
+"Avoid long exposure to sun.",
+"Don't drop sharp objects inside.",
+"Avoid harsh abrasives.",
+"Use for correct purpose.",
+"Avoid knocking/dropping.",
+"Avoid prolonged contact with boiling water."
+]
+},
+"core_competencies": [
+"Learning to learn and reflective practice"
+],
+"values": [
+"Responsibility",
+"Peace"
+],
+"assessment_rubric": []
+}
+]
+},
+{
+"strand": "4.0 Home Management",
+"sub_strands": [
+{
+"name": "4.1 Home Environment",
+"specific_learning_outcomes": [
+"Describe features of a healthy home environment",
+"Identify hazards in the home and school"
+],
+"hazards": [
+"Loose mats/rugs",
+"Loose wires",
+"Loose rags/carpets",
+"Carelessness",
+"Faulty equipment",
+"Fatigue/exhaustion",
+"Insufficient light",
+"Poor refuse disposal"
+],
+"accidents": [
+"Burns and scalds",
+"Cuts and bruises",
+"Snake bites",
+"Drowning",
+"Insect bites and stings"
+],
+"preventive_measures": [
+"Repair broken furniture.",
+"Ensure proper sanitation.",
+"Improve security.",
+"Maintain neatness.",
+"Provide close supervision.",
+"Provide safe grounds.",
+"Clear bushes.",
+"Play safe/avoid stone throwing."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Responsibility",
+"Peace"
+],
+"assessment_rubric": []
+},
+{
+"name": "4.2 Ventilation",
+"specific_learning_outcomes": [
+"Explain the importance of ventilation",
+"Identify methods of ventilating a room"
+],
+"importance": [
+"Prevents suffocation.",
+"Removes bad odors.",
+"Controls humidity.",
+"Reduces risk of respiratory infections.",
+"May lead to health complications from kitchen heat.",
+"Smoke from fires irritates eyes and may cause bronchitis."
+],
+"methods": {
+"natural": {
+"description": "Through openings like windows, doors, vents, chimneys.",
+"features": "Louvre windows (slanting, stay open when raining), fanlights (small, high up), vertically pivoted windows."
+},
+"mechanical": {}
+},
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Respect",
+"Love"
+],
+"assessment_rubric": []
+},
+{
+"name": "4.3 Lighting",
+"specific_learning_outcomes": [
+"Identify sources of lighting in the home",
+"Demonstrate safe use of lighting appliances"
+],
+"suggested_learning_experiences": [
+"Compare natural and artificial lighting.",
+"Discuss safety with electrical and flame-based lights."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Responsibility",
+"Peace"
+],
+"assessment_rubric": []
+},
+{
+"name": "4.4 Furnishing and Interior Decoration",
+"specific_learning_outcomes": [
+"Select appropriate furnishings for different rooms",
+"Apply principles of interior decoration"
+],
+"suggested_learning_experiences": [
+"Design a room layout using sketches or digital tools.",
+"Discuss how color, texture, and space affect mood."
+],
+"core_competencies": [
+"Creativity and imagination"
+],
+"values": [
+"Unity",
+"Love"
+],
+"assessment_rubric": []
+},
+{
+"name": "4.5 Cleaning the Home",
+"specific_learning_outcomes": [
+"Identify cleaning agents and equipment",
+"Demonstrate correct cleaning methods for different surfaces",
+"Practice improvisation of cleaning tools"
+],
+"cleaning_equipment": {
+"brushes": {
+"qualities": [
+"Strong bristles",
+"Firm handle",
+"Rust-free metal parts",
+"Well-finished",
+"Durable",
+"Appropriate size",
+"Easy to clean"
+],
+"care": [
+"Clean after use.",
+"Wash occasionally in hot soapy water.",
+"Hang to dry.",
+"Store properly."
+],
+"improvisation": [
+"Old brooms",
+"Twigs tied together"
+]
+},
+"brooms": {
+"qualities": [
+"Flexible but firm bristles",
+"Firm handle",
+"Well-secured head",
+"Durable",
+"Appropriate size",
+"Easy to clean"
+],
+"care": [
+"Clean after use.",
+"Shake off dust.",
+"Store hanging or upright."
+],
+"improvisation": [
+"Reeds",
+"Maize husks tied to a stick",
+"Straw"
+]
+},
+"dusters": {
+"qualities": [
+"Soft",
+"Absorbent",
+"Colorfast",
+"Durable",
+"Smooth handle",
+"Firmly attached"
+],
+"care": [
+"Wash regularly.",
+"Dry thoroughly.",
+"Store properly."
+],
+"improvisation": [
+"Chicken feathers",
+"Duck feathers",
+"Old rags"
+]
+},
+"mops": {
+"qualities": [
+"Soft",
+"Appropriate height",
+"Absorbent",
+"Colorfast",
+"Durable/strong",
+"Smooth handle",
+"Firmly fixed to handle"
+],
+"care": [
+"Rinse and dry well.",
+"Occasionally wash in hot soapy water.",
+"Hang to dry."
+],
+"improvisation": [
+"Old cloths tied to a stick",
+"Coconut husks"
+]
+},
+"dustpans": {
+"qualities": [
+"Strong with open edges",
+"Smooth edges",
+"Rust-free",
+"Well-finished",
+"Durable",
+"Cleanable",
+"Functional shape"
+],
+"care": [
+"Clean after use.",
+"Wash occasionally in hot soapy water.",
+"Hang to store."
+],
+"improvisation": [
+"Cardboard paper",
+"Flattened tin",
+"Broken basins/buckets",
+"Boxes"
+]
+},
+"buckets_basins_karais": {
+"qualities": [
+"Durable",
+"Appropriate weight",
+"Good quality",
+"Attractive color",
+"Affordable cost",
+"Suitable for purpose",
+"Good design",
+"Guarantee",
+"Rust-free"
+],
+"care": [
+"Clean after use.",
+"Avoid dropping.",
+"Avoid extreme temperatures.",
+"Avoid coarse abrasives.",
+"Don’t keep acid substances in enamel items for long."
+]
+}
+},
+"summarizing_methods": [
+"Group discussion",
+"Asking questions",
+"Answering questions",
+"Copying summary notes",
+"Attempting written questions",
+"Observing and identifying specific items (e.g., glass, wood)"
+],
+"evaluating_methods": [
+"Giving written exercise",
+"Asking oral questions",
+"Highlighting main points",
+"Debriefing learners"
+],
+"preparations_for_practical_lesson": [
+"Prepare lesson plan",
+"Collect teaching/learning resources",
+"Group learners",
+"Choose group leader"
+],
+"core_competencies": [
+"Learning to learn and reflective practice",
+"Creativity and imagination"
+],
+"values": [
+"Responsibility",
+"Unity"
+],
+"assessment_rubric": []
+},
+{
+"name": "4.6 Time and Energy Management",
+"specific_learning_outcomes": [
+"Explain the importance of managing time and energy",
+"Apply methods to conserve time and energy in daily tasks"
+],
+"importance": [
+"Saves time and energy.",
+"Enables completion of all tasks.",
+"Allows smooth transition between activities without backtracking."
+],
+"conservation_methods": [
+"Use trays or wheelbarrows.",
+"Use labor-saving appliances.",
+"Use a hatch/window between kitchen and dining for serving.",
+"Work systematically.",
+"Use correct cleaning/cooking methods.",
+"Gather materials in advance.",
+"Use correct equipment and materials.",
+"Use sharp knives."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Responsibility",
+"Peace"
+],
+"assessment_rubric": []
+},
+{
+"name": "4.7 Waste Management",
+"specific_learning_outcomes": [
+"Classify household refuse",
+"Identify appropriate disposal methods"
+],
+"household_refuse": {
+"organic": [
+"Banana fibers",
+"Food waste",
+"Maize cobs"
+],
+"inorganic": [
+"Broken glasses",
+"Tins",
+"Plastic containers"
+],
+"non_decomposable": [
+"Broken bottles/pots/ceramics",
+"Tins/enamel",
+"Polythene bags/paper"
+]
+},
+"disposal_methods": {
+"organic": [
+"Feed animals",
+"Put in pit",
+"Burn"
+],
+"inorganic": [
+"Bury",
+"Recycle",
+"Put in pit latrine"
+],
+"sanitary_towels": [
+"Put in sanitary bins",
+"Bury",
+"Burn",
+"Put in pit latrine"
+],
+"general_methods": [
+"Recycling",
+"Burning",
+"Burying",
+"Compost pit",
+"Feeding animals"
+]
+},
+"core_competencies": [
+"Environmental stewardship",
+"Critical thinking and problem solving"
+],
+"values": [
+"Respect",
+"Unity"
+],
+"assessment_rubric": []
+},
+{
+"name": "4.8 Water and Sanitation",
+"specific_learning_outcomes": [
+"Identify sources and uses of water in the home",
+"Practice safe water storage and usage",
+"Maintain hygiene in water systems"
+],
+"liquid_waste_disposal": {
+"types": [
+"Wastewater from bathroom",
+"Wastewater from kitchen",
+"Wastewater from water closet/sewage"
+],
+"drainage_systems": [
+"Open/free",
+"Closed/concealed"
+]
+},
+"sink_care": [
+"Disinfect with boiling water, salt, or disinfectant."
+],
+"core_competencies": [
+"Learning to learn and reflective practice"
+],
+"values": [
+"Responsibility",
+"Peace"
+],
+"assessment_rubric": []
+},
+{
+"name": "4.9 Fuels and Energy",
+"specific_learning_outcomes": [
+"Identify common fuels used in the home",
+"Discuss safety precautions when using different fuels"
+],
+"fuels": [
+"Charcoal",
+"Paraffin",
+"Gas",
+"Electricity/Electric cooker",
+"Firewood",
+"Solar",
+"Sawdust",
+"Cow dung"
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Responsibility",
+"Peace"
+],
+"assessment_rubric": []
+}
+]
+},
+{
+"strand": "5.0 Child Development and Care",
+"sub_strands": [
+{
+"name": "5.1 Stages of Child Development",
+"specific_learning_outcomes": [],
+"suggested_learning_experiences": [],
+"suggested_key_inquiry_questions": []
+},
+{
+"name": "5.2 Principles of Child Growth and Development",
+"specific_learning_outcomes": [],
+"suggested_learning_experiences": [],
+"suggested_key_inquiry_questions": []
+},
+{
+"name": "5.3 Child Health and Nutrition",
+"specific_learning_outcomes": [],
+"suggested_learning_experiences": [],
+"suggested_key_inquiry_questions": []
+},
+{
+"name": "5.4 Play and Learning Activities for Children",
+"specific_learning_outcomes": [],
+"suggested_learning_experiences": [],
+"suggested_key_inquiry_questions": []
+},
+{
+"name": "5.5 Guidance and Counseling of Children",
+"specific_learning_outcomes": [],
+"suggested_learning_experiences": [],
+"suggested_key_inquiry_questions": []
+}
+]
+},
+{
+"strand": "6.0 Community and Social Issues",
+"sub_strands": [
+{
+"name": "6.1 Citizenship",
+"specific_learning_outcomes": [
+"Define citizenship",
+"Explain rights and responsibilities of citizens"
+],
+"citizenship_definition": "Being a member of a state or nation who owes allegiance to it and is entitled to its protection.",
+"integration": [
+"Promotes national unity.",
+"Encourages participation in national development.",
+"Fosters patriotism and nationalism."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Patriotism",
+"Nationalism"
+],
+"assessment_rubric": []
+},
+{
+"name": "6.2 Democracy",
+"specific_learning_outcomes": [
+"Define democracy",
+"Explain principles of democracy"
+],
+"democracy_definition": "A system of government where power is vested in the people, exercised directly or through elected representatives.",
+"principles": [
+"Rule of law",
+"Free and fair elections",
+"Human rights",
+"Accountability",
+"Transparency"
+],
+"integration": "Is democratic and advocates for harmonious relationships in society.",
+"core_competencies": [
+"Critical thinking and problem solving",
+"Communication and collaboration"
+],
+"values": [
+"Respect",
+"Peace"
+],
+"assessment_rubric": []
+},
+{
+"name": "6.3 Human Rights",
+"specific_learning_outcomes": [
+"Define human rights",
+"Identify basic human rights",
+"Discuss ways of promoting and protecting human rights"
+],
+"human_rights_definition": "Rights inherent to all human beings, regardless of race, sex, nationality, religion, etc.",
+"integration": "Refers to fair treatment and promotion of equity, based on human dignity, solidarity, and elimination of inequalities.",
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Respect",
+"Peace",
+"Unity"
+],
+"assessment_rubric": []
+},
+{
+"name": "6.4 Gender",
+"specific_learning_outcomes": [
+"Define gender",
+"Differentiate between gender and sex",
+"Discuss gender equality and equity"
+],
+"gender_definition": "Socially constructed roles, behaviors, activities, and attributes that a society considers appropriate for men and women.",
+"integration": "Accords equal opportunities, fosters fairness and justice, shares resources equitably.",
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Equality",
+"Equity"
+],
+"assessment_rubric": []
+},
+{
+"name": "6.5 Drug and Substance Abuse",
+"specific_learning_outcomes": [
+"Differentiate between medicine, drugs, and substances",
+"Explain drug use, abuse, and misuse",
+"Identify signs and symptoms of drug abuse",
+"Discuss measures to control misuse of medicine"
+],
+"definitions": {
+"medicine": "Chemical/compound used to cure, halt, or prevent disease (e.g., painkillers).",
+"drugs": "Chemical compounds that change how the body and mind work (e.g., alcohol).",
+"substances": "Materials with intoxicating effects (e.g., cigarettes, alcohol)."
+},
+"drug_use_patterns": {
+"use": "Taken as required/prescribed (e.g., 2x3 daily).",
+"abuse": "Used in a way not intended, more than prescribed (e.g., 2x3 taken as 3x2).",
+"misuse": "Incorrect use, such as wrong dose, wrong time, stopping too soon, taking someone else’s prescription."
+},
+"forms_of_medicine": [
+"Tablets",
+"Pills",
+"Capsules",
+"Syrups/drinks",
+"Ointments/creams",
+"Inhalers/aerosols",
+"Eye/ear/nose drops",
+"Liquid injections",
+"Powder/solid crystal",
+"Natural/herbal"
+],
+"usefulness_of_medicine_box_info": [
+"Make informed decisions about suitability.",
+"Provides summary of benefits and side effects.",
+"Identifies the type.",
+"Shows dosage.",
+"Shows expiry dates."
+],
+"signs_of_drug_abuse": [
+"Stealing money",
+"Persistent/severe headache",
+"Overweight/obese"
+],
+"measures_to_control_misuse": [
+"Do not stop/change dosing without consulting doctor.",
+"Never use another person’s prescription.",
+"Never give your prescription to others.",
+"Store prescription stimulants, sedatives, and opioids safely."
+],
+"assignments": [
+"Collect empty medicine boxes and discuss the usefulness of the information provided."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Self-efficacy"
+],
+"values": [
+"Responsibility",
+"Respect"
+],
+"assessment_rubric": []
+},
+{
+"name": "6.6 Family Life Education",
+"specific_learning_outcomes": [],
+"suggested_learning_experiences": [],
+"suggested_key_inquiry_questions": []
+},
+{
+"name": "6.7 HIV and AIDS",
+"specific_learning_outcomes": [],
+"suggested_learning_experiences": [],
+"suggested_key_inquiry_questions": []
+}
+]
+},
+{
+"strand": "7.0 Special Needs and Home-Based Care",
+"sub_strands": [
+{
+"name": "7.1 Care of the Sick at Home",
+"specific_learning_outcomes": [
+"Define home-based care",
+"Identify forms of assistance given to the sick",
+"Meet nutritional needs of the sick",
+"Provide personal care for bedridden patients"
+],
+"home_based_care_definition": "Assistance given to the unwell while at home, including material, financial, and emotional support.",
+"nutritional_needs": [
+"Serve food attractively.",
+"Use clean, sterilized utensils.",
+"Adhere to doctor’s instructions.",
+"Use available, affordable foods.",
+"Prepare food in easy-to-eat forms (e.g., minced meat)."
+],
+"personal_care": [
+"Ensure patient is clean and comfortable.",
+"Change bedding regularly.",
+"Assist with bathing and toileting.",
+"Empty and clean bedpans promptly.",
+"Raise patient to position pan, then rest comfortably after use.",
+"Ensure clear passage for wheelchair users.",
+"Lower beds for easy access for diabetic or mobility-impaired patients.",
+"Keep syringes accessible and dispose of needles immediately."
+],
+"environmental_care": [
+"Ensure quiet and privacy.",
+"Ensure dust-free environment.",
+"Keep patient warm."
+],
+"core_competencies": [
+"Communication and collaboration",
+"Empathy and compassion"
+],
+"values": [
+"Love",
+"Respect"
+],
+"assessment_rubric": []
+},
+{
+"name": "7.2 Post-Natal Care",
+"specific_learning_outcomes": [
+"Define post-natal care",
+"Explain its importance",
+"Describe services offered at post-natal clinics"
+],
+"post_natal_care_definition": "Care given to the mother and baby after birth, provided at home and clinics.",
+"importance": [
+"Ensures recovery of mother and health of baby.",
+"Monitors for complications.",
+"Supports breastfeeding.",
+"Provides family planning advice."
+],
+"clinic_services": [
+"Check blood pressure.",
+"Examine breasts for breastfeeding readiness.",
+"Ensure pregnancy complications have resolved.",
+"Discuss family planning.",
+"Advise on nutrition, cleanliness, and childcare.",
+"Answer mother’s questions.",
+"Check uterus.",
+"Advise on health status.",
+"Provide guidance and counseling."
+],
+"core_competencies": [
+"Communication and collaboration"
+],
+"values": [
+"Love",
+"Responsibility"
+],
+"assessment_rubric": []
+},
+{
+"name": "7.3 Role Play in Home-Based Care",
+"specific_learning_outcomes": [
+"Demonstrate care procedures through role play"
+],
+"suggested_learning_experiences": [
+"Trainees role-play scenarios involving care for the sick, elderly, or disabled."
+],
+"core_competencies": [
+"Communication and collaboration",
+"Empathy and compassion"
+],
+"values": [
+"Love",
+"Respect"
+],
+"assessment_rubric": []
+}
+]
+},
+{
+"strand": "8.0 Pedagogical Skills for Home Science",
+"sub_strands": [
+{
+"name": "8.1 Lesson Planning for Practical Subjects",
+"specific_learning_outcomes": [
+"Develop a lesson plan for a Home Science practical lesson",
+"Integrate theory and practice effectively"
+],
+"preparations_for_practical_lesson": [
+"Prepare lesson plan",
+"Collect teaching/learning resources",
+"Group learners",
+"Choose group leader"
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Planning and organization"
+],
+"values": [
+"Responsibility",
+"Respect"
+],
+"assessment_rubric": []
+},
+{
+"name": "8.2 Demonstration Techniques",
+"specific_learning_outcomes": [
+"Demonstrate correct procedures clearly and safely",
+"Sequence demonstrations logically",
+"Engage learners during demonstrations"
+],
+"approaches_to_teach": [
+"Demonstration",
+"Practical work"
+],
+"core_competencies": [
+"Communication and collaboration",
+"Creativity and imagination"
+],
+"values": [
+"Responsibility",
+"Safety"
+],
+"assessment_rubric": []
+},
+{
+"name": "8.3 Learner-Centered Activities",
+"specific_learning_outcomes": [
+"Organize group work and collaborative learning",
+"Facilitate learner participation and inquiry"
+],
+"learners_activities": [
+"Listening",
+"Observing the demonstration",
+"Asking questions",
+"Answering questions",
+"Collecting materials",
+"Participate in removing stains"
+],
+"approaches_to_teach": [
+"Group work",
+"Discussion",
+"Oral Q&A"
+],
+"core_competencies": [
+"Communication and collaboration"
+],
+"values": [
+"Respect",
+"Unity"
+],
+"assessment_rubric": []
+},
+{
+"name": "8.4 Assessment in Practical Lessons",
+"specific_learning_outcomes": [
+"Use diverse methods to assess practical skills and knowledge",
+"Provide constructive feedback"
+],
+"evaluation_methods": [
+"Asking questions",
+"Inviting questions",
+"Assess products",
+"Assess acquisition of skills",
+"Assess proper use of equipment",
+"Check timeliness",
+"Give written work",
+"Giving written exercise",
+"Asking oral questions",
+"Highlighting main points",
+"Debriefing learners"
+],
+"summarizing_methods": [
+"Participating in group discussion",
+"Asking questions",
+"Answering questions",
+"Copying summary notes",
+"Attempting written questions",
+"Observing and identifying items"
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Assessment literacy"
+],
+"values": [
+"Fairness",
+"Respect"
+],
+"assessment_rubric": []
+}
+]
+}
+],
+"course_structure": {
+"total_hours": null,
+"content_and_pedagogy_hours": null,
+"practicum_hours": null,
+"microteaching_hours": null,
+"subjects": []
+}
+}
