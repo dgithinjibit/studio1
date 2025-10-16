@@ -23,11 +23,13 @@ export async function generateDPTEResponse(input: GenerateDPTEResponseInput): Pr
       model: 'googleai/gemini-2.5-flash',
     });
 
-    const encoder = new TextEncoder();
     const readableStream = new ReadableStream({
       async start(controller) {
         for await (const chunk of responseStream) {
-          controller.enqueue(chunk.text);
+          const text = chunk.text;
+          if (text) {
+            controller.enqueue(text);
+          }
         }
         controller.close();
       }
