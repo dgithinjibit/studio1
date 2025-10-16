@@ -24,12 +24,13 @@ export async function handleTutorQuery(query: string): Promise<string> {
 }
 
 /**
- * Generates a new assessment question for the user.
+ * Generates a new assessment question for the user based on a subject.
+ * @param subject The subject to generate a question for.
  * @returns The AI-generated question.
  */
-export async function handleGenerateQuestion(): Promise<string> {
+export async function handleGenerateQuestion(subject: string): Promise<string> {
   try {
-    const result = await generateAssessmentQuestion();
+    const result = await generateAssessmentQuestion({ subject });
     return result.question;
   } catch (error) {
     console.error("Error in handleGenerateQuestion:", error);

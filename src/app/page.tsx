@@ -15,6 +15,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+
 
 import { handleTutorQuery, handleAssessment, handleGenerateQuestion } from "@/app/actions";
 import type { AssessTeacherResponseOutput } from "@/ai/flows/assess-teacher-response";
@@ -26,11 +28,7 @@ const assessmentSchema = z.object({
   teacherResponse: z.string().min(20, "Please provide a comprehensive response for assessment."),
 });
 
-type AssessmentSession = {
-  question: string;
-  response?: string;
-  result?: AssessTeacherResponseOutput;
-}
+const subjects = ["Microteaching", "Child Development", "Home Science"];
 
 export default function Home() {
   const [messages, setMessages] = useState<Message[]>([
@@ -42,6 +40,7 @@ export default function Home() {
   const [input, setInput] = useState("");
   const [isTutorLoading, startTutorTransition] = useTransition();
 
+  const [selectedSubject, setSelectedSubject] = useState<string | null>(null);
   const [assessmentQuestion, setAssessmentQuestion] = useState<string | null>(null);
   const [assessmentResult, setAssessmentResult] = useState<AssessTeacherResponseOutput | null>(null);
   const [isGeneratingQuestion, startQuestionGenerationTransition] = useTransition();
@@ -80,12 +79,22 @@ export default function Home() {
   };
   
   const onGenerateQuestion = () => {
+    if (!selectedSubject) {
+       toast({
+        variant: "destructive",
+        title: "No Subject Selected",
+        description: "Please select a subject before generating a question.",
+      });
+      return;
+    }
+
     setAssessmentQuestion(null);
     setAssessmentResult(null);
     form.reset();
+
     startQuestionGenerationTransition(async () => {
       try {
-        const question = await handleGenerateQuestion();
+        const question = await handleGenerateQuestion(selectedSubject);
         setAssessmentQuestion(question);
       } catch (error) {
          toast({
@@ -120,6 +129,13 @@ export default function Home() {
     });
   };
   
+  const handleSubjectChange = (subject: string) => {
+    setSelectedSubject(subject);
+    setAssessmentQuestion(null);
+    setAssessmentResult(null);
+    form.reset();
+  }
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-4 md:p-8 bg-background">
       <Card className="w-full max-w-3xl h-[90vh] flex flex-col shadow-2xl">
@@ -166,11 +182,23 @@ export default function Home() {
           <TabsContent value="assessment" className="flex-1 overflow-hidden mt-0">
             <ScrollArea className="h-full">
               <CardContent className="p-6 space-y-6">
-                <div className="flex flex-col items-center text-center">
-                  <p className="text-sm text-muted-foreground mb-4">
-                    Ready to test your knowledge? The AI will generate a question for you based on the DPTE curriculum.
+                <div className="flex flex-col items-center text-center gap-4">
+                  <p className="text-sm text-muted-foreground">
+                    Ready to test your knowledge? Select a subject, and the AI will generate a question for you based on the DPTE curriculum.
                   </p>
-                  <Button onClick={onGenerateQuestion} disabled={isAssessmentLoading}>
+                  <div className="w-full max-w-sm">
+                     <Select onValueChange={handleSubjectChange} value={selectedSubject ?? ""}>
+                      <SelectTrigger className="w-full">
+                        <SelectValue placeholder="Select a subject..." />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {subjects.map(subject => (
+                          <SelectItem key={subject} value={subject}>{subject}</SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                  <Button onClick={onGenerateQuestion} disabled={isAssessmentLoading || !selectedSubject}>
                     {isGeneratingQuestion ? (
                       <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                     ) : (
@@ -183,14 +211,14 @@ export default function Home() {
                 {isGeneratingQuestion && (
                   <div className="flex items-center justify-center pt-8">
                     <Loader2 className="h-8 w-8 animate-spin text-primary" />
-                    <p className="ml-4 text-muted-foreground">Generating question...</p>
+                    <p className="ml-4 text-muted-foreground">Generating question for {selectedSubject}...</p>
                   </div>
                 )}
                 
                 {assessmentQuestion && (
                   <div className="space-y-6 pt-4">
                     <Alert>
-                      <AlertTitle className="font-semibold">Your Question:</AlertTitle>
+                      <AlertTitle className="font-semibold">Your Question for {selectedSubject}:</AlertTitle>
                       <AlertDescription className="text-foreground">
                         {assessmentQuestion}
                       </AlertDescription>
