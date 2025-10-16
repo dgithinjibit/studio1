@@ -30,7 +30,7 @@ const assessmentSchema = z.object({
   teacherResponse: z.string().min(20, "Please provide a comprehensive response for assessment."),
 });
 
-const subjects = ["Microteaching", "Child Development", "Home Science"];
+const subjects = ["Microteaching", "Child Development", "Home Science", "Art and Craft", "Christian Religious Education"];
 
 export default function Home() {
   

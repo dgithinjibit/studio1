@@ -90,4 +90,5 @@ export function retrieveContext(query: string, k: number = 10): string {
 
   const topChunks = relevantChunks.slice(0, k).map(item => item.chunk);
   
-  
+  return topChunks.join('\n\n---\n\n');
+}
