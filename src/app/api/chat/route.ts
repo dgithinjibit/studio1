@@ -15,14 +15,5 @@ export async function POST(req: Request) {
     context,
   });
 
-  const decoder = new TextDecoder();
-  const transformStream = new TransformStream({
-    transform(chunk, controller) {
-      controller.enqueue(decoder.decode(chunk));
-    },
-  });
-
-  stream.pipeTo(transformStream.writable);
-
-  return new StreamingTextResponse(transformStream.readable);
+  return new StreamingTextResponse(stream);
 }

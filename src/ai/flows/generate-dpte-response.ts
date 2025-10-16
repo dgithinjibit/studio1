@@ -5,7 +5,6 @@
  *
  * - generateDPTEResponse - A function that handles the generation of responses to DPTE curriculum questions.
  * - GenerateDPTEResponseInput - The input type for the generateDPTEResponse function.
- * - GenerateDPTEResponseOutput - The return type for the generateDPTEResponse function.
  */
 
 import {ai} from '@/ai/genkit';
@@ -16,10 +15,6 @@ const GenerateDPTEResponseInputSchema = z.object({
   context: z.string().describe('The relevant DPTE curriculum document chunks.'),
 });
 export type GenerateDPTEResponseInput = z.infer<typeof GenerateDPTEResponseInputSchema>;
-
-export type GenerateDPTEResponseOutput = {
-  response: string;
-};
 
 
 export async function generateDPTEResponse(input: GenerateDPTEResponseInput): Promise<ReadableStream<string>> {
@@ -32,7 +27,7 @@ export async function generateDPTEResponse(input: GenerateDPTEResponseInput): Pr
     const readableStream = new ReadableStream({
       async start(controller) {
         for await (const chunk of responseStream) {
-          controller.enqueue(encoder.encode(chunk.text));
+          controller.enqueue(chunk.text);
         }
         controller.close();
       }
