@@ -92,3 +92,5 @@ export function retrieveContext(query: string, k: number = 10): string {
   
   return topChunks.join('\n\n---\n\n');
 }
+
+    

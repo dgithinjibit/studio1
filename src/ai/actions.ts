@@ -2,7 +2,7 @@
 
 import { assessTeacherResponse, type AssessTeacherResponseOutput } from "@/ai/flows/assess-teacher-response";
 import { generateAssessmentQuestion } from "@/ai/flows/generate-assessment-question";
-import { retrieveContext } from "@/lib/dpte-curriculum";
+import { retrieveContext } from "@/lib/rag/dpte-curriculum";
 
 /**
  * Generates a new assessment question for the user based on a subject.
@@ -42,3 +42,5 @@ export async function handleAssessment(data: { question: string, teacherResponse
     throw new Error("Failed to process assessment.");
   }
 }
+
+    

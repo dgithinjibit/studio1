@@ -1,5 +1,5 @@
 import { generateDPTEResponse } from '@/ai/flows/generate-dpte-response';
-import { retrieveContext } from '@/lib/dpte-curriculum';
+import { retrieveContext } from '@/lib/rag/dpte-curriculum';
 import { CoreMessage, StreamingTextResponse } from 'ai';
 
 export const dynamic = 'force-dynamic';
@@ -17,3 +17,5 @@ export async function POST(req: Request) {
 
   return new StreamingTextResponse(stream);
 }
+
+    
