@@ -1,0 +1,186 @@
+{
+"document_title": "Diploma in Teacher Education (DTE) - Microteaching Guide",
+"modules": [
+{
+"strand": "1.0 The Practice of Microteaching",
+"sub_strands": [
+{
+"name": "1.1 The Concept of Microteaching",
+"specific_learning_outcomes": [],
+"suggested_learning_experiences": [],
+"suggested_key_inquiry_questions": []
+},
+{
+"name": "1.2 Phases in Microteaching",
+"specific_learning_outcomes": [],
+"suggested_learning_experiences": [],
+"suggested_key_inquiry_questions": []
+}
+]
+},
+{
+"strand": "2.0 Curriculum Design Interpretation",
+"sub_strands": [
+{
+"name": "2.1 National Goals of Education",
+"specific_learning_outcomes": [],
+"suggested_learning_experiences": [],
+"suggested_key_inquiry_questions": []
+},
+{
+"name": "2.2 Essence Statement",
+"specific_learning_outcomes": [],
+"suggested_learning_experiences": [],
+"suggested_key_inquiry_questions": []
+},
+{
+"name": "2.3 Subject General Learning Outcomes",
+"specific_learning_outcomes": [],
+"suggested_learning_experiences": [],
+"suggested_key_inquiry_questions": []
+},
+{
+"name": "2.4 Strand and Sub strand",
+"specific_learning_outcomes": [],
+"suggested_learning_experiences": [
+"Teacher trainees make presentations on the ideas addressed in each strand within a given subject.",
+"Teacher trainees brainstorm on the link between concepts in the sub strands and their respective strands."
+],
+"suggested_key_inquiry_questions": [
+"What is the difference between a strand and sub strand?",
+"How do concepts in sub strands relate to the strands?"
+],
+"core_competencies": [
+"Self-efficacy"
+],
+"values": [
+"Respect"
+]
+},
+{
+"name": "2.5 Specific Learning Outcomes",
+"specific_learning_outcomes": [
+"Interpret specific learning outcomes in a sub strand"
+],
+"assessment_rubric": {
+"ability": "Ability to interpret specific learning outcomes in a sub strand",
+"levels": {
+"Exceeds Expectation": "Elaborately interprets specific learning outcomes in a sub strand",
+"Meets Expectation": "Interprets specific learning outcomes in a sub strand",
+"Approaches Expectation": "Partially interprets specific learning outcomes in a sub strand",
+"Below Expectation": "Only with assistance, interprets specific learning outcomes in a sub strand"
+}
+}
+},
+{
+"name": "2.6 Suggested Key Inquiry Questions",
+"specific_learning_outcomes": [
+"Examine the characteristics of good suggested key inquiry questions",
+"Suggest key inquiry questions that will guide the facilitation of a lesson",
+"Demonstrate the use of suggested key inquiry questions in a lesson"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to examine the characteristics of good suggested key inquiry questions",
+"levels": {
+"Exceeds Expectation": "Broadly and accurately examines the characteristics of good suggested key inquiry questions",
+"Meets Expectation": "Accurately examines the characteristics of good suggested key inquiry questions",
+"Approaches Expectation": "To some degree, accurately examines the characteristics of good suggested key inquiry questions",
+"Below Expectation": "Only with assistance, examines characteristics of good suggested key inquiry questions"
+}
+},
+{
+"ability": "Ability to suggest key inquiry questions that will guide the facilitation of a lesson",
+"levels": {
+"Exceeds Expectation": "Illustratively suggests key inquiry questions that will guide the facilitation of a lesson",
+"Meets Expectation": "Suggests key inquiry questions that will guide the facilitation of a lesson",
+"Approaches Expectation": "Suggests some key inquiry questions that will guide the facilitation of a lesson",
+"Below Expectation": "Only with guidance, suggests key inquiry questions that will guide the facilitation of a lesson"
+}
+},
+{
+"ability": "Ability to demonstrate the use of suggested key inquiry questions in a lesson",
+"levels": {
+"Exceeds Expectation": "With examples, clearly demonstrates the use of suggested key inquiry questions in a lesson",
+"Meets Expectation": "Clearly demonstrates the use of suggested key inquiry questions in a lesson",
+"Approaches Expectation": "Partially demonstrates the use of suggested key inquiry questions in a lesson",
+"Below Expectation": "Only with guidance, demonstrates the use of suggested key inquiry questions in a lesson"
+}
+}
+]
+},
+{
+"name": "2.7 Core Competencies",
+"specific_learning_outcomes": [
+"Analyse the core competencies outlined in the BECF"
+],
+"assessment_rubric": {
+"ability": "Ability to analyse the core competencies outlined in the BECF",
+"levels": {
+"Exceeds Expectation": "Comprehensively and clearly analyses the core competencies outlined in the BECF",
+"Meets Expectation": "Clearly analyses the core competencies outlined in the BECF",
+"Approaches Expectation": "Clearly analyses some core competencies outlined in the BECF",
+"Below Expectation": "Only with assistance, analyses core competencies outlined in the BECF"
+}
+}
+}
+]
+},
+{
+"strand": "3.0 Professional Documents",
+"sub_strands": [
+{
+"name": "3.1 Nature of Professional Documents",
+"specific_learning_outcomes": [
+"Examine the use of professional documents in curriculum implementation and assessment",
+"Assess how professional documents make teaching and learning more effective",
+"Interpret the different types of professional documents used by a school teacher",
+"Appreciate the use of professional documents for a teacher"
+],
+"suggested_learning_experiences": [
+"Teacher trainees critique the function of professional documents.",
+"Teacher trainees search information on the internet on the importance of professional documents.",
+"Teacher trainees discuss and write how professional documents promote teaching and learning."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Digital literacy"
+],
+"values": [
+"Respect",
+"Unity"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to examine the use of professional documents in curriculum implementation and assessment",
+"levels": {
+"Exceeds Expectation": "Extensively examines the use of professional documents in curriculum implementation and assessment",
+"Meets Expectation": "Examines the use of professional documents in curriculum implementation and assessment",
+"Approaches Expectation": "Partly examines the use of professional documents in curriculum implementation and assessment",
+"Below Expectation": "Only with support, examines the use of professional documents in curriculum implementation and assessment"
+}
+},
+{
+"ability": "Ability to assess how professional documents make teaching and learning more effective",
+"levels": {
+"Exceeds Expectation": "Elaborately assesses how professional documents make teaching and learning more effective",
+"Meets Expectation": "Assesses how professional documents make teaching and learning more effective",
+"Approaches Expectation": "Partially assesses how professional documents make teaching and learning more effective",
+"Below Expectation": "Only with assistance, assesses how professional documents make teaching and learning more effective"
+}
+},
+{
+"ability": "Ability to interpret the different types of professional documents used by a school teacher",
+"levels": {
+"Exceeds Expectation": "Effectively interprets the different types of professional documents used by a school teacher",
+"Meets Expectation": "Interprets the different types of professional documents used by a school teacher",
+"Approaches Expectation": "Partially interprets the different types of professional documents used by a school teacher",
+"Below Expectation": "Only with assistance, interprets the different types of professional documents used by a school teacher"
+}
+}
+]
+}
+]
+}
+]
+}
