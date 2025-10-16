@@ -6,15 +6,84 @@
 "sub_strands": [
 {
 "name": "1.1 The Concept of Microteaching",
-"specific_learning_outcomes": [],
-"suggested_learning_experiences": [],
-"suggested_key_inquiry_questions": []
+"specific_learning_outcomes": [
+"Explain the meaning of microteaching",
+"Assess the importance of microteaching in teacher training",
+"Analyse the characteristics of microteaching"
+],
+"suggested_learning_experiences": [
+"Teacher trainees discuss the meaning and importance of microteaching.",
+"Teacher trainees watch video demonstrations of microteaching sessions.",
+"Teacher trainees brainstorm on the characteristics of microteaching."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Communication and collaboration"
+],
+"values": [
+"Respect",
+"Responsibility"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to explain the meaning of microteaching",
+"levels": {
+"Exceeds Expectation": "Comprehensively and clearly explains the meaning of microteaching",
+"Meets Expectation": "Clearly explains the meaning of microteaching",
+"Approaches Expectation": "To a certain extent, clearly explains the meaning of microteaching",
+"Below Expectation": "Only with prompts, explains the meaning of microteaching"
+}
+},
+{
+"ability": "Ability to assess the importance of microteaching in teacher training",
+"levels": {
+"Exceeds Expectation": "Extensively and logically assesses the importance of microteaching in teacher training",
+"Meets Expectation": "Assesses the importance of microteaching in teacher training",
+"Approaches Expectation": "Partially assesses the importance of microteaching in teacher training",
+"Below Expectation": "Only with assistance, assesses the importance of microteaching in teacher training"
+}
+},
+{
+"ability": "Ability to analyse the characteristics of microteaching",
+"levels": {
+"Exceeds Expectation": "Comprehensively analyses the characteristics of microteaching",
+"Meets Expectation": "Analyses the characteristics of microteaching",
+"Approaches Expectation": "Partially analyses the characteristics of microteaching",
+"Below Expectation": "Only with support, analyses the characteristics of microteaching"
+}
+}
+]
 },
 {
 "name": "1.2 Phases in Microteaching",
-"specific_learning_outcomes": [],
-"suggested_learning_experiences": [],
-"suggested_key_inquiry_questions": []
+"specific_learning_outcomes": [
+"Assess the phases in microteaching",
+"Demonstrate understanding of the cyclical nature of microteaching"
+],
+"suggested_learning_experiences": [
+"Teacher trainees discuss the various phases of microteaching: planning, teaching, observation, feedback, re-planning, re-teaching, and reflection.",
+"Teacher trainees view recorded microteaching sessions and identify the different phases.",
+"In groups, trainees map out a microteaching cycle based on a case study."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Self-efficacy"
+],
+"values": [
+"Respect",
+"Love"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to assess the phases in microteaching",
+"levels": {
+"Exceeds Expectation": "With examples, correctly assesses the phases in microteaching",
+"Meets Expectation": "Correctly assesses the phases in microteaching",
+"Approaches Expectation": "To a certain extent, correctly assesses the phases in microteaching",
+"Below Expectation": "Only with assistance, assesses the phases in microteaching"
+}
+}
+]
 }
 ]
 },
@@ -41,28 +110,65 @@
 },
 {
 "name": "2.4 Strand and Sub strand",
-"specific_learning_outcomes": [],
+"specific_learning_outcomes": [
+"Analyse the strands and sub strands in a specific subject in the curriculum",
+"Relate concepts in the sub strand to the strand in the curriculum design"
+],
 "suggested_learning_experiences": [
 "Teacher trainees make presentations on the ideas addressed in each strand within a given subject.",
 "Teacher trainees brainstorm on the link between concepts in the sub strands and their respective strands."
-],
-"suggested_key_inquiry_questions": [
-"What is the difference between a strand and sub strand?",
-"How do concepts in sub strands relate to the strands?"
 ],
 "core_competencies": [
 "Self-efficacy"
 ],
 "values": [
 "Respect"
+],
+"suggested_key_inquiry_questions": [
+"What is the difference between a strand and sub strand?",
+"How do concepts in sub strands relate to the strands?"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to analyse the strands and sub strands in a specific subject in the curriculum",
+"levels": {
+"Exceeds Expectation": "Elaborately and accurately analyses the strands and sub strands in a specific subject in the curriculum",
+"Meets Expectation": "Accurately analyses the strands and sub strands in a specific subject in the curriculum",
+"Approaches Expectation": "Partially analyses the strands and sub strands in a specific subject in the curriculum",
+"Below Expectation": "Only with assistance, analyses the strands and sub strands in a specific subject in the curriculum"
+}
+},
+{
+"ability": "Ability to relate concepts in the sub strand to the strand in the curriculum design",
+"levels": {
+"Exceeds Expectation": "Logically and correctly relates concepts in the sub strand to the strand in the curriculum design",
+"Meets Expectation": "Correctly relates concepts in the sub strand to the strand in the curriculum design",
+"Approaches Expectation": "Relates some concepts in the sub strand to the strand in the curriculum design",
+"Below Expectation": "Only with support, relates concepts in the sub strand to the strand in the curriculum design"
+}
+}
 ]
 },
 {
 "name": "2.5 Specific Learning Outcomes",
 "specific_learning_outcomes": [
-"Interpret specific learning outcomes in a sub strand"
+"Interpret specific learning outcomes in a sub strand",
+"Formulate lesson-specific learning outcomes from the sub strand’s specific learning outcomes",
+"Acknowledge the implication of learning outcomes in the learning process"
 ],
-"assessment_rubric": {
+"suggested_learning_experiences": [
+"Teacher trainees interpret sample specific learning outcomes from various subjects.",
+"Trainees develop lesson-specific learning outcomes based on curriculum documents.",
+"Group discussion on how learning outcomes guide teaching and assessment."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Respect"
+],
+"assessment_rubric": [
+{
 "ability": "Ability to interpret specific learning outcomes in a sub strand",
 "levels": {
 "Exceeds Expectation": "Elaborately interprets specific learning outcomes in a sub strand",
@@ -71,6 +177,7 @@
 "Below Expectation": "Only with assistance, interprets specific learning outcomes in a sub strand"
 }
 }
+]
 },
 {
 "name": "2.6 Suggested Key Inquiry Questions",
@@ -78,6 +185,19 @@
 "Examine the characteristics of good suggested key inquiry questions",
 "Suggest key inquiry questions that will guide the facilitation of a lesson",
 "Demonstrate the use of suggested key inquiry questions in a lesson"
+],
+"suggested_learning_experiences": [
+"Teacher trainees analyse sample inquiry questions from curriculum materials.",
+"In pairs, trainees formulate inquiry questions for given topics.",
+"Trainees role-play lesson introductions using inquiry questions."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Communication and collaboration"
+],
+"values": [
+"Respect",
+"Peace"
 ],
 "assessment_rubric": [
 {
@@ -114,7 +234,20 @@
 "specific_learning_outcomes": [
 "Analyse the core competencies outlined in the BECF"
 ],
-"assessment_rubric": {
+"suggested_learning_experiences": [
+"Teacher trainees study the Basic Education Curriculum Framework (BECF) document.",
+"Group discussions on the six core competencies: communication, critical thinking, digital literacy, learning to learn, self-efficacy, and values."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Digital literacy"
+],
+"values": [
+"Respect",
+"Unity"
+],
+"assessment_rubric": [
+{
 "ability": "Ability to analyse the core competencies outlined in the BECF",
 "levels": {
 "Exceeds Expectation": "Comprehensively and clearly analyses the core competencies outlined in the BECF",
@@ -123,6 +256,46 @@
 "Below Expectation": "Only with assistance, analyses core competencies outlined in the BECF"
 }
 }
+]
+},
+{
+"name": "2.8 Values",
+"specific_learning_outcomes": [
+"Identify the core values to be developed by learners as per BECF",
+"Discuss learning experiences that promote the acquisition of values among learners",
+"Organize and facilitate micro lessons to demonstrate facilitation of learning experiences to promote the acquisition of values"
+],
+"suggested_learning_experiences": [
+"Search for information on the internet and other sources on the meaning of values",
+"Refer to the BECF to identify the core values: patriotism, nationalism, respect, peace, unity, love",
+"Discuss the learning experiences that promote the acquisition of values among learners",
+"Organize and facilitate micro lessons to demonstrate facilitation of learning experiences to promote the acquisition of values (formal, informal, non-formal)"
+],
+"core_competencies": [
+"Learning to learn and reflective practice",
+"Digital literacy"
+],
+"values": [
+"Respect",
+"Love",
+"Peace",
+"Unity"
+],
+"suggested_key_inquiry_questions": [
+"What is values-based education?",
+"How does a teacher promote acquisition of values in the learning process?"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to illustrate experiences that lead to the acquisition of values by learners",
+"levels": {
+"Exceeds Expectation": "Precisely and correctly illustrates experiences that lead to the acquisition of values by learners",
+"Meets Expectation": "Correctly illustrates experiences that lead to the acquisition of values by learners",
+"Approaches Expectation": "Correctly illustrates some experiences that lead to the acquisition of values by learners",
+"Below Expectation": "Only with assistance, illustrates experiences that lead to the acquisition of values by learners"
+}
+}
+]
 }
 ]
 },
@@ -178,6 +351,738 @@
 "Below Expectation": "Only with assistance, interprets the different types of professional documents used by a school teacher"
 }
 }
+]
+},
+{
+"name": "3.2 Records of Work",
+"specific_learning_outcomes": [
+"Analyse the use of records of work to evaluate performance over time in relation to the scheme of work",
+"Prepare relevant records of work for use in the teaching and learning process"
+],
+"suggested_learning_experiences": [
+"Teacher trainees generate samples of records of work for different subjects.",
+"Use ICT tools to create digital records of work.",
+"Discuss and present on the use of records of work in monitoring learner progress."
+],
+"core_competencies": [
+"Learning to learn and reflective practice",
+"Digital literacy"
+],
+"values": [
+"Respect",
+"Responsibility"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to analyse the use of records of work to evaluate performance over a period of time in relation to the scheme of work",
+"levels": {
+"Exceeds Expectation": "Comprehensively analyses the use of records of work to evaluate performance over a period of time in relation to the scheme of work",
+"Meets Expectation": "Analyses the use of records of work to evaluate performance over a period of time in relation to the scheme of work",
+"Approaches Expectation": "Partially analyses the use of records of work to evaluate performance over a period of time in relation to the scheme of work",
+"Below Expectation": "Only with assistance, analyses the use of records of work to evaluate performance over a period of time in relation to the scheme of work"
+}
+},
+{
+"ability": "Ability to prepare relevant records of work for use in the teaching and learning process",
+"levels": {
+"Exceeds Expectation": "Creatively and accurately prepares relevant records of work for use in the teaching and learning process",
+"Meets Expectation": "Accurately prepares relevant records of work for use in the teaching and learning process",
+"Approaches Expectation": "Prepares relevant records of work for use in the teaching and learning process with minor errors",
+"Below Expectation": "Only with assistance, prepares relevant records of work for use in the teaching and learning process"
+}
+}
+]
+},
+{
+"name": "3.3 Lesson Plan",
+"specific_learning_outcomes": [
+"Examine the components and administrative details of a lesson plan",
+"Illustrate the relevance of a lesson plan to a teacher and the learning process",
+"Develop a lesson plan using the provided format"
+],
+"suggested_learning_experiences": [
+"Analyse sample lesson plans from experienced teachers.",
+"Identify key components such as objectives, resources, activities, differentiation, assessment.",
+"Create original lesson plans based on curriculum topics."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Digital literacy"
+],
+"values": [
+"Responsibility",
+"Unity"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to examine the components and administrative details of a lesson plan",
+"levels": {
+"Exceeds Expectation": "Broadly examines the components and administrative details of a lesson plan",
+"Meets Expectation": "Examines the components and administrative details of a lesson plan",
+"Approaches Expectation": "Partly examines the components and administrative details of a lesson plan",
+"Below Expectation": "Only with assistance examines the components and administrative details of a lesson plan"
+}
+},
+{
+"ability": "Ability to illustrate the relevance of a lesson plan to a teacher and the learning process",
+"levels": {
+"Exceeds Expectation": "Effectively illustrates the relevance of a lesson plan to a teacher and the learning process",
+"Meets Expectation": "Illustrates the relevance of a lesson plan to a teacher and the learning process",
+"Approaches Expectation": "Partly illustrates the relevance of a lesson plan to a teacher and the learning process",
+"Below Expectation": "Only with assistance, illustrates the relevance of a lesson plan to a teacher and the learning process"
+}
+},
+{
+"ability": "Ability to develop a lesson plan using the provided format",
+"levels": {
+"Exceeds Expectation": "Creatively and accurately develops a comprehensive lesson plan using the provided format",
+"Meets Expectation": "Accurately develops a lesson plan using the provided format",
+"Approaches Expectation": "Develops a lesson plan using the provided format with minor omissions",
+"Below Expectation": "Only with assistance, develops a lesson plan using the provided format"
+}
+}
+]
+},
+{
+"name": "3.4 Scheme of Work",
+"specific_learning_outcomes": [
+"Analyse the components of a scheme of work",
+"Develop a scheme of work using the provided format"
+],
+"suggested_learning_experiences": [
+"Review sample schemes of work for various subjects and terms.",
+"Break down a term's curriculum into weekly topics and allocations.",
+"Create a scheme of work for a chosen subject and term."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Digital literacy"
+],
+"values": [
+"Responsibility",
+"Unity"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to analyse the components of a scheme of work",
+"levels": {
+"Exceeds Expectation": "Comprehensively analyses the components of a scheme of work",
+"Meets Expectation": "Analyses the components of a scheme of work",
+"Approaches Expectation": "Partially analyses the components of a scheme of work",
+"Below Expectation": "Only with assistance, analyses the components of a scheme of work"
+}
+},
+{
+"ability": "Ability to develop a scheme of work using the provided format",
+"levels": {
+"Exceeds Expectation": "Creatively and accurately develops a comprehensive scheme of work using the provided format",
+"Meets Expectation": "Accurately develops a scheme of work using the provided format",
+"Approaches Expectation": "Develops a scheme of work using the provided format with minor errors",
+"Below Expectation": "Only with assistance, develops a scheme of work using the provided format"
+}
+}
+]
+},
+{
+"name": "3.5 Individualized Education Programme (IEP)",
+"specific_learning_outcomes": [
+"Explain the concept of an Individualized Education Programme (IEP)",
+"Analyse the components of an IEP",
+"Develop an IEP for a learner with special needs"
+],
+"suggested_learning_experiences": [
+"Study case studies of learners with diverse needs.",
+"Research the purpose and structure of IEPs.",
+"Draft an IEP for a hypothetical or real learner based on assessment data."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Communication and collaboration"
+],
+"values": [
+"Love",
+"Respect",
+"Peace"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to explain the concept of an Individualized Education Programme (IEP)",
+"levels": {
+"Exceeds Expectation": "Comprehensively and clearly explains the concept of an IEP",
+"Meets Expectation": "Clearly explains the concept of an IEP",
+"Approaches Expectation": "Partially explains the concept of an IEP",
+"Below Expectation": "Only with assistance, explains the concept of an IEP"
+}
+},
+{
+"ability": "Ability to analyse the components of an IEP",
+"levels": {
+"Exceeds Expectation": "Thoroughly analyses all components of an IEP",
+"Meets Expectation": "Analyses the components of an IEP",
+"Approaches Expectation": "Partially analyses the components of an IEP",
+"Below Expectation": "Only with assistance, analyses the components of an IEP"
+}
+},
+{
+"ability": "Ability to develop an IEP for a learner with special needs",
+"levels": {
+"Exceeds Expectation": "Creatively and comprehensively develops a realistic and effective IEP for a learner with special needs",
+"Meets Expectation": "Develops a valid IEP for a learner with special needs",
+"Approaches Expectation": "Develops an IEP for a learner with special needs with significant guidance",
+"Below Expectation": "Only with extensive assistance, develops an IEP for a learner with special needs"
+}
+}
+]
+}
+]
+},
+{
+"strand": "4.0 Pedagogical Approaches",
+"sub_strands": [
+{
+"name": "4.1 Concept of Pedagogy",
+"specific_learning_outcomes": [
+"Evaluate the concept of pedagogy and pedagogical approaches in the learning process"
+],
+"suggested_learning_experiences": [
+"Define pedagogy and distinguish it from related concepts like andragogy.",
+"Discuss historical and contemporary pedagogical theories.",
+"Debate the relevance of various pedagogical approaches in modern classrooms."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Respect",
+"Unity"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to evaluate the concept of pedagogy and pedagogical approaches in the learning process",
+"levels": {
+"Exceeds Expectation": "Exhaustively evaluates the concept of pedagogy and pedagogical approaches in the learning process",
+"Meets Expectation": "Evaluates the concept of pedagogy and pedagogical approaches in the learning process",
+"Approaches Expectation": "Attempts to evaluate the concept of pedagogy and pedagogical approaches in the learning process",
+"Below Expectation": "Only with support evaluates the concept of pedagogy and pedagogical approaches in the learning process"
+}
+}
+]
+},
+{
+"name": "4.2 Experiential Learning Approach",
+"specific_learning_outcomes": [
+"Evaluate experiential learning approach in lesson delivery",
+"Apply experiential learning approach in lesson delivery"
+],
+"suggested_learning_experiences": [
+"Engage in hands-on activities simulating experiential learning (e.g., science experiments, field simulations).",
+"Analyse Kolb’s experiential learning cycle.",
+"Design and deliver a short lesson using the experiential learning model."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Creativity and imagination"
+],
+"values": [
+"Love",
+"Unity"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to evaluate experiential learning approach in lesson delivery",
+"levels": {
+"Exceeds Expectation": "Critically evaluates experiential learning approach in lesson delivery",
+"Meets Expectation": "Evaluates experiential learning approach in lesson delivery",
+"Approaches Expectation": "Evaluates some aspects of experiential learning approach in lesson delivery",
+"Below Expectation": "Only with assistance, evaluates experiential learning approach in lesson delivery"
+}
+},
+{
+"ability": "Ability to apply experiential learning approach in lesson delivery",
+"levels": {
+"Exceeds Expectation": "Effectively applies experiential learning approach in lesson delivery",
+"Meets Expectation": "Applies experiential learning approach in lesson delivery",
+"Approaches Expectation": "Partially applies experiential learning approach in lesson delivery",
+"Below Expectation": "Only with guidance, applies experiential learning approach in lesson delivery"
+}
+}
+]
+},
+{
+"name": "4.3 Inquiry-Based Learning Approach",
+"specific_learning_outcomes": [
+"Examine inquiry based learning approach",
+"Apply inquiry based learning approach in lesson delivery"
+],
+"suggested_learning_experiences": [
+"Analyse examples of inquiry-based lessons.",
+"Design a lesson using the inquiry-based model (posing questions, investigation, conclusion).",
+"Deliver a micro lesson demonstrating inquiry-based techniques."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Communication and collaboration"
+],
+"values": [
+"Respect",
+"Peace"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to examine inquiry based learning approach",
+"levels": {
+"Exceeds Expectation": "Comprehensively and correctly examines inquiry based learning approach",
+"Meets Expectation": "Correctly examines inquiry based learning approach",
+"Approaches Expectation": "Partly and correctly examines inquiry based learning approach",
+"Below Expectation": "Only with assistance, examines inquiry based learning approach"
+}
+},
+{
+"ability": "Ability to apply inquiry based learning approach in lesson delivery",
+"levels": {
+"Exceeds Expectation": "Effectively applies inquiry based learning approach in lesson delivery",
+"Meets Expectation": "Applies inquiry based learning approach in lesson delivery",
+"Approaches Expectation": "Partially applies inquiry based learning approach in lesson delivery",
+"Below Expectation": "Only with guidance, applies inquiry based learning approach in lesson delivery"
+}
+}
+]
+},
+{
+"name": "4.4 Problem-Based Learning Approach",
+"specific_learning_outcomes": [
+"Examine problem-based approach in teaching and learning",
+"Apply problem-based approach in lesson delivery"
+],
+"suggested_learning_experiences": [
+"Analyse real-world problems suitable for classroom use.",
+"Design a problem-based learning scenario.",
+"Facilitate a micro lesson using the problem-based approach."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Creativity and imagination"
+],
+"values": [
+"Responsibility",
+"Unity"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to examine problem-based approach in teaching and learning",
+"levels": {
+"Exceeds Expectation": "Critically and clearly examines problem-based approach in teaching and learning",
+"Meets Expectation": "Clearly examines problem-based approach in teaching and learning",
+"Approaches Expectation": "To some extent, clearly examines problem-based approach in teaching and learning",
+"Below Expectation": "Only with support, examines problem-based approach in teaching and learning"
+}
+},
+{
+"ability": "Ability to apply problem-based approach in lesson delivery",
+"levels": {
+"Exceeds Expectation": "Effectively and correctly applies problem-based approach in lesson delivery",
+"Meets Expectation": "Correctly applies problem-based approach in lesson delivery",
+"Approaches Expectation": "Correctly applies some aspects of problem-based approach in lesson delivery",
+"Below Expectation": "Only with guidance, applies problem-based approach in lesson delivery"
+}
+}
+]
+},
+{
+"name": "4.5 Project-Based Learning Approach",
+"specific_learning_outcomes": [
+"Examine project-based approach in the learning process",
+"Apply project-based approach in lesson delivery"
+],
+"suggested_learning_experiences": [
+"Study successful project-based learning examples.",
+"Plan a cross-curricular project for learners.",
+"Simulate the launch of a project-based activity during a micro lesson."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Creativity and imagination"
+],
+"values": [
+"Unity",
+"Responsibility"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to examine project-based approach in the learning process",
+"levels": {
+"Exceeds Expectation": "Exhaustively and clearly examines project-based approach in the learning process",
+"Meets Expectation": "Clearly examines project-based approach in the learning process",
+"Approaches Expectation": "Clearly examines some aspects of project-based approach in the learning process",
+"Below Expectation": "Only with prompts examines project-based approach in the learning process"
+}
+},
+{
+"ability": "Ability to apply project-based approach in lesson delivery",
+"levels": {
+"Exceeds Expectation": "Effectively applies project-based approach in lesson delivery",
+"Meets Expectation": "Applies project-based approach in lesson delivery",
+"Approaches Expectation": "Partially applies project-based approach in lesson delivery",
+"Below Expectation": "Only with guidance, applies project-based approach in lesson delivery"
+}
+}
+]
+},
+{
+"name": "4.6 Facilitation Approach",
+"specific_learning_outcomes": [
+"Illustrate the pros and cons of facilitation approach in lesson delivery",
+"Apply facilitation approach in lesson delivery"
+],
+"suggested_learning_experiences": [
+"Compare teacher-centered vs. learner-centered models.",
+"Observe videos of facilitative teaching.",
+"Conduct a learner-centered discussion session during microteaching."
+],
+"core_competencies": [
+"Communication and collaboration",
+"Self-efficacy"
+],
+"values": [
+"Respect",
+"Love"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to illustrate the pros and cons of facilitation approach in lesson delivery",
+"levels": {
+"Exceeds Expectation": "Elaborately and correctly illustrates the pros and cons of facilitation approach in lesson delivery",
+"Meets Expectation": "Correctly illustrates the pros and cons of facilitation approach in lesson delivery",
+"Approaches Expectation": "To some extent, correctly illustrates the pros and cons of facilitation approach in lesson delivery",
+"Below Expectation": "Only with support, illustrates the pros and cons of facilitation approach in lesson delivery"
+}
+},
+{
+"ability": "Ability to apply facilitation approach in lesson delivery",
+"levels": {
+"Exceeds Expectation": "Effectively applies facilitation approach in lesson delivery",
+"Meets Expectation": "Applies facilitation approach in lesson delivery",
+"Approaches Expectation": "Partially applies facilitation approach in lesson delivery",
+"Below Expectation": "Only with guidance, applies facilitation approach in lesson delivery"
+}
+}
+]
+},
+{
+"name": "4.7 Reflective Learning Approach",
+"specific_learning_outcomes": [
+"Analyse aspects of reflective learning as used in the learning process",
+"Illustrate the pros and cons of reflective learning in a lesson delivery"
+],
+"suggested_learning_experiences": [
+"Engage in journaling after teaching practice sessions.",
+"Read and discuss Schön’s theory of reflection-in-action and reflection-on-action.",
+"Design activities that promote learner reflection (e.g., exit tickets, portfolios)."
+],
+"core_competencies": [
+"Learning to learn and reflective practice"
+],
+"values": [
+"Self-awareness",
+"Responsibility"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to analyse aspects of reflective learning as used in the learning process",
+"levels": {
+"Exceeds Expectation": "Exhaustively analyses aspects of reflective learning as used in the learning process",
+"Meets Expectation": "Analyses aspects of reflective learning as used in the learning process",
+"Approaches Expectation": "Analyses some aspects of reflective learning as used in the learning process",
+"Below Expectation": "Only with assistance analyses aspects of reflective learning as used in the learning process"
+}
+},
+{
+"ability": "Ability to illustrate the pros and cons of reflective learning in a lesson delivery",
+"levels": {
+"Exceeds Expectation": "Elaborately and correctly illustrates the pros and cons of reflective learning in a lesson delivery",
+"Meets Expectation": "Correctly illustrates the pros and cons of reflective learning in a lesson delivery",
+"Approaches Expectation": "Correctly illustrates some of the pros and cons of reflective learning in a lesson delivery",
+"Below Expectation": "Only with guidance illustrates the pros and cons of reflective learning in a lesson delivery"
+}
+}
+]
+},
+{
+"name": "4.8 Collaborative and Cooperative Learning",
+"specific_learning_outcomes": [
+"Explain the concept of collaborative and cooperative learning",
+"Apply cooperative and collaborative learning approaches to deliver a lesson"
+],
+"suggested_learning_experiences": [
+"Participate in group tasks using cooperative learning structures (e.g., jigsaw, think-pair-share).",
+"Differentiate between collaboration and cooperation.",
+"Deliver a micro lesson incorporating group work strategies."
+],
+"core_competencies": [
+"Communication and collaboration"
+],
+"values": [
+"Unity",
+"Respect"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to explain the concept of collaborative and cooperative learning",
+"levels": {
+"Exceeds Expectation": "Comprehensively and clearly explains the concept of collaborative and cooperative learning",
+"Meets Expectation": "Clearly explains the concept of collaborative and cooperative learning",
+"Approaches Expectation": "Partially explains the concept of collaborative and cooperative learning",
+"Below Expectation": "Only with assistance, explains the concept of collaborative and cooperative learning"
+}
+},
+{
+"ability": "Ability to apply cooperative and collaborative learning approaches to deliver a lesson",
+"levels": {
+"Exceeds Expectation": "Clearly applies cooperative and collaborative learning approaches to deliver a lesson",
+"Meets Expectation": "Applies cooperative and collaborative learning approaches to deliver a lesson",
+"Approaches Expectation": "Partially applies cooperative and collaborative learning approaches to deliver a lesson to some extent",
+"Below Expectation": "Only with guidance, applies cooperative and collaborative learning approaches to deliver a lesson"
+}
+}
+]
+}
+]
+},
+{
+"strand": "5.0 Teaching Skills",
+"sub_strands": [
+{
+"name": "5.1 Questioning Techniques",
+"specific_learning_outcomes": [
+"Explore effective questioning techniques in lesson facilitation",
+"Demonstrate effective use of questioning techniques in lesson delivery"
+],
+"suggested_learning_experiences": [
+"Analyse Bloom’s taxonomy and corresponding question stems.",
+"Practice formulating open-ended, probing, and higher-order questions.",
+"Deliver a micro lesson focusing on varied questioning techniques."
+],
+"core_competencies": [
+"Communication and collaboration"
+],
+"values": [
+"Respect",
+"Love",
+"Peace",
+"Unity"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to explore effective questioning techniques in lesson facilitation",
+"levels": {
+"Exceeds Expectation": "Broadly explores effective questioning techniques in lesson facilitation",
+"Meets Expectation": "Explores effective questioning techniques in lesson facilitation",
+"Approaches Expectation": "Explores some effective questioning techniques in lesson facilitation.",
+"Below Expectation": "Only with support, explores effective questioning techniques in lesson facilitation."
+}
+},
+{
+"ability": "Ability to demonstrate effective use of questioning techniques in lesson delivery",
+"levels": {
+"Exceeds Expectation": "Consistently and appropriately uses a variety of effective questioning techniques in lesson delivery",
+"Meets Expectation": "Uses effective questioning techniques in lesson delivery",
+"Approaches Expectation": "Uses some effective questioning techniques in lesson delivery",
+"Below Expectation": "Only with prompting, uses questioning techniques in lesson delivery"
+}
+}
+]
+},
+{
+"name": "5.2 Stimulus Variation",
+"specific_learning_outcomes": [
+"Evaluate techniques applied to enhance stimulus variation in a lesson",
+"Demonstrate a lesson to peers using stimulus variation techniques"
+],
+"suggested_learning_experiences": [
+"Watch video clips highlighting voice modulation, movement, and gaze.",
+"Practice changing tone, pitch, and pace of speech.",
+"Deliver a micro lesson focusing on physical movement and visual aids."
+],
+"core_competencies": [
+"Communication and collaboration",
+"Creativity and imagination"
+],
+"values": [
+"Respect",
+"Love"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to evaluate techniques applied to enhance stimulus variation in a lesson",
+"levels": {
+"Exceeds Expectation": "Critically evaluates techniques applied to enhance stimulus variation in a lesson",
+"Meets Expectation": "Evaluates techniques applied to enhance stimulus variation in a lesson",
+"Approaches Expectation": "Logically evaluates some techniques applied to enhance stimulus variation in a lesson",
+"Below Expectation": "Only with assistance, evaluates techniques applied to enhance stimulus variation in a lesson"
+}
+},
+{
+"ability": "Ability to demonstrate a lesson to peers using stimulus variation techniques",
+"levels": {
+"Exceeds Expectation": "Creatively and skillfully demonstrates a lesson to peers using stimulus variation techniques",
+"Meets Expectation": "Skillfully demonstrates a lesson to peers using stimulus variation techniques",
+"Approaches Expectation": "Sometimes, skillfully demonstrates a lesson to peers using stimulus variation techniques",
+"Below Expectation": "Only with prompts, demonstrates a lesson to peers using stimulus variation techniques"
+}
+}
+]
+},
+{
+"name": "5.3 Board Work",
+"specific_learning_outcomes": [
+"Demonstrate proper use of a white board or chalkboard during a lesson"
+],
+"suggested_learning_experiences": [
+"Practice clear, organized board writing with headings, spacing, and color coding.",
+"Peer review of board work clarity and relevance.",
+"Deliver a micro lesson emphasizing effective board use."
+],
+"core_competencies": [
+"Communication and collaboration"
+],
+"values": [
+"Respect",
+"Responsibility"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to demonstrate proper use of a white board or chalkboard during a lesson",
+"levels": {
+"Exceeds Expectation": "Elaborately demonstrates proper use of a white board or chalkboard during a lesson",
+"Meets Expectation": "Demonstrates proper use of a white board or chalkboard during a lesson",
+"Approaches Expectation": "Partially demonstrates proper use of a white board or chalkboard during a lesson",
+"Below Expectation": "Only with guidance, demonstrates proper use of a white board or chalkboard during a lesson"
+}
+}
+]
+},
+{
+"name": "5.4 Reinforcement",
+"specific_learning_outcomes": [
+"Analyse reinforcement skills in lesson delivery"
+],
+"suggested_learning_experiences": [
+"Identify verbal, non-verbal, and symbolic forms of reinforcement.",
+"Analyse video clips showing positive reinforcement in classrooms.",
+"Role-play scenarios using affirmative feedback techniques."
+],
+"core_competencies": [
+"Communication and collaboration"
+],
+"values": [
+"Love",
+"Respect"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to analyse reinforcement skills in lesson delivery",
+"levels": {
+"Exceeds Expectation": "Comprehensively analyses reinforcement skills in lesson delivery",
+"Meets Expectation": "Analyses reinforcement skills in lesson delivery",
+"Approaches Expectation": "Partially analyses reinforcement skills in lesson delivery",
+"Below Expectation": "Only with assistance, analyses reinforcement skills in lesson delivery"
+}
+}
+]
+},
+{
+"name": "5.5 Lesson Introduction",
+"specific_learning_outcomes": [
+"Assess the importance of executing a good lesson introduction",
+"Execute the introduction of a lesson effectively"
+],
+"suggested_learning_experiences": [
+"Analyse effective lesson starters (hooks, questions, visuals).",
+"Design engaging introductions for sample topics.",
+"Deliver a micro lesson focusing on a strong opening."
+],
+"core_competencies": [
+"Communication and collaboration",
+"Creativity and imagination"
+],
+"values": [
+"Respect",
+"Love"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to assess the importance of executing a good lesson introduction",
+"levels": {
+"Exceeds Expectation": "With examples, assesses the importance of executing a good lesson introduction",
+"Meets Expectation": "Assesses the importance of executing a good lesson introduction",
+"Approaches Expectation": "Partly assesses the importance of executing a good lesson introduction",
+"Below Expectation": "Only with assistance, assesses the importance of executing a good lesson introduction"
+}
+},
+{
+"ability": "Ability to execute the introduction of a lesson effectively",
+"levels": {
+"Exceeds Expectation": "Expertly executes the introduction of a lesson effectively",
+"Meets Expectation": "Executes the introduction of a lesson effectively",
+"Approaches Expectation": "To some degree, executes the introduction of a lesson effectively",
+"Below Expectation": "Only with guidance, executes the introduction of a lesson effectively"
+}
+}
+]
+},
+{
+"name": "5.6 Lesson Conclusion",
+"specific_learning_outcomes": [
+"Assess the importance of executing a good lesson conclusion",
+"Execute the conclusion of a lesson effectively"
+],
+"suggested_learning_experiences": [
+"Study techniques for summarizing and consolidating learning.",
+"Design closure activities (exit tickets, summaries, reflections).",
+"Deliver a micro lesson with a deliberate focus on concluding effectively."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Responsibility",
+"Respect"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to assess the importance of executing a good lesson conclusion",
+"levels": {
+"Exceeds Expectation": "With examples, assesses the importance of executing a good lesson conclusion",
+"Meets Expectation": "Assesses the importance of executing a good lesson conclusion",
+"Approaches Expectation": "Partly assesses the importance of executing a good lesson conclusion",
+"Below Expectation": "Only with assistance, assesses the importance of executing a good lesson conclusion"
+}
+},
+{
+"ability": "Ability to execute the conclusion of a lesson effectively",
+"levels": {
+"Exceeds Expectation": "Expertly executes the conclusion of a lesson effectively",
+"Meets Expectation": "Executes the conclusion of a lesson effectively",
+"Approaches Expectation": "To some degree, executes the conclusion of a lesson effectively",
+"Below Expectation": "Only with guidance, executes the conclusion of a lesson effectively"
+}
+}
+]
+}
+]
+},
+{
+"strand": "6.0 Microteaching Process",
+"sub_strands": [
+{
+"name": "6.1 Planning for Microteaching",
+"specific_learning_outcomes": [
+"Plan for a micro lesson to be delivered in 10 minutes for an effective experience"
+],
+"suggested_learning_experiences": [
+"Select a topic and narrow it to a 10-minute scope.",
+"Write specific learning outcomes, select appropriate activities, and prepare necessary resources.",
+"Practice the 10-minute lesson individually before peer teaching."
 ]
 }
 ]
