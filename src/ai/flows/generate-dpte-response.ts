@@ -10,7 +10,7 @@
 
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
-import {createStreamableValue, StreamableValue} from 'ai/rsc';
+import { StreamableValue } from 'ai/rsc';
 
 const GenerateDPTEResponseInputSchema = z.object({
   query: z.string().describe('The question from the DPTE teacher trainee.'),
@@ -19,26 +19,25 @@ const GenerateDPTEResponseInputSchema = z.object({
 export type GenerateDPTEResponseInput = z.infer<typeof GenerateDPTEResponseInputSchema>;
 
 export type GenerateDPTEResponseOutput = {
-  response: StreamableValue<string>;
+  response: string;
 };
 
 
-export async function generateDPTEResponse(input: GenerateDPTEResponseInput): Promise<GenerateDPTEResponseOutput> {
-  const stream = createStreamableValue('');
-
-  (async () => {
+export async function generateDPTEResponse(input: GenerateDPTEResponseInput): Promise<ReadableStream<string>> {
     const {stream: responseStream} = await ai.generateStream({
       prompt: `As an Expert DPTE Master Teacher and Curriculum Specialist, your sole task is to answer the following Trainee Query based STRICTLY and ONLY on the provided Curriculum Context Documents. You must synthesize a concise, pedagogically sound, and encouraging response. DO NOT use external knowledge or state that you are restricted to the provided context; simply deliver the authoritative answer. If the context does not contain the answer, state that the information is not available in the current curriculum documents.\n\nTrainee Query: ${input.query}\n\nCurriculum Context Documents: ${input.context}`,
       model: 'googleai/gemini-2.5-flash',
     });
 
-    for await (const chunk of responseStream) {
-      stream.update(chunk.text);
-    }
-  
-    stream.done();
+    const encoder = new TextEncoder();
+    const readableStream = new ReadableStream({
+      async start(controller) {
+        for await (const chunk of responseStream) {
+          controller.enqueue(encoder.encode(chunk.text));
+        }
+        controller.close();
+      }
+    });
 
-  })();
-
-  return { response: stream.value };
+    return readableStream;
 }

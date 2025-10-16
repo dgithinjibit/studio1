@@ -1,7 +1,6 @@
 import { generateDPTEResponse } from '@/ai/flows/generate-dpte-response';
 import { retrieveContext } from '@/lib/dpte-curriculum';
-import { CoreMessage, streamText } from 'ai';
-import { createStreamableValue } from 'ai/rsc';
+import { CoreMessage, StreamingTextResponse } from 'ai';
 
 export const dynamic = 'force-dynamic';
 
@@ -10,19 +9,20 @@ export async function POST(req: Request) {
 
   const lastMessage = messages[messages.length - 1];
   const context = retrieveContext(lastMessage.content as string);
+  
+  const stream = await generateDPTEResponse({
+    query: lastMessage.content as string,
+    context,
+  });
 
-  const stream = createStreamableValue();
+  const decoder = new TextDecoder();
+  const transformStream = new TransformStream({
+    transform(chunk, controller) {
+      controller.enqueue(decoder.decode(chunk));
+    },
+  });
 
-  (async () => {
-    const { response } = await generateDPTEResponse({
-      query: lastMessage.content as string,
-      context,
-    });
-    for await (const delta of response) {
-      stream.update(delta);
-    }
-    stream.done();
-  })();
+  stream.pipeTo(transformStream.writable);
 
-  return new Response(stream.value);
+  return new StreamingTextResponse(transformStream.readable);
 }
