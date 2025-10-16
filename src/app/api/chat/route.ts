@@ -15,7 +15,6 @@ export async function POST(req: Request) {
     context,
   });
 
+  // @ts-ignore
   return new StreamingTextResponse(stream);
 }
-
-    
