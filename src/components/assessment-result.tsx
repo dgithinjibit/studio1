@@ -64,17 +64,23 @@ export function AssessmentResult({ result }: AssessmentResultProps) {
         </div>
         
         <div className="space-y-4">
-          <div>
-            <h3 className="font-semibold flex items-center gap-2 text-lg"><PenLine size={20}/>Overall Assessment</h3>
-            <p className="text-sm text-muted-foreground whitespace-pre-wrap">{result.assessment}</p>
-          </div>
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg font-semibold flex items-center gap-2"><PenLine size={20}/>Overall Assessment</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-sm text-muted-foreground whitespace-pre-wrap">{result.assessment}</p>
+            </CardContent>
+          </Card>
           
-          <Separator />
-
-          <div>
-            <h3 className="font-semibold flex items-center gap-2 text-lg"><Lightbulb size={20}/>Actionable Feedback</h3>
-            <p className="text-sm text-muted-foreground whitespace-pre-wrap">{result.feedback}</p>
-          </div>
+          <Card>
+            <CardHeader>
+              <CardTitle className="text-lg font-semibold flex items-center gap-2"><Lightbulb size={20}/>Actionable Feedback</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-sm text-muted-foreground whitespace-pre-wrap">{result.feedback}</p>
+            </CardContent>
+          </Card>
         </div>
       </CardContent>
     </Card>

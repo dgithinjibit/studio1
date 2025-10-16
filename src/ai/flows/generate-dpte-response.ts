@@ -9,7 +9,9 @@
  */
 
 import {ai} from '@/ai/genkit';
+import {generate} from 'genkit/ai';
 import {z} from 'genkit';
+import {createStreamableValue} from 'ai/rsc';
 
 const GenerateDPTEResponseInputSchema = z.object({
   query: z.string().describe('The question from the DPTE teacher trainee.'),
@@ -17,30 +19,27 @@ const GenerateDPTEResponseInputSchema = z.object({
 });
 export type GenerateDPTEResponseInput = z.infer<typeof GenerateDPTEResponseInputSchema>;
 
-const GenerateDPTEResponseOutputSchema = z.object({
-  response: z.string().describe('The AI-generated response to the query.'),
-});
-export type GenerateDPTEResponseOutput = z.infer<typeof GenerateDPTEResponseOutputSchema>;
+export type GenerateDPTEResponseOutput = {
+  response: string;
+};
 
-export async function generateDPTEResponse(input: GenerateDPTEResponseInput): Promise<GenerateDPTEResponseOutput> {
-  return generateDPTEResponseFlow(input);
+
+export async function generateDPTEResponse(input: GenerateDPTEResponseInput) {
+  const stream = createStreamableValue('');
+
+  (async () => {
+    const {stream: responseStream} = await ai.generateStream({
+      prompt: `As an Expert DPTE Master Teacher and Curriculum Specialist, your sole task is to answer the following Trainee Query based STRICTLY and ONLY on the provided Curriculum Context Documents. You must synthesize a concise, pedagogically sound, and encouraging response. DO NOT use external knowledge or state that you are restricted to the provided context; simply deliver the authoritative answer. If the context does not contain the answer, state that the information is not available in the current curriculum documents.\n\nTrainee Query: ${input.query}\n\nCurriculum Context Documents: ${input.context}`,
+      model: 'googleai/gemini-2.5-flash',
+    });
+
+    for await (const chunk of responseStream) {
+      stream.update(chunk.text);
+    }
+  
+    stream.done();
+
+  })();
+
+  return { response: stream.value };
 }
-
-const prompt = ai.definePrompt({
-  name: 'generateDPTEResponsePrompt',
-  input: {schema: GenerateDPTEResponseInputSchema},
-  output: {schema: GenerateDPTEResponseOutputSchema},
-  prompt: `As an Expert DPTE Master Teacher and Curriculum Specialist, your sole task is to answer the following Trainee Query based STRICTLY and ONLY on the provided Curriculum Context Documents. You must synthesize a concise, pedagogically sound, and encouraging response. DO NOT use external knowledge or state that you are restricted to the provided context; simply deliver the authoritative answer. If the context does not contain the answer, state that the information is not available in the current curriculum documents.\n\nTrainee Query: {{{query}}}\n\nCurriculum Context Documents: {{{context}}}`,
-});
-
-const generateDPTEResponseFlow = ai.defineFlow(
-  {
-    name: 'generateDPTEResponseFlow',
-    inputSchema: GenerateDPTEResponseInputSchema,
-    outputSchema: GenerateDPTEResponseOutputSchema,
-  },
-  async input => {
-    const {output} = await prompt(input);
-    return output!;
-  }
-);

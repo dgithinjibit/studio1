@@ -1,10 +1,12 @@
 "use client";
 
-import { useState, useRef, useEffect, useTransition } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { BookCopy, GraduationCap, Loader2, Send, WandSparkles } from "lucide-react";
+import { useChat, type Message } from '@ai-sdk/react';
+
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -18,9 +20,9 @@ import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 
 
-import { handleTutorQuery, handleAssessment, handleGenerateQuestion } from "@/app/actions";
+import { handleAssessment, handleGenerateQuestion } from "@/app/actions";
 import type { AssessTeacherResponseOutput } from "@/ai/flows/assess-teacher-response";
-import { ChatMessage, type Message } from "@/components/chat-message";
+import { ChatMessage } from "@/components/chat-message";
 import { AssessmentResult } from "@/components/assessment-result";
 import { ThemeToggle } from "@/components/theme-toggle";
 
@@ -31,20 +33,23 @@ const assessmentSchema = z.object({
 const subjects = ["Microteaching", "Child Development", "Home Science"];
 
 export default function Home() {
-  const [messages, setMessages] = useState<Message[]>([
-    {
-      role: "assistant",
-      content: "Hello! I am your DPTE Co-Pilot. How can I help you with the curriculum today?",
-    },
-  ]);
-  const [input, setInput] = useState("");
-  const [isTutorLoading, startTutorTransition] = useTransition();
+  
+  const { messages, input, handleInputChange, handleSubmit, isLoading: isTutorLoading, error } = useChat({
+    api: '/api/chat',
+    initialMessages: [
+      {
+        id: '1',
+        role: "assistant",
+        content: "Hello! I am your DPTE Co-Pilot. How can I help you with the curriculum today?",
+      },
+    ]
+  });
 
   const [selectedSubject, setSelectedSubject] = useState<string | null>(null);
   const [assessmentQuestion, setAssessmentQuestion] = useState<string | null>(null);
   const [assessmentResult, setAssessmentResult] = useState<AssessTeacherResponseOutput | null>(null);
-  const [isGeneratingQuestion, startQuestionGenerationTransition] = useTransition();
-  const [isAssessing, startAssessmentTransition] = useTransition();
+  const [isGeneratingQuestion, setIsGeneratingQuestion] = useState(false);
+  const [isAssessing, setIsAssessing] = useState(false);
   const isAssessmentLoading = isGeneratingQuestion || isAssessing;
   
   const scrollAreaViewport = useRef<HTMLDivElement>(null);
@@ -63,22 +68,8 @@ export default function Home() {
     }
   }, [messages]);
 
-  const onTutorSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    if (!input.trim() || isTutorLoading) return;
-
-    const userMessage: Message = { role: "user", content: input };
-    setMessages((prev) => [...prev, userMessage]);
-    setInput("");
-
-    startTutorTransition(async () => {
-      const response = await handleTutorQuery(input);
-      const assistantMessage: Message = { role: "assistant", content: response };
-      setMessages((prev) => [...prev, assistantMessage]);
-    });
-  };
   
-  const onGenerateQuestion = () => {
+  const onGenerateQuestion = async () => {
     if (!selectedSubject) {
        toast({
         variant: "destructive",
@@ -91,42 +82,45 @@ export default function Home() {
     setAssessmentQuestion(null);
     setAssessmentResult(null);
     form.reset();
+    setIsGeneratingQuestion(true);
 
-    startQuestionGenerationTransition(async () => {
-      try {
-        const question = await handleGenerateQuestion(selectedSubject);
-        setAssessmentQuestion(question);
-      } catch (error) {
-         toast({
-          variant: "destructive",
-          title: "Failed to Generate Question",
-          description: "There was an error generating a new question. Please try again.",
-        });
-        console.error(error);
-      }
-    });
+    try {
+      const question = await handleGenerateQuestion(selectedSubject);
+      setAssessmentQuestion(question);
+    } catch (error) {
+       toast({
+        variant: "destructive",
+        title: "Failed to Generate Question",
+        description: "There was an error generating a new question. Please try again.",
+      });
+      console.error(error);
+    } finally {
+      setIsGeneratingQuestion(false);
+    }
   };
 
-  const onAssessmentSubmit = (values: z.infer<typeof assessmentSchema>) => {
+  const onAssessmentSubmit = async (values: z.infer<typeof assessmentSchema>) => {
     if (!assessmentQuestion) return;
 
     setAssessmentResult(null);
-    startAssessmentTransition(async () => {
-      try {
-        const result = await handleAssessment({
-          question: assessmentQuestion,
-          teacherResponse: values.teacherResponse
-        });
-        setAssessmentResult(result);
-      } catch (error) {
-        toast({
-          variant: "destructive",
-          title: "Assessment Failed",
-          description: "There was an error processing your assessment. Please try again.",
-        });
-        console.error(error);
-      }
-    });
+    setIsAssessing(true);
+
+    try {
+      const result = await handleAssessment({
+        question: assessmentQuestion,
+        teacherResponse: values.teacherResponse
+      });
+      setAssessmentResult(result);
+    } catch (error) {
+      toast({
+        variant: "destructive",
+        title: "Assessment Failed",
+        description: "There was an error processing your assessment. Please try again.",
+      });
+      console.error(error);
+    } finally {
+      setIsAssessing(false);
+    }
   };
   
   const handleSubjectChange = (subject: string) => {
@@ -160,14 +154,14 @@ export default function Home() {
                   {messages.map((msg, index) => (
                     <ChatMessage key={index} message={msg} />
                   ))}
-                   {isTutorLoading && <ChatMessage message={{ role: "assistant", content: "" }} isLoading />}
+                   {isTutorLoading && messages[messages.length -1]?.role === 'user' && <ChatMessage message={{ role: "assistant", content: "" }} isLoading />}
                 </div>
               </ScrollArea>
               <div className="p-6 pt-2 border-t">
-                <form onSubmit={onTutorSubmit} className="flex gap-2">
+                <form onSubmit={handleSubmit} className="flex gap-2">
                   <Input
                     value={input}
-                    onChange={(e) => setInput(e.target.value)}
+                    onChange={handleInputChange}
                     placeholder="Ask a question about the DPTE curriculum..."
                     className="flex-1"
                     disabled={isTutorLoading}

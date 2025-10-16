@@ -1,22 +1,59 @@
 "use client";
 
-import { Sparkles, User, Loader2 } from 'lucide-react';
+import { Sparkles, User, Loader2, Copy } from 'lucide-react';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { cn } from '@/lib/utils';
-
-export interface Message {
-  role: 'user' | 'assistant';
-  content: string;
-}
+import type { Message } from '@ai-sdk/react';
+import { useToast } from '@/hooks/use-toast';
+import { Button } from './ui/button';
+import { render } from 'ai/rsc';
 
 interface ChatMessageProps {
   message: Message;
   isLoading?: boolean;
 }
 
+const CodeBlock = ({ content }: { content: string }) => {
+  const { toast } = useToast();
+  const onCopy = () => {
+    navigator.clipboard.writeText(content);
+    toast({ title: 'Copied to clipboard' });
+  };
+  return (
+    <div className="relative">
+      <pre className="bg-muted p-4 rounded-md my-2 overflow-x-auto text-sm">
+        <code>{content}</code>
+      </pre>
+      <Button
+        size="icon"
+        variant="ghost"
+        className="absolute top-2 right-2 h-7 w-7"
+        onClick={onCopy}
+      >
+        <Copy size={16} />
+      </Button>
+    </div>
+  );
+};
+
+
 export function ChatMessage({ message, isLoading = false }: ChatMessageProps) {
-  const { role, content } = message;
+  const { role, content, toolInvocations } = message;
   const isAssistant = role === 'assistant';
+  const { toast } = useToast();
+
+  const renderedContent = render({
+    schema: {
+      code: {
+        description: 'A block of code to be displayed.',
+        parameters: z.object({
+          content: z.string().describe('The code content.'),
+        }),
+      },
+    },
+    content: content,
+    render: ({ code }) => <CodeBlock content={code.content} />,
+  });
 
   return (
     <div
@@ -47,7 +84,7 @@ export function ChatMessage({ message, isLoading = false }: ChatMessageProps) {
             <span>Thinking...</span>
           </div>
         ) : (
-          <p className="whitespace-pre-wrap">{content}</p>
+          <div className="whitespace-pre-wrap">{renderedContent}</div>
         )}
       </div>
       {!isAssistant && (
