@@ -1,785 +1,912 @@
 {
-  "document_title": "DIPLOMA IN TEACHER EDUCATION: CHILD DEVELOPMENT AND PSYCHOLOGY CURRICULUM DESIGN (PRE-PRIMARY AND PRIMARY)",
-  "metadata": {
-    "title": "DIPLOMA IN TEACHER EDUCATION: PRE-PRIMARY AND PRIMARY, CHILD DEVELOPMENT AND PSYCHOLOGY CURRICULUM DESIGN",
-    "institution": "KENYA INSTITUTE OF CURRICULUM DEVELOPMENT (A Skilled and Ethical Society)",
-    "publication_dates": {
-      "revised": "2024",
-      "first_published": "2021"
-    },
-    "copyright": "All rights reserved. No part of this document may be reproduced, stored in a retrieval system or transcribed, in any form or by any means, electronic, mechanical, photocopy, recording or otherwise, without the prior written permission of the publisher [1].",
-    "published_by": "Kenya Institute of Curriculum Development [3]",
-    "isbn": "[Not provided in sources]"
-  },
-  "table_of_content": [
-    {
-      "section": "TABLE OF CONTENT",
-      "page": "i"
-    },
-    {
-      "section": "INTRODUCTION",
-      "page": "ii"
-    },
-    {
-      "section": "REGULATIONS FOR DIPLOMA IN TEACHER EDUCATION - PRE-PRIMARY AND PRIMARY (DTE–PP&P)",
-      "page": "iv"
-    },
-    {
-      "section": "TABLE 1: DISTRIBUTION OF PROFESSIONAL LEARNING AREAS",
-      "page": "v"
-    },
-    {
-      "section": "TABLE 2: DISTRIBUTION OF CONTENT + PEDAGOGY (SUBJECTS)",
-      "page": "vi"
-    },
-    {
-      "section": "NATIONAL GOALS OF EDUCATION",
-      "page": "vii"
-    },
-    {
-      "section": "LEVEL LEARNING OUTCOMES",
-      "page": "ix"
-    },
-    {
-      "section": "ESSENCE STATEMENT",
-      "page": "x"
-    },
-    {
-      "section": "GENERAL LEARNING OUTCOMES",
-      "page": "x"
-    },
-    {
-      "section": "STRAND 1.0 INTRODUCTION TO CHILD GROWTH AND DEVELOPMENT",
-      "page": "1"
-    },
-    {
-      "section": "STRAND 2.0 THEORIES OF GROWTH AND DEVELOPMENT",
-      "page": "6"
-    },
-    {
-      "section": "STRAND 3.0 THEORIES OF LEARNING",
-      "page": "16"
-    },
-    {
-      "section": "STRAND 4.0 GUIDANCE AND COUNSELLING",
-      "page": "24"
-    }
-  ],
-  "introduction": {
-    "curriculum_goal": "The development of the curriculum for Diploma in Teacher Education for the Pre-Primary and Primary level (DTE–PP&P) is a critical milestone in the implementation of Competency Based Curriculum (CBC) in Kenya [4, 5].",
-    "target_learners": "The curriculum designs have been developed to prepare the student teacher to be able to effectively guide the learners at the Pre-Primary School and Primary School level; that is from Pre-Primary One (PP1) to Grade Six (G6) in Basic Education [5].",
-    "curriculum_shift": "The DTE–PP&P embraces the shift from the Objective-Based to the Competency Based Curriculum which is hinged on use of learner-centred pedagogy for realisation of the stated expected learning outcomes [5].",
-    "key_aspects_introduced": [
-      "Emphasis on formative assessment to facilitate learning and determine learner aptitude and performance [6].",
-      "Structured micro-teaching [6].",
-      "A longer period for the practicum [6].",
-      "Introduction of specific Professional Courses that ensure congruence with the CBC vision, mission, pillars and guiding principles as enshrined in the Basic Education Curriculum Framework (KICD, 2017) [6].",
-      "Emphasis on experiential and reflective learning to develop appropriate Pedagogical Content Knowledge (PCK) [7].",
-      "Integrated content and pedagogy for the student teachers while at college [7]."
-    ],
-    "teacher_role": "The DTE-PP&P curriculum seeks to develop the teacher to act as a facilitator in the learning process taking into consideration the different abilities and learning styles of individual target learners [7].",
-    "packaging_of_courses": {
-      "professional_learning_areas": [
-        "Child Development and Psychology [8]",
-        "Curriculum Studies [8]",
-        "Educational Resources [8]",
-        "ICT Integration in Education [8]",
-        "Educational Assessment [8]",
-        "Research Skills [8]",
-        "Inclusive Education [8]",
-        "Educational Leadership and Management [8]",
-        "Sociological and Philosophical Foundations of Education [8]",
-        "Historical and Comparative Foundations of Education [9]",
-        "Micro Teaching [9]",
-        "Practicum [9]"
-      ],
-      "integrated_content_and_pedagogy_learning_areas": [
-        "English [9]",
-        "Kiswahili [9]",
-        "Mathematics [9]",
-        "Science and Technology [9]",
-        "Agriculture [9]",
-        "Home Science [9]",
-        "Religious Education: CRE/IRE/HRE [9]",
-        "Social Studies [9]",
-        "Physical and Health Education [9]",
-        "Art and Craft [9]",
-        "Music [9]",
-        "Indigenous Language [9]",
-        "Foreign Languages: French/ Arabic/ German/ Mandarin (Chinese)/ KSL [9]"
-      ]
-    }
-  },
-  "regulations": {
-    "title": "REGULATIONS FOR DIPLOMA IN TEACHER EDUCATION - PRE-PRIMARY AND PRIMARY (DTE–PP&P)",
-    "entry_requirements": {
-      "standard": "C Plain Mean Grade in the Kenya Certificate of Secondary Education examination (KCSE) or its equivalent (as equated by the Kenya National Examinations Council (KNEC) [10].",
-      "special_needs_candidates_sne": "C Minus (-) Grade in KCSE or equivalent [10]."
-    },
-    "duration_of_training": "The duration for the DTE–PP&P shall be three years [10].",
-    "subjects_offered": "The trainee undertaking the DTE–PP&P shall take ALL courses specified in the DPTE curriculum; which includes Professional Courses and learning areas (subjects) in Primary School Curriculum [11].",
-    "micro_teaching_and_practicum": {
-      "micro_teaching_status": "Micro Teaching shall be undertaken as a course and shall be a pre-requisite for the Practicum; hence a course design has been developed for it [11].",
-      "practicum_duration": "There shall be two (2) school term practicum sessions for which guidelines shall be developed [11]."
-    },
-    "award_of_diploma": {
-      "requirements": [
-        "Complete the required hours for coursework and pass the stipulated assessment as directed by the Kenya National Examinations Council (KNEC) [11, 12].",
-        "Complete the required hours for the Practicum and pass the stipulated assessment as directed by the Kenya National Examinations Council (KNEC) [12]."
-      ],
-      "failure_policy": "If the student fails to meet the requirements for award of the Diploma in Teacher Education –Pre-Primary and Primary, he/she will be allowed to repeat the specific component or learning area failed [12]."
-    },
-    "grading": "The DTE–PP&P shall be graded as stipulated by the Kenya National Examinations Council (KNEC) [12]."
-  },
-  "curriculum_distribution_tables": {
-    "table_1_professional_learning_areas": {
-      "total_hours_header": "420 Hours [13]",
-      "sub_total_hours": "414Hrs [14]",
-      "courses": [
-        {"subject": "Child Development and Psychology", "term_1": "10", "term_2": "10", "term_3": "10", "term_4": "10", "term_5": "10", "term_6": "10", "sub_total": "60", "total_for_course": "60 [13]"},
-        {"subject": "Curriculum Studies", "term_1": "30", "term_2": "20", "term_3": "20", "term_4": "20", "term_5": "", "term_6": "", "sub_total": "90", "total_for_course": "90 [13]"},
-        {"subject": "Educational Resources", "term_1": "10", "term_2": "10", "term_3": "10", "term_4": "", "term_5": "", "term_6": "", "sub_total": "30", "total_for_course": "30 [13]"},
-        {"subject": "ICT Integration in Education", "term_1": "10", "term_2": "10", "term_3": "10", "term_4": "", "term_5": "", "term_6": "", "sub_total": "30", "total_for_course": "30 [13]"},
-        {"subject": "Educational Assessment", "term_1": "10", "term_2": "10", "term_3": "10", "term_4": "", "term_5": "", "term_6": "", "sub_total": "30", "total_for_course": "30 [13]"},
-        {"subject": "Research Skills", "term_1": "10", "term_2": "10", "term_3": "4", "term_4": "", "term_5": "", "term_6": "", "sub_total": "24", "total_for_course": "24 [13]"},
-        {"subject": "Inclusive Education", "term_1": "", "term_2": "10", "term_3": "10", "term_4": "10", "term_5": "", "term_6": "", "sub_total": "30", "total_for_course": "30 [14]"},
-        {"subject": "Educational Leadership and Management", "term_1": "", "term_2": "10", "term_3": "10", "term_4": "10", "term_5": "", "term_6": "", "sub_total": "30", "total_for_course": "30 [14]"},
-        {"subject": "Sociological and Philosophical Foundations of Education", "term_1": "", "term_2": "10", "term_3": "10", "term_4": "10", "term_5": "", "term_6": "", "sub_total": "30", "total_for_course": "30 [14]"},
-        {"subject": "Historical and Comparative Foundations of Education", "term_1": "", "term_2": "10", "term_3": "10", "term_4": "10", "term_5": "", "term_6": "", "sub_total": "30", "total_for_course": "30 [14]"},
-        {"subject": "Micro Teaching", "term_1": "30", "term_2": "", "term_3": "", "term_4": "", "term_5": "", "term_6": "", "sub_total": "30", "total_for_course": "30 [14]"}
-      ],
-      "term_sub_totals": {
-        "term_1": "120Hrs",
-        "term_2": "80Hrs",
-        "term_3": "80Hrs",
-        "term_4": "60Hrs",
-        "term_5": "40Hrs",
-        "term_6": "40Hrs"
-      }
-    },
-    "table_2_content_plus_pedagogy_subjects": {
-      "total_content_pedagogy_hours_header": "1680 Hrs [15]",
-      "total_practicum_hours_header": "600Hrs [15]",
-      "sub_total_hours": "1686Hrs [16]",
-      "overall_total_hours": "3000 HRS [16]",
-      "practicum_and_subject_practicals": {
-        "term_7_subject_practicals": "300 Hours [16]",
-        "term_8_practicum": "300 Hours [15]",
-        "term_9_practicum": "300 Hours [15]"
-      },
-      "subjects": [
-        {"subject": "English", "term_1": "30", "term_2": "30", "term_3": "36", "term_4": "30", "term_5": "30", "term_6": "30", "sub_total": "186", "term_7_practicals": "30 [15]"},
-        {"subject": "Kiswahili", "term_1": "20", "term_2": "20", "term_3": "20", "term_4": "20", "term_5": "20", "term_6": "20", "sub_total": "120", "term_7_practicals": "20 [15]"},
-        {"subject": "Mathematics", "term_1": "30", "term_2": "30", "term_3": "30", "term_4": "30", "term_5": "30", "term_6": "30", "sub_total": "180", "term_7_practicals": "30 [15]"},
-        {"subject": "Science and Technology", "term_1": "20", "term_2": "20", "term_3": "20", "term_4": "20", "term_5": "20", "term_6": "20", "sub_total": "120", "term_7_practicals": "30 [15]"},
-        {"subject": "Agriculture", "term_1": "20", "term_2": "20", "term_3": "20", "term_4": "20", "term_5": "20", "term_6": "20", "sub_total": "120", "term_7_practicals": "20 [15]"},
-        {"subject": "Home science", "term_1": "20", "term_2": "20", "term_3": "20", "term_4": "20", "term_5": "20", "term_6": "20", "sub_total": "120", "term_7_practicals": "20 [15]"},
-        {"subject": "Religious Education: (CRE, IRE, HRE)", "term_1": "20", "term_2": "20", "term_3": "20", "term_4": "20", "term_5": "20", "term_6": "20", "sub_total": "120", "term_7_practicals": "20 [15]"},
-        {"subject": "Social Studies", "term_1": "20", "term_2": "20", "term_3": "20", "term_4": "20", "term_5": "20", "term_6": "20", "sub_total": "120", "term_7_practicals": "20 [15, 16]"},
-        {"subject": "Physical and Health Education", "term_1": "10", "term_2": "10", "term_3": "10", "term_4": "30", "term_5": "30", "term_6": "30", "sub_total": "120", "term_7_practicals": "30 [16]"},
-        {"subject": "Art and craft", "term_1": "10", "term_2": "30", "term_3": "30", "term_4": "10", "term_5": "20", "term_6": "20", "sub_total": "120", "term_7_practicals": "20 [16]"},
-        {"subject": "Music", "term_1": "10", "term_2": "20", "term_3": "20", "term_4": "20", "term_5": "20", "term_6": "30", "sub_total": "120", "term_7_practicals": "20 [16]"},
-        {"subject": "Indigenous Languages", "term_1": "10", "term_2": "20", "term_3": "20", "term_4": "20", "term_5": "30", "term_6": "20", "sub_total": "120", "term_7_practicals": "20 [16]"},
-        {"subject": "Foreign Languages: French/ Arabic/ German/ Mandarin (Chinese)/ KSL", "term_1": "10", "term_2": "10", "term_3": "10", "term_4": "30", "term_5": "30", "term_6": "30", "sub_total": "120", "term_7_practicals": "20 [16]"}
-      ],
-      "term_sub_totals": {
-        "term_1": "230 Hrs",
-        "term_2": "270 Hrs",
-        "term_3": "270 Hrs",
-        "term_4": "290 Hrs",
-        "term_5": "310 Hrs",
-        "term_6": "310 Hrs",
-        "total_by_term": "350 [16]"
-      }
-    }
-  },
-  "educational_goals_and_outcomes": {
-    "national_goals_of_education": [
-      "Foster nationalism and patriotism and promote national unity [16, 17].",
-      "Promote the social, economic, technological and industrial needs for national development [18]. (Includes sub-goals: Social Needs, Economic Needs, Technological and Industrial Needs) [18-20].",
-      "Promote individual development and self-fulfilment (including building of character) [20].",
-      "Promote sound moral and religious values [20, 21].",
-      "Promote social equity and responsibility [21].",
-      "Promote respect for and development of Kenya’s rich and varied cultures [22].",
-      "Promote international consciousness and foster positive attitudes towards other nations [22, 23].",
-      "Promote positive attitudes towards good health and environmental protection [23, 24]."
-    ],
-    "level_learning_outcomes": [
-      "Model appropriate behaviour and values for primary school learners to emulate for development of good citizenship [24].",
-      "Communicate and collaborate effectively with learners, peers, parents and the community to create a conducive learning environment [24].",
-      "Use appropriate pedagogical approaches to facilitate learning for primary school learners in and out of the classroom [24, 25].",
-      "Apply inclusive practices to support all primary school learners including those with disabilities and special educational needs [25].",
-      "Employ ICT skills in the learning process to enhance digital literacy [25].",
-      "Employ appropriate assessment approaches to promote effective learning [25].",
-      "Identify and nurture learner’s potential and talents for appropriate placement and transition into lower secondary education [25].",
-      "Develop environmental conservation skills in primary school learners to promote education for sustainable development [25, 26].",
-      "Create innovative and effective solutions to challenges in the learning process [26].",
-      "Integrate pertinent and contemporary issues in learning to enable learners to cope with daily challenges [26]."
-    ],
-    "essence_statement": "This course on Child Development and Psychology deals with how children grow physically, mentally, emotionally, and socially [26]. Awareness of these facets is crucial for a primary school teacher, equipping the trainee with knowledge about children’s ability at different ages [26, 27]. The course is designed to equip and develop knowledge and skills that would enable the teacher trainee effectively guide the young learners [27]. It provides knowledge on different aspects of growth and development of the child and the requirements at different stages of development [27]. It addresses the fact that every child has different mental ability and learns at different pace levels [28]. Child psychology helps the teacher to study the ability, interests, intelligence, and needs of the child as well as the different techniques of teaching for effective communication [28].",
-    "general_learning_outcomes": [
-      "Analyse major developmental milestones of children in the areas of physical, cognitive, and emotional development [29].",
-      "Compare and contrast various theoretical frameworks that relate to the study of human development [29].",
-      "Evaluate the effectiveness of child development theories in terms of their practical applications in learning [29].",
-      "Analyse the effect of biological, environmental and cultural influences on development of children [29].",
-      "Apply appropriate theoretical approaches when analysing aspects of child growth and development [29]."
-    ]
-  },
-  "curriculum_strands_detailed": [
-    {
-      "strand_id": "1.0",
-      "title": "INTRODUCTION TO CHILD GROWTH AND DEVELOPMENT",
-      "page_reference": "1 [30]",
-      "sub_strands": [
-        {
-          "sub_strand_id": "1.1",
-          "concept": "Concepts in Child Growth and Development",
-          "duration": "5 hours [30]",
-          "specific_learning_outcomes": [
-            "examine terminologies related to child growth and development [30]",
-            "analyse the brain development in children from 0- 5 years [30]",
-            "illustrate the responsibilities of caregivers in promoting normal brain development [31]",
-            "recognise the concepts of growth and development of children in the learning process [31]"
-          ],
-          "suggested_learning_experiences": [
-            "search and discuss the information on terminologies (growth, development, personality, memory, intelligence, attitude, motivation, emotions, learning, physical, cognitive, social, and emotional development in children) related to child growth and development. Share findings in class [31]",
-            "study and brainstorm brain development in children from 0-5 years. (factors that influence, and process) [31, 32]",
-            "simulate the role of caregivers in enhancing normal brain development [32]",
-            "watch a demonstration or an audio visual clip on care of young children in different contexts such as crèches [32]"
-          ],
-          "suggested_key_inquiry_questions": [
-            "Why is it important for a teacher to study child growth and development? [32]",
-            "How do caregivers enhance normal brain development? [32]"
-          ],
-          "core_competencies_developed": "Digital literacy skills: Teacher trainee demonstrates digital literacy skills as they search for information on terminologies related to child growth and development [32, 33].",
-          "values": "Responsibility: Teacher trainee engages in assigned roles and duties while simulating on the roles of caregivers in enhancing normal brain development [33].",
-          "formative_assessment_rubrics": [
-            {
-              "indicator": "Ability to examine terminologies related to child growth and development",
-              "exceeds_expectation": "Clearly examines terminologies related to child growth and development [33]",
-              "meet_expectation": "Examines terminologies related to child growth and development [34]",
-              "approaching_expectation": "Partially examines terminologies related to child growth and development [34]",
-              "below_expectation": "Requires assistance to examine terminologies related to child growth and development [34]"
-            },
-            {
-              "indicator": "Ability to analyse the brain development in children from 0- 5 years",
-              "exceeds_expectation": "Comprehensively analyses the brain development in children from 0- 5 years [34, 35]",
-              "meet_expectation": "Analyses the brain development in children from 0- 5 years [35]",
-              "approaching_expectation": "Analyses the brain development in children from 0- 5 years that require clarity [35]",
-              "below_expectation": "Analysis made on the brain development in children from 0- 5 years require clarity [35]"
-            },
-            {
-              "indicator": "Ability to illustrate the responsibilities of caregivers in promoting normal brain development",
-              "exceeds_expectation": "Accurately illustrates the responsibilities of caregivers in promoting normal brain development [35, 36]",
-              "meet_expectation": "Illustrates the responsibilities of caregivers in promoting normal brain development [36]",
-              "approaching_expectation": "Illustrates few responsibilities of caregivers in promoting normal brain development [36]",
-              "below_expectation": "Inaccurately illustrates the responsibilities of caregivers in promoting normal brain development [36]"
-            }
-          ]
-        },
-        {
-          "sub_strand_id": "1.2",
-          "concept": "Domains of Human Development",
-          "duration": "6 hours [36]",
-          "specific_learning_outcomes": [
-            "examine changes in children from infancy to adolescence [36]",
-            "evaluate factors influencing child growth and development [37]",
-            "illustrate the characteristics of children from infancy to adolescence [37]",
-            "acknowledge the effect of developmental changes on children's learning process [37]"
-          ],
-          "suggested_learning_experiences": [
-            "search and discuss the information on changes (biological, cognitive, physical, socio-emotional) in children from infancy to adolescence (infants, toddlers, pre-schoolers, school age (age 6-10) and adolescents) Share findings in class [37]",
-            "study and brainstorm the factors that influence child growth and development (biological factors - genetic inheritances, brain chemistry, hormone levels, nutrition, and gender; environmental factors; socio-cultural factors; role of play; care of children) [37, 38]",
-            "demonstrate the traits of children (ages 0-12) that influence the learning process [38]"
-          ],
-          "suggested_key_inquiry_questions": [
-            "How do developmental changes vary across stages from childhood to adolescence? [38]"
-          ],
-          "core_competencies_developed": "Pedagogical Content Knowledge: Teacher trainee demonstrates appreciation of the experience, as they watch an audiovisual clip or a demonstration on care of young children in different contexts [38, 39].",
-          "values": "Unity: Teacher trainee collaborate with others as they demonstrate the traits of children (ages 0-12) that influence the learning process [39].",
-          "formative_assessment_rubrics": [
-            {
-              "indicator": "Ability to examine changes in children from infancy to adolescence",
-              "exceeds_expectation": "Comprehensively examine changes in children from infancy to adolescence [39]",
-              "meet_expectation": "Analyses changes in children from infancy to adolescence [40]",
-              "approaching_expectation": "Partially analyses changes in children from infancy to adolescence [40]",
-              "below_expectation": "Leaves out many details in analyses of changes in children from infancy to adolescence [40]"
-            },
-            {
-              "indicator": "Ability to evaluate factors influencing child growth and development",
-              "exceeds_expectation": "Comprehensively evaluate factors influencing child growth and development [40]",
-              "meet_expectation": "Evaluates factors influencing child growth and development [40]",
-              "approaching_expectation": "Evaluates some factors influencing child growth and development [40]",
-              "below_expectation": "Omits many details when evaluating factors influencing child growth and development [41]"
-            },
-            {
-              "indicator": "Ability to illustrate the characteristics of children from infancy to adolescence",
-              "exceeds_expectation": "Distinctively illustrates the characteristics of children from infancy to adolescence [41]",
-              "meet_expectation": "Illustrates the characteristics of children from infancy to adolescence [41]",
-              "approaching_expectation": "Illustrates some characteristics of children from infancy to adolescence [41]",
-              "below_expectation": "Illustrates unclear characteristics of children from infancy to adolescence [41]"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "strand_id": "2.0",
-      "title": "THEORIES OF GROWTH AND DEVELOPMENT",
-      "page_reference": "6 [42]",
-      "sub_strands": [
-        {
-          "sub_strand_id": "2.1",
-          "concept": "Personality Development",
-          "duration": "5 hours [42]",
-          "specific_learning_outcomes": [
-            "examine personality development in relation to child growth and development [42]",
-            "apply psychoanalytic theory in the development process of children [42]",
-            "propose the personality development challenges experienced by learners [42]",
-            "appreciate the role of theories of personality in children's learning process [43]"
-          ],
-          "suggested_learning_experiences": [
-            "study and discuss the information on structures, theories, types, and personality traits according to psychoanalytic theory (Sigmund Freud). Share your findings in class [43]",
-            "create a scenario to act out different situations aligned to psychoanalytic theory. Reflect and share results in class [43]",
-            "brainstorm and identify the personality development challenges experienced by learners [43]"
-          ],
-          "suggested_key_inquiry_questions": [
-            "Why should a teacher study personality development theories? [44]"
-          ],
-          "core_competencies_developed": "Creativity and innovation: Teacher trainee creates a conducive learning environment and displays a scenario to act out different situations aligned to psychoanalytic theory [44].",
-          "values": "Love: Teacher trainee displays respect as they brainstorm the personality development challenges experienced by learners [45].",
-          "formative_assessment_rubrics": [
-            {
-              "indicator": "Ability to examine personality development in relation to child growth and development",
-              "exceeds_expectation": "Clearly examines personality development in relation to child growth and development [45]",
-              "meet_expectation": "Examines personality development in relation to child growth and development [45]",
-              "approaching_expectation": "Partially examines personality development in relation to child growth and development [45]",
-              "below_expectation": "Examines personality development in relation to child growth and development with details that require clarity [45]"
-            },
-            {
-              "indicator": "Ability to apply psychoanalytic theory in the development process of children",
-              "exceeds_expectation": "Comprehensively applies psychoanalytic theory in the development process of children [46]",
-              "meet_expectation": "Applies apply psychoanalytic theory in the development process of children [46]",
-              "approaching_expectation": "Omits some details when applying psychoanalytic theory in the development process of children [46]",
-              "below_expectation": "Omits many details when applying psychoanalytic theory in the development process of children [46]"
-            },
-            {
-              "indicator": "Ability to propose the personality development challenges experienced by learners",
-              "exceeds_expectation": "Accurately proposes the personality development challenges experienced by learners [46, 47]",
-              "meet_expectation": "Proposes the personality development challenges experienced by learners [47]",
-              "approaching_expectation": "Proposes few personality development challenges experienced by learners that are inaccurate [47]",
-              "below_expectation": "Many proposed personality development challenges experienced by learners require clarity [47]"
-            }
-          ]
-        },
-        {
-          "sub_strand_id": "2.2",
-          "concept": "Cognitive development",
-          "duration": "6 hours [48]",
-          "specific_learning_outcomes": [
-            "analyse theories of cognitive development in relation to child growth and development [48]",
-            "apply the principles of cognitive development theories to enhance learning in children [48]",
-            "appreciate the role of cognitive development theories in the child development process [48]"
-          ],
-          "suggested_learning_experiences": [
-            "investigate the information on structures, theories, types, and traits in Cognitive development theory (Jean Piaget’s and Vygotsky stages of development). share their findings in class [48, 49]",
-            "design activities that can be used to enhance cognitive development in young children and present in class [49]",
-            "share a case study, experiences, or documentaries on the principles of cognitive development theories [49]"
-          ],
-          "suggested_key_inquiry_questions": [
-            "Why should a teacher study cognitive development theories? [49]"
-          ],
-          "core_competencies_developed": "Critical thinking and Problem Solving: Teacher trainee facilitates exploring new ways of doing things as they design activities that can be used to enhance cognitive development in young children [49].",
-          "values": "Integrity: Teacher trainee applies laid down procedures as they investigate the principles of cognitive development theories to enhance learning in children [50].",
-          "formative_assessment_rubrics": [
-            {
-              "indicator": "Ability to analyse theories of cognitive development in relation to child growth and development",
-              "exceeds_expectation": "Comprehensively analyses theories of cognitive development in relation to child growth and development [50, 51]",
-              "meet_expectation": "Analyses theories of cognitive development in relation to child growth and development [51]",
-              "approaching_expectation": "Analyses few theories of cognitive development in relation to child growth and development that require clarity [51]",
-              "below_expectation": "All theories of cognitive development analysed in relation to child growth and development require clarity [51]"
-            },
-            {
-              "indicator": "Ability to apply the principles of cognitive development theories to enhance learning in children",
-              "exceeds_expectation": "Comprehensively applies the principles of Cognitive development theories to enhance learning in children [51, 52]",
-              "meet_expectation": "Applies the principles of cognitive development theories to enhance learning in children [52]",
-              "approaching_expectation": "Leaves out some details when applying principles of cognitive development theories to enhance learning in children [52]",
-              "below_expectation": "Leaves out many details when applying principles of cognitive development theories to enhance learning in children [52]"
-            }
-          ]
-        },
-        {
-          "sub_strand_id": "2.3",
-          "concept": "Language development",
-          "duration": "4 hours [53]",
-          "specific_learning_outcomes": [
-            "analyse language development in children [53]",
-            "apply the principles of language development theory to enhance acquisition of language in children [53]",
-            "examine factors that influence language development in children [53]",
-            "appreciate the role of language development theories in promoting acquisition of language in children [53]"
-          ],
-          "suggested_learning_experiences": [
-            "study and reflect on the stages of the theory of language development and write a paper (B.F. Skinner) [53, 54]",
-            "discuss and present how children develop language in reference to the principles of language development [54]",
-            "create and demonstrate a practical classroom strategy such as interactive storytelling, group discussions or debates on principles of language development theory [54]",
-            "design and model learning resources that enhance language development in children [54]"
-          ],
-          "suggested_key_inquiry_questions": [
-            "Why should a teacher study language development theory? [54]",
-            "How can learners improve their speaking, listening and writing skills? [55]"
-          ],
-          "core_competencies_developed": "Learning to learn and reflective practice: Teacher trainee develops reflective skills in learning as they study and reflect on the stage of theory of language development [55].",
-          "values": "Unity: Teacher trainee appreciates the effort of one another as they design and model learning resources that enhance language development in children [55].",
-          "formative_assessment_rubrics": [
-            {
-              "indicator": "Ability to analyse language development in children",
-              "exceeds_expectation": "Critically analyses language development in children [56]",
-              "meet_expectation": "Analyses language development in children [56]",
-              "approaching_expectation": "Leaves out many details when analysing language development in children [56]",
-              "below_expectation": "Leaves out many details when analysing language development in children [56]"
-            },
-            {
-              "indicator": "Ability to examine factors that influence language development in children",
-              "exceeds_expectation": "Accurately examines factors that influence language development in children [56, 57]",
-              "meet_expectation": "Examines factors that influence language development in children [57]",
-              "approaching_expectation": "Examines few factors that influence language development in children that are inaccurate [57]",
-              "below_expectation": "Many factors that influence language development in children are inaccurately examined [57]"
-            },
-            {
-              "indicator": "Ability to apply the principles of language development theory to enhance acquisition of language in children",
-              "exceeds_expectation": "Extensively applies the principles of language development theory to enhance acquisition of language in children [57, 58]",
-              "meet_expectation": "Applies the principles of language development theory to enhance acquisition of language in children [58]",
-              "approaching_expectation": "Applies few principles of language development theory to enhance acquisition of language in children [58]",
-              "below_expectation": "All principles of language development theory applied have scanty details [58]"
-            }
-          ]
-        },
-        {
-          "sub_strand_id": "2.4",
-          "concept": "Psychosocial Development",
-          "duration": "5 hours [59]",
-          "specific_learning_outcomes": [
-            "analyse theories of psychosocial development in children [59]",
-            "apply the principles of psychosocial development theories to promote children's learning process [59]",
-            "appreciate the significance of psychosocial development theories in enhancing social behaviour among learners [59]"
-          ],
-          "suggested_learning_experiences": [
-            "investigate information on the stages of psychosocial theory of development (Erik Erickson) [59]",
-            "discuss and present stages of psychosocial theory of development and how to apply it in learning to young children [59, 60]",
-            "conduct a game of charades by acting out different simple emotions and scenarios related to the psychosocial stages [60]"
-          ],
-          "suggested_key_inquiry_questions": [
-            "How can teachers use psychosocial development theory to support children's learning? [60]"
-          ],
-          "core_competencies_developed": "Pedagogical content knowledge: Teacher trainee displays understanding of psychosocial theory of development as they investigate information on its stages [60].",
-          "values": "Responsibility: Teacher trainee offers leadership and guidance to others as they conduct a game of charades by acting out different simple emotions and scenarios related to the psychosocial stages [60, 61].",
-          "formative_assessment_rubrics": [
-            {
-              "indicator": "Ability to analyse theories of psychosocial development in children",
-              "exceeds_expectation": "Exhaustively analyse theories of psychosocial development in children [61]",
-              "meet_expectation": "Analyse theories of psychosocial development in children [61]",
-              "approaching_expectation": "Partially analyse theories of psychosocial development in children [61]",
-              "below_expectation": "Leaves out many details when analysing theories of psychosocial development in children [62]"
-            },
-            {
-              "indicator": "Ability to apply the principles of psychosocial development theories to promote children's learning process",
-              "exceeds_expectation": "Comprehensively applies the principles of psychosocial development theories to promote children's learning process [62]",
-              "meet_expectation": "Partly applies the principles of psychosocial development theories to promote children's learning process [62]",
-              "approaching_expectation": "Omits many details when applying principles of psychosocial development theories to promote children's learning process [62]",
-              "below_expectation": "Applies unclear principles of psychosocial development theories applied to promote children's learning process [63]"
-            }
-          ]
-        },
-        {
-          "sub_strand_id": "2.5",
-          "concept": "Moral Development",
-          "duration": "5 hours [63]",
-          "specific_learning_outcomes": [
-            "analyse moral development theory in relation to child growth and development [63]",
-            "apply the principles of moral development theory to enhance learning in children [64]",
-            "recognize the importance of moral development theory in children's learning [64]"
-          ],
-          "suggested_learning_experiences": [
-            "study and write a report on how children develop acceptable moral behaviour (Lawrence Kolberg theory) [64]",
-            "design activities that can be used to enhance moral development in young children [64]",
-            "organise a classroom activity that aligns with the moral development theory [64]"
-          ],
-          "suggested_key_inquiry_questions": [
-            "Why should a teacher study moral development theory? [64]"
-          ],
-          "core_competencies_developed": "Creativity and Innovation: Teacher trainee makes work interesting for themselves and others around them as they organise a classroom activity that aligns with the moral development theory [65].",
-          "values": "Peace: Teacher trainee observes respect for self and others as they discuss the principles of moral development theory and presentation [65].",
-          "formative_assessment_rubrics": [
-            {
-              "indicator": "Ability to analyse moral development theory in relation to child growth and development",
-              "exceeds_expectation": "Clearly analyses moral development theory in relation to child growth and development [66]",
-              "meet_expectation": "Analyses moral development theory in relation to child growth and development [66]",
-              "approaching_expectation": "Partially analyses moral development theory in relation to child growth and development [66]",
-              "below_expectation": "Leaves out many details when analysing moral development theory in relation to child growth and development [66]"
-            },
-            {
-              "indicator": "Ability to apply the principles of moral development theory to enhance learning in children",
-              "exceeds_expectation": "Distinctively applies the principles of moral development theory to enhance learning in children [67]",
-              "meet_expectation": "Applies the principles of moral development theory to enhance learning in children [67]",
-              "approaching_expectation": "Applies few theories of cognitive development in relation to child growth and development that require clarity [67]",
-              "below_expectation": "All theories of cognitive development analysed in relation to child growth and development require clarity [67]"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "strand_id": "3.0",
-      "title": "THEORIES OF LEARNING",
-      "page_reference": "16 [67]",
-      "sub_strands": [
-        {
-          "sub_strand_id": "3.1",
-          "concept": "Cognitive theories of Learning",
-          "duration": "4 hours [68]",
-          "specific_learning_outcomes": [
-            "analyse cognitive theories in relation to learning [68]",
-            "apply the principles of cognitive theories of learning as used to enhance learning in children [68]",
-            "appreciate the role of theories of cognitive learning in the learning process [68]"
-          ],
-          "suggested_learning_experiences": [
-            "study and discuss how principles of cognitive theories of learning (Jean Piaget’s process of learning) enhance learning in children [68, 69]",
-            "create age-appropriate activities and materials that engage children in manipulation, problem-solving and critical thinking. Showcase them in the class [69]"
-          ],
-          "suggested_key_inquiry_questions": [
-            "How can a teacher use cognitive learning theories to enhance learning? [69]"
-          ],
-          "core_competencies_developed": "Pedagogical content knowledge: Teacher trainee demonstrates knowledge and capability as they create show-case age-appropriate activities and materials that engage children in manipulation, problem-solving and critical thinking [69].",
-          "values": "Patriotism: Teacher trainee is conscious of his/her social and moral duties as they report factors influencing learning in children [70].",
-          "formative_assessment_rubrics": [
-            {
-              "indicator": "Ability to analyse cognitive theories in relation to learning",
-              "exceeds_expectation": "Exhaustively analyses cognitive theories in relation to learning [70]",
-              "meet_expectation": "Analyses cognitive theories in relation to learning [70]",
-              "approaching_expectation": "Analyses cognitive theories in relation to learning leaving out few details [71]",
-              "below_expectation": "Analyses few cognitive theories in relation to learning but leaves out many details [71]"
-            },
-            {
-              "indicator": "Ability to apply the principles of cognitive theories of learning as used to enhance learning in children",
-              "exceeds_expectation": "Comprehensively applies the principles of cognitive theories of learning as used to enhance learning in children [71]",
-              "meet_expectation": "Apply the principles of cognitive theories of learning as used to enhance learning in children [71]",
-              "approaching_expectation": "Applies some principles of cognitive theories of learning as used to enhance learning in children,that require clarity [72]",
-              "below_expectation": "All the principles of cognitive theories of learning applied to enhance learning in children, require clarity [72]"
-            }
-          ]
-        },
-        {
-          "sub_strand_id": "3.2",
-          "concept": "Motivational Theories of Learning",
-          "duration": "4 hours [72]",
-          "specific_learning_outcomes": [
-            "examine the types of motivation and their relevance to learning [72]",
-            "apply different types of motives and motivation to stimulate learning [73]",
-            "recognise the importance of types motives and motivation in learning [73]"
-          ],
-          "suggested_learning_experiences": [
-            "use ICT devices and print media to research on types of motives and their implications on learning and report the findings in plenary [73]",
-            "brainstorm the types of motives (primary, stimulus and social motives), motivation (Abraham Maslow’s extrinsic and intrinsic motivation) how they relate to learning [73]",
-            "participate in a case study analysis, reviewing scenarios that showcase intrinsic and extrinsic motivators [74]",
-            "discuss the effect of motivation on learning for young children [74]",
-            "develop a motivation plan that integrates both intrinsic and extrinsic motivators tailored to different student profiles with varying needs and interests [74, 75]",
-            "organise a role-play to simulate different classroom dynamics that cater to social motives [75]"
-          ],
-          "suggested_key_inquiry_questions": [
-            "How can Maslow's theory of motivation be applied to cater for individual differences in learning? [74]",
-            "What are the implications of different types of motives to learning? [74]"
-          ],
-          "core_competencies_developed": "Digital Literacy: Teacher trainee access the internet for digital information as they use ICT devices to research on types of motives and their implications on learning [75].",
-          "values": "Responsibility: Teacher trainee engages in assigned roles and duties as they organise a role-play to simulate different classroom dynamics that cater to social motives [75].",
-          "formative_assessment_rubrics": [
-            {
-              "indicator": "Ability to examine the types of motivation and their relevance to learning",
-              "exceeds_expectation": "Extensively examines the types of motivation and their relevance to learning [76]",
-              "meet_expectation": "Examines the types of motivation and their relevance to learning [76]",
-              "approaching_expectation": "Examine some types of motivation and partial relevance to learning [76]",
-              "below_expectation": "Examines the types of motivation and their relevance to learning with many errors that require clarity [76]"
-            },
-            {
-              "indicator": "Ability to apply different types of motives and motivation to stimulate learning",
-              "exceeds_expectation": "Distinctly applies different types of motives and motivation to stimulate learning [77]",
-              "meet_expectation": "Applies different types of motives and motivation to stimulate learning [77]",
-              "approaching_expectation": "Applies some different types of motives and motivation to stimulate learning [77]",
-              "below_expectation": "All types of motives and motivation to stimulate learning applied, require clarity [77]"
-            }
-          ]
-        },
-        {
-          "sub_strand_id": "3.3",
-          "concept": "Operant Conditioning",
-          "duration": "4 hours [78]",
-          "specific_learning_outcomes": [
-            "describe the principles of operant conditioning theory and its relevance in learning [78]",
-            "demonstrate operant conditioning theory in a learning environment [78]",
-            "appreciate the principles of operant conditioning theory in learning [78]"
-          ],
-          "suggested_learning_experiences": [
-            "search and write a report on principles of operant conditioning by B.F. Skinner and its application in learning to cater for individual differences among learners [78, 79]",
-            "organise a debate on the application of operant conditioning theory in learning [79]",
-            "watch a documentary or video clip on how the operant conditioning theory enhances learning [79]",
-            "create a scenario to act out different situations aligned to the principles of operant conditioning theory.Critique the presentations in class [79]"
-          ],
-          "suggested_key_inquiry_questions": [
-            "How can a teacher apply the principles of operant conditioning to encourage learning among demotivated learners? [79]"
-          ],
-          "core_competencies_developed": "Pedagogical content knowledge: Teacher trainee organises the content into effective learning as they participate in a debate on the application of operant conditioning theory during learning [79, 80].",
-          "values": "Respect: Teacher trainee understands and appreciates others as they create a scenario to act out different situations aligned to the principles of operant conditioning theory [80].",
-          "formative_assessment_rubrics": [
-            {
-              "indicator": "Ability to describe the principles of operant conditioning theory and its relevance in learning",
-              "exceeds_expectation": "Gives an in depth description of principles of operant conditioning theory and its relevance in learning [81]",
-              "meet_expectation": "Describes principles of operant conditioning theory and its relevance in learning [81]",
-              "approaching_expectation": "Describes some principles of operant conditioning theory and its relevance in learning and gives a few details [81]",
-              "below_expectation": "Describes some principles of operant conditioning theory and its relevance in learning with many distorted details [81]"
-            },
-            {
-              "indicator": "Ability to demonstrate operant conditioning theory in a learning environment",
-              "exceeds_expectation": "Comprehensively demonstrates operant conditioning theory in a learning environment [82]",
-              "meet_expectation": "Demonstrates operant conditioning theory in a learning environment [82]",
-              "approaching_expectation": "Partially demonstrates operant conditioning theory in a learning environment [82]",
-              "below_expectation": "Demonstrates operant conditioning theory in a learning environment with details that distort meaning [82]"
-            }
-          ]
-        },
-        {
-          "sub_strand_id": "3.4",
-          "concept": "Classical Conditioning",
-          "duration": "4 hours [83]",
-          "specific_learning_outcomes": [
-            "describe the principles of classical conditioning theory and its relevance in learning [83]",
-            "demonstrate classical conditioning theory in a learning environment [83]",
-            "appreciate the principles of classical conditioning theory and its relevance in learning [83]"
-          ],
-          "suggested_learning_experiences": [
-            "study and discuss principles of classical conditioning by Ivan Pavlov and its application in learning to cater for individual differences among learners [83, 84]",
-            "organise a debate on the pros and cons on classical conditioning theory in learning [84]",
-            "study and reflect on a case study or documentaries on the principles of classical conditioning. Write a report and present [84]",
-            "design activities and resources that can be used to embrace the principles of classical conditioning in learning [84]"
-          ],
-          "suggested_key_inquiry_questions": [
-            "What role does the principles of classical conditioning theory play in the learning process? [84]"
-          ],
-          "core_competencies_developed": "Citizenship and Leadership: Teacher trainee interacts successfully and respectfully with others as they design activities and resources that can be used to embrace the principles of classical conditioning in learning [85].",
-          "values": "Integrity: Teacher trainee is committed to assigned duty as they study, reflect and write a report on a case study or documentaries on the principles of classical conditioning [85].",
-          "formative_assessment_rubrics": [
-            {
-              "indicator": "Ability to describe the principles of classical conditioning theory and its relevance in learning",
-              "exceeds_expectation": "Gives an in depth description of principles of classical conditioning theory and its relevance in learning [86]",
-              "meet_expectation": "Describes principles of classical conditioning theory and its relevance in learning [86]",
-              "approaching_expectation": "Partially describes some principles of classical conditioning theory and its relevance in learning [86]",
-              "below_expectation": "Describes principles of classical conditioning theory and its relevance in learning with scanty distorted details [86]"
-            },
-            {
-              "indicator": "Ability to demonstrate operant conditioning theory in a learning environment",
-              "exceeds_expectation": "Comprehensively demonstrates operant conditioning theory in a learning environment [87]",
-              "meet_expectation": "Demonstrates operant conditioning theory in a learning environment [87]",
-              "approaching_expectation": "Leaves out some details when applying different types of motives and motivation to stimulate learning [87]",
-              "below_expectation": "Leaves out many details when applying different types of motives and motivation to stimulate learning [87]"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "strand_id": "4.0",
-      "title": "GUIDANCE AND COUNSELLING",
-      "page_reference": "24 [87]",
-      "sub_strands": [
-        {
-          "sub_strand_id": "4.1",
-          "concept": "Overview of Guidance and Counselling",
-          "duration": "5 hours [88]",
-          "specific_learning_outcomes": [
-            "describe the importance of guidance and counselling to the learner [88]",
-            "examine socio-emotional and psychological issues [88]",
-            "examine guidance and counselling theories and their relevance to learning [88]",
-            "appreciate the guidance and counselling in assisting learners to manage emotional and psychological issues [88]"
-          ],
-          "suggested_learning_experiences": [
-            "use ICT devices and print media to find information on guiding and counselling and the importance of guidance and counselling to young children [89]",
-            "use documentary, case studies, or share experiences to differentiate between guidance and counselling [89]",
-            "investigate and write a report on ways of handling challenges young children face during learning [89]",
-            "brainstorm causes of socio-emotional and psychological issues (anger, grief, depression, anxiety and stress) and how they affect young learners [89]",
-            "role play a session to act out different situations aligned to counselling theories. Record and showcase the results. (person-centred theory-Carl Rogers and Cognitive behavioural therapy by Aaron Beck) [89, 90]"
-          ],
-          "suggested_key_inquiry_questions": [
-            "What distinguishes guidance from counselling? [90]"
-          ],
-          "core_competencies_developed": "Self-efficacy: Teacher trainee reflects confidence as they role play, record and showcase a session to act out different situations aligned to counselling theories [90].",
-          "values": "Respect: Teacher trainee accommodates diverse opinions as they brainstorm causes of socio-emotional and psychological issues and how they affect young learners [90, 91].",
-          "formative_assessment_rubrics": [
-            {
-              "indicator": "Ability to describe the importance of guidance and counselling for the learner",
-              "exceeds_expectation": "Clearly describes the importance of guidance and counselling for the learner [91]",
-              "meet_expectation": "Describes the importance of guidance and counselling for the learner [91]",
-              "approaching_expectation": "Partially describes the importance of guidance and counselling for the learner [91]",
-              "below_expectation": "Vaguely describes the importance of guidance and counselling for the learner [92]"
-            },
-            {
-              "indicator": "Ability to examine socio-emotional and psychological issues",
-              "exceeds_expectation": "Distinctively examines socio-emotional and psychological issues [92]",
-              "meet_expectation": "Examines socio-emotional and psychological issues [92]",
-              "approaching_expectation": "Partly examines socio-emotional and psychological issues [92]",
-              "below_expectation": "All socio-emotional and psychological issues examined require clarity [92]"
-            },
-            {
-              "indicator": "Ability to examine guidance and counselling theories and their relevance to learning",
-              "exceeds_expectation": "Accurately examines guidance and counselling theories and their relevance to learning [93]",
-              "meet_expectation": "Examines guidance and counselling theories and their relevance to learning [93]",
-              "approaching_expectation": "Examines few guidance and counselling theories and their relevance to learning [93]",
-              "below_expectation": "Many guidance and counselling theories and their relevance to learning are inaccurately examined [93]"
-            }
-          ]
-        },
-        {
-          "sub_strand_id": "4.2",
-          "concept": "Qualities of an Effective Teacher Counsellor",
-          "duration": "3 hours [94]",
-          "specific_learning_outcomes": [
-            "describe the qualities of an effective teacher counsellor [94]",
-            "analyse counselling in relation to the learning process [94]",
-            "apply the counselling skills required during the learning process [94]",
-            "value an effective teacher counsellor in relation to the learning process [94]"
-          ],
-          "suggested_learning_experiences": [
-            "use ICT devices and print media to search information and research further on the qualities of an effective teacher counsellor [95]",
-            "brainstorm the basic counselling (techniques, skills, types) and write a report [95]",
-            "organise a role play depicting qualities of an effective teacher counsellor. Critique the presentations [95]"
-          ],
-          "suggested_key_inquiry_questions": [
-            "What key qualities make an effective teachers counsellor? [95]"
-          ],
-          "core_competencies_developed": "Learning to learn and Reflective Practice: Teacher trainee appreciates the design of an effective counselling program that reflects on management strategies for addressing emotional and psychological challenges in young children [95, 96].",
-          "values": "Unity: Teacher trainee strives to achieve common goals as they organise and critique a role play depicting qualities of an effective teacher counsellor [96].",
-          "formative_assessment_rubrics": [
-            {
-              "indicator": "Ability to describe the qualities of an effective teacher counsellor",
-              "exceeds_expectation": "Describes the qualities of an effective teacher counsellor correctly [96, 97]",
-              "meet_expectation": "Describes the qualities of an effective teacher counsellor [97]",
-              "approaching_expectation": "Describes some of the qualities of an effective teacher counsellor [97]",
-              "below_expectation": "Describes the qualities of an effective teacher counsellor with incorrect details [97]"
-            },
-            {
-              "indicator": "Ability to analyse counselling in relation to the learning process",
-              "exceeds_expectation": "Extensively analyses counselling in relation to the learning process [97]",
-              "meet_expectation": "Analyses counselling in relation to the learning process [97, 98]",
-              "approaching_expectation": "Partially analyses counselling in relation to the learning process [98]",
-              "below_expectation": "Vaguely analyses counselling in relation to the learning process, with distorted details [98]"
-            },
-            {
-              "indicator": "Ability to apply the counselling skills required during the learning process",
-              "exceeds_expectation": "Distinctly applies the counselling skills required during the learning process [98]",
-              "meet_expectation": "Applies the counselling skills required during the learning process [98]",
-              "approaching_expectation": "Leaves out some details when applying the counselling skills required during the learning process [98]",
-              "below_expectation": "Vaguely applies the counselling skills required during the learning process leaving out many details [2]"
-            }
-          ]
-        }
-      ]
-    }
-  ]
+"document_title": "Diploma in Teacher Education - Child Development and Psychology Curriculum",
+"modules": [
+{
+"strand": "1.0 Introduction to Child Growth and Development",
+"sub_strands": [
+{
+"name": "1.1 Concept of Child Growth and Development",
+"specific_learning_outcomes": [
+"Examine terminologies related to child growth and development",
+"Explain the concept of child growth and development",
+"Analyse the principles of child growth and development"
+],
+"suggested_learning_experiences": [
+"Teacher trainees define key terms such as growth, development, maturation, and learning.",
+"Trainees discuss the differences and interrelationships between growth and development.",
+"Case studies on developmental milestones are analysed."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Respect",
+"Responsibility"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to examine terminologies related to child growth and development",
+"levels": {
+"Exceeds Expectation": "Clearly examines terminologies related to child growth and development",
+"Meets Expectation": "Examines terminologies related to child growth and development",
+"Approaches Expectation": "Partially examines terminologies related to child growth and development",
+"Below Expectation": "Requires assistance to examine terminologies related to child growth and development"
+}
+},
+{
+"ability": "Ability to explain the concept of child growth and development",
+"levels": {
+"Exceeds Expectation": "Comprehensively explains the concept of child growth and development",
+"Meets Expectation": "Explains the concept of child growth and development",
+"Approaches Expectation": "Partially explains the concept of child growth and development",
+"Below Expectation": "Only with support, explains the concept of child growth and development"
+}
+},
+{
+"ability": "Ability to analyse the principles of child growth and development",
+"levels": {
+"Exceeds Expectation": "Accurately analyses all principles of child growth and development",
+"Meets Expectation": "Analyses the principles of child growth and development",
+"Approaches Expectation": "Partially analyses the principles of child growth and development",
+"Below Expectation": "Only with guidance, analyses the principles of child growth and development"
+}
+}
+]
+},
+{
+"name": "1.2 Stages of Child Development",
+"specific_learning_outcomes": [
+"Examine changes in children from infancy to adolescence",
+"Illustrate the characteristics of children from infancy to adolescence"
+],
+"suggested_learning_experiences": [
+"Trainees map out physical, cognitive, social, and emotional changes across developmental stages.",
+"Role-play scenarios depicting typical behaviours at different ages.",
+"Observe children in real or video settings and document their developmental traits."
+],
+"core_competencies": [
+"Communication and collaboration",
+"Learning to learn and reflective practice"
+],
+"values": [
+"Love",
+"Respect"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to examine changes in children from infancy to adolescence",
+"levels": {
+"Exceeds Expectation": "Comprehensively examine changes in children from infancy to adolescence",
+"Meets Expectation": "Analyses changes in children from infancy to adolescence",
+"Approaches Expectation": "Partially analyses changes in children from infancy to adolescence",
+"Below Expectation": "Leaves out many details in analyses of changes in children from infancy to adolescence"
+}
+},
+{
+"ability": "Ability to illustrate the characteristics of children from infancy to adolescence",
+"levels": {
+"Exceeds Expectation": "Distinctively illustrates the characteristics of children from infancy to adolescence",
+"Meets Expectation": "Illustrates the characteristics of children from infancy to adolescence",
+"Approaches Expectation": "Illustrates some characteristics of children from infancy to adolescence",
+"Below Expectation": "Illustrates unclear characteristics of children from infancy to adolescence"
+}
+}
+]
+},
+{
+"name": "1.3 Factors Influencing Child Development",
+"specific_learning_outcomes": [
+"Identify factors that influence child growth and development",
+"Assess the impact of heredity and environment on child development"
+],
+"suggested_learning_experiences": [
+"Debate nature vs. nurture influences on development.",
+"Research and present on how malnutrition, disease, parenting styles, and socio-economic status affect development.",
+"Analyse case studies where environmental deprivation has impacted development."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Digital literacy"
+],
+"values": [
+"Respect",
+"Unity"
+],
+"assessment_rubric": []
+},
+{
+"name": "1.4 Individual Differences in Children",
+"specific_learning_outcomes": [
+"Examine individual differences among children",
+"Appreciate the importance of recognizing individual differences in a classroom setting"
+],
+"suggested_learning_experiences": [
+"Trainees complete personality or learning style inventories.",
+"Discuss strategies for accommodating diverse learners in the classroom.",
+"Create profiles of hypothetical learners with varying abilities and interests."
+],
+"core_competencies": [
+"Self-efficacy",
+"Empathy and compassion"
+],
+"values": [
+"Respect",
+"Inclusion"
+],
+"assessment_rubric": []
+},
+{
+"name": "1.5 Personality Development",
+"specific_learning_outcomes": [
+"Examine personality development in relation to child growth and development",
+"Propose personality development challenges experienced by learners"
+],
+"suggested_learning_experiences": [
+"Study major theories of personality (e.g., Freud, Erikson).",
+"Discuss common personality issues in school-aged children (e.g., shyness, aggression, low self-esteem).",
+"Develop intervention plans for addressing personality-related challenges."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Love",
+"Respect"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to examine personality development in relation to child growth and development",
+"levels": {
+"Exceeds Expectation": "Clearly examines personality development in relation to child growth and development",
+"Meets Expectation": "Examines personality development in relation to child growth and development",
+"Approaches Expectation": "Partially examines personality development in relation to child growth and development",
+"Below Expectation": "Examines personality development in relation to child growth and development with details that require clarity"
+}
+},
+{
+"ability": "Ability to propose the personality development challenges experienced by learners",
+"levels": {
+"Exceeds Expectation": "Accurately proposes the personality development challenges experienced by learners",
+"Meets Expectation": "Proposes the personality development challenges experienced by learners",
+"Approaches Expectation": "Proposes few personality development challenges experienced by learners that are inaccurate",
+"Below Expectation": "Many proposed personality development challenges experienced by learners require clarity"
+}
+}
+]
+}
+]
+},
+{
+"strand": "2.0 Theories of Growth and Development",
+"sub_strands": [
+{
+"name": "2.1 Psychoanalytic Theories",
+"specific_learning_outcomes": [
+"Examine psychoanalytic theories of growth and development",
+"Analyse Sigmund Freud’s theory of psychosexual development",
+"Analyse Erik Erikson’s theory of psychosocial development"
+],
+"suggested_learning_experiences": [
+"Compare and contrast Freud’s and Erikson’s stages of development.",
+"Apply theoretical concepts to real-life examples of children’s behaviour.",
+"Critique the relevance of psychoanalytic theories in modern educational contexts."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Respect",
+"Responsibility"
+],
+"assessment_rubric": []
+},
+{
+"name": "2.2 Cognitive Development Theories",
+"specific_learning_outcomes": [
+"Examine cognitive development theories",
+"Analyse Jean Piaget’s theory of cognitive development",
+"Analyse Lev Vygotsky’s theory of sociocultural development"
+],
+"suggested_learning_experiences": [
+"Conduct experiments or demonstrations illustrating Piagetian concepts (e.g., conservation tasks).",
+"Design classroom activities based on Vygotsky’s Zone of Proximal Development (ZPD) and scaffolding.",
+"Compare Piaget’s and Vygotsky’s views on language and thought."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Creativity and imagination"
+],
+"values": [
+"Respect",
+"Unity"
+],
+"assessment_rubric": []
+},
+{
+"name": "2.3 Behavioural Theories",
+"specific_learning_outcomes": [
+"Examine behavioural theories of growth and development",
+"Analyse Ivan Pavlov’s classical conditioning theory",
+"Analyse B.F. Skinner’s operant conditioning theory"
+],
+"suggested_learning_experiences": [
+"Demonstrate classical conditioning using simple stimuli (e.g., bell and light).",
+"Design a token economy system for classroom management based on operant conditioning.",
+"Discuss ethical considerations in applying behavioural modification techniques."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Respect",
+"Responsibility"
+],
+"assessment_rubric": []
+},
+{
+"name": "2.4 Humanistic Theories",
+"specific_learning_outcomes": [
+"Examine humanistic theories of growth and development",
+"Analyse Abraham Maslow’s hierarchy of needs",
+"Analyse Carl Rogers’ person-centred theory"
+],
+"suggested_learning_experiences": [
+"Map Maslow’s hierarchy onto students' needs in school environments.",
+"Role-play counselling sessions using Rogerian principles (empathy, unconditional positive regard).",
+"Discuss how schools can foster self-actualization in learners."
+],
+"core_competencies": [
+"Empathy and compassion",
+"Self-efficacy"
+],
+"values": [
+"Love",
+"Respect"
+],
+"assessment_rubric": []
+}
+]
+},
+{
+"strand": "3.0 Theories of Learning",
+"sub_strands": [
+{
+"name": "3.1 Classical Conditioning",
+"specific_learning_outcomes": [
+"Describe Ivan Pavlov’s experiment on classical conditioning",
+"Demonstrate classical conditioning in a learning environment"
+],
+"suggested_learning_experiences": [
+"Recreate simplified versions of Pavlov’s dog experiment using sound and visual cues.",
+"Identify examples of classical conditioning in everyday school life (e.g., anxiety associated with tests)."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Respect",
+"Responsibility"
+],
+"assessment_rubric": []
+},
+{
+"name": "3.2 Operant Conditioning",
+"specific_learning_outcomes": [
+"Describe B.F. Skinner’s concept of operant conditioning",
+"Demonstrate operant conditioning theory in a learning environment"
+],
+"suggested_learning_experiences": [
+"Design reinforcement schedules (fixed ratio, variable interval) for classroom use.",
+"Implement positive/negative reinforcement and punishment in simulated teaching scenarios."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Responsibility",
+"Fairness"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to demonstrate operant conditioning theory in a learning environment",
+"levels": {
+"Exceeds Expectation": "Comprehensively demonstrates operant conditioning theory in a learning environment",
+"Meets Expectation": "Demonstrates operant conditioning theory in a learning environment",
+"Approaches Expectation": "Leaves out some details when applying operant conditioning theory",
+"Below Expectation": "Leaves out many details when applying operant conditioning theory"
+}
+}
+]
+},
+{
+"name": "3.3 Social Learning Theory",
+"specific_learning_outcomes": [
+"Explain Albert Bandura’s social learning theory",
+"Demonstrate observational learning in a classroom setting"
+],
+"suggested_learning_experiences": [
+"Show videos of Bandura’s Bobo doll experiment.",
+"Conduct role modelling exercises where trainees model desired behaviours for peers.",
+"Discuss the role of media and peer influence on children’s learning."
+],
+"core_competencies": [
+"Communication and collaboration"
+],
+"values": [
+"Respect",
+"Responsibility"
+],
+"assessment_rubric": []
+},
+{
+"name": "3.4 Cognitive Learning Theories",
+"specific_learning_outcomes": [
+"Examine cognitive learning theories",
+"Analyse information processing theory",
+"Apply cognitive strategies to enhance learning"
+],
+"suggested_learning_experiences": [
+"Model the human memory system (sensory, short-term, long-term).",
+"Teach mnemonic devices and other memory aids to peers.",
+"Design lessons incorporating chunking, rehearsal, and elaboration techniques."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Learning to learn and reflective practice"
+],
+"values": [
+"Respect",
+"Unity"
+],
+"assessment_rubric": []
+},
+{
+"name": "3.5 Constructivist Theories",
+"specific_learning_outcomes": [
+"Examine constructivist theories of learning",
+"Analyse Jean Piaget’s and Lev Vygotsky’s contributions to constructivism",
+"Apply constructivist approaches in lesson delivery"
+],
+"suggested_learning_experiences": [
+"Design inquiry-based or project-based learning activities.",
+"Facilitate peer teaching sessions using discovery learning methods.",
+"Reflect on personal experiences of constructing knowledge."
+],
+"core_competencies": [
+"Creativity and imagination",
+"Communication and collaboration"
+],
+"values": [
+"Respect",
+"Love"
+],
+"assessment_rubric": []
+}
+]
+},
+{
+"strand": "4.0 Guidance and Counselling",
+"sub_strands": [
+{
+"name": "4.1 Concept of Guidance and Counselling",
+"specific_learning_outcomes": [
+"Describe the concept of guidance and counselling",
+"Differentiate between guidance and counselling",
+"Explain the importance of guidance and counselling for the learner"
+],
+"suggested_learning_experiences": [
+"Define key terms and compare definitions across sources.",
+"Invite a professional counsellor to give a guest talk.",
+"Discuss scenarios requiring guidance versus formal counselling."
+],
+"core_competencies": [
+"Communication and collaboration",
+"Empathy and compassion"
+],
+"values": [
+"Love",
+"Respect"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to describe the importance of guidance and counselling for the learner",
+"levels": {
+"Exceeds Expectation": "Clearly describes the importance of guidance and counselling for the learner",
+"Meets Expectation": "Describes the importance of guidance and counselling for the learner",
+"Approaches Expectation": "Partially describes the importance of guidance and counselling for the learner",
+"Below Expectation": "Vaguely describes the importance of guidance and counselling for the learner"
+}
+}
+]
+},
+{
+"name": "4.2 Types of Guidance and Counselling Services",
+"specific_learning_outcomes": [
+"Identify types of guidance and counselling services in schools",
+"Explain academic, career, personal-social, and moral counselling"
+],
+"suggested_learning_experiences": [
+"Map out the structure of a school counselling program.",
+"Role-play different types of counselling sessions (academic advising, conflict resolution).",
+"Research national policies on school-based counselling services."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Respect",
+"Responsibility"
+],
+"assessment_rubric": []
+},
+{
+"name": "4.3 Counselling Skills and Techniques",
+"specific_learning_outcomes": [
+"Demonstrate basic counselling skills: active listening, empathy, rapport building",
+"Apply appropriate counselling techniques in simulated situations"
+],
+"suggested_learning_experiences": [
+"Practice active listening through paired exercises.",
+"Use reflection, paraphrasing, and summarizing in mock counselling sessions.",
+"Receive feedback on non-verbal communication (eye contact, posture)."
+],
+"core_competencies": [
+"Communication and collaboration",
+"Empathy and compassion"
+],
+"values": [
+"Love",
+"Respect"
+],
+"assessment_rubric": []
+},
+{
+"name": "4.4 Referral Systems",
+"specific_learning_outcomes": [
+"Explain the need for referral systems in guidance and counselling",
+"Identify agencies and professionals to whom learners may be referred"
+],
+"suggested_learning_experiences": [
+"Create a directory of local mental health and social service providers.",
+"Discuss ethical boundaries and when to refer a student to external professionals.",
+"Analyse case studies requiring multi-agency collaboration."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Responsibility",
+"Unity"
+],
+"assessment_rubric": []
+},
+{
+"name": "4.5 Record Keeping in Guidance and Counselling",
+"specific_learning_outcomes": [
+"Explain the importance of record keeping in guidance and counselling",
+"Maintain confidential records of counselling sessions"
+],
+"suggested_learning_experiences": [
+"Review sample anonymized counselling logs.",
+"Draft a confidentiality policy for a school counselling office.",
+"Discuss legal and ethical implications of record keeping."
+],
+"core_competencies": [
+"Digital literacy",
+"Ethical reasoning"
+],
+"values": [
+"Confidentiality",
+"Integrity"
+],
+"assessment_rubric": []
+}
+]
+},
+{
+"strand": "5.0 Learner Motivation",
+"sub_strands": [
+{
+"name": "5.1 Concept of Motivation",
+"specific_learning_outcomes": [
+"Define motivation",
+"Explain intrinsic and extrinsic motivation",
+"Analyse factors that influence learner motivation"
+],
+"suggested_learning_experiences": [
+"Trainees reflect on what motivates them personally as learners.",
+"Classify classroom rewards as intrinsic or extrinsic.",
+"Discuss how autonomy, competence, and relatedness (Self-Determination Theory) drive motivation."
+],
+"core_competencies": [
+"Self-efficacy",
+"Critical thinking and problem solving"
+],
+"values": [
+"Self-worth",
+"Responsibility"
+],
+"assessment_rubric": []
+},
+{
+"name": "5.2 Theories of Motivation",
+"specific_learning_outcomes": [
+"Examine various theories of motivation",
+"Analyse Maslow’s hierarchy of needs in relation to learner motivation",
+"Apply expectancy-value theory and goal-setting theory in educational contexts"
+],
+"suggested_learning_experiences": [
+"Map students’ unmet needs to potential motivational barriers.",
+"Set SMART goals for academic achievement and track progress.",
+"Design classroom environments that satisfy basic psychological needs."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Planning and organization"
+],
+"values": [
+"Perseverance",
+"Ambition"
+],
+"assessment_rubric": []
+},
+{
+"name": "5.3 Strategies for Enhancing Motivation",
+"specific_learning_outcomes": [
+"Suggest strategies for enhancing learner motivation",
+"Apply motivational strategies in lesson delivery"
+],
+"suggested_learning_experiences": [
+"Brainstorm ways to make lessons more engaging and relevant.",
+"Incorporate choice, novelty, and real-world connections into lesson plans.",
+"Use praise, feedback, and recognition effectively during microteaching."
+],
+"core_competencies": [
+"Creativity and imagination",
+"Communication and collaboration"
+],
+"values": [
+"Encouragement",
+"Support"
+],
+"assessment_rubric": []
+}
+]
+},
+{
+"strand": "6.0 Special Educational Needs",
+"sub_strands": [
+{
+"name": "6.1 Concept of Inclusive Education",
+"specific_learning_outcomes": [
+"Define inclusive education",
+"Explain the philosophy and rationale for inclusive education",
+"Appreciate the rights of learners with special educational needs"
+],
+"suggested_learning_experiences": [
+"Watch documentaries on inclusive classrooms.",
+"Discuss the UN Convention on the Rights of Persons with Disabilities.",
+"Visit inclusive schools or speak with teachers working in inclusive settings."
+],
+"core_competencies": [
+"Empathy and compassion",
+"Social responsibility"
+],
+"values": [
+"Inclusion",
+"Equity"
+],
+"assessment_rubric": []
+},
+{
+"name": "6.2 Categories of Learners with Special Educational Needs",
+"specific_learning_outcomes": [
+"Identify categories of learners with special educational needs: sensory impairments, physical disabilities, learning disabilities, giftedness, emotional and behavioural disorders",
+"Describe characteristics of each category"
+],
+"suggested_learning_experiences": [
+"Research and present on specific conditions (e.g., dyslexia, autism, ADHD, visual impairment).",
+"Simulate learning challenges (e.g., wearing earplugs to experience hearing loss).",
+"Interview individuals living with disabilities."
+],
+"core_competencies": [
+"Digital literacy",
+"Critical thinking and problem solving"
+],
+"values": [
+"Respect",
+"Compassion"
+],
+"assessment_rubric": []
+},
+{
+"name": "6.3 Identification and Assessment of Learners with Special Needs",
+"specific_learning_outcomes": [
+"Explain procedures for identifying and assessing learners with special educational needs",
+"Use screening tools and observation checklists"
+],
+"suggested_learning_experiences": [
+"Practice using developmental screening tools.",
+"Observe children and note signs of possible learning difficulties.",
+"Learn about multidisciplinary assessment teams and processes."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Assessment literacy"
+],
+"values": [
+"Fairness",
+"Objectivity"
+],
+"assessment_rubric": []
+},
+{
+"name": "6.4 Individualized Education Programme (IEP)",
+"specific_learning_outcomes": [
+"Explain the purpose of an Individualized Education Programme (IEP)",
+"Develop an IEP for a learner with special needs",
+"Monitor and evaluate the implementation of an IEP"
+],
+"suggested_learning_experiences": [
+"Review sample IEPs.",
+"Draft an IEP for a hypothetical student based on assessment data.",
+"Role-play IEP meetings with parents and specialists."
+],
+"core_competencies": [
+"Planning and organization",
+"Collaboration"
+],
+"values": [
+"Accountability",
+"Commitment"
+],
+"assessment_rubric": []
+},
+{
+"name": "6.5 Differentiated Instruction",
+"specific_learning_outcomes": [
+"Explain the concept of differentiated instruction",
+"Apply differentiated instruction strategies in lesson planning and delivery"
+],
+"suggested_learning_experiences": [
+"Modify lesson plans to accommodate different learning styles and readiness levels.",
+"Use tiered assignments, flexible grouping, and learning stations.",
+"Deliver a micro lesson demonstrating differentiation in content, process, or product."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Creativity and imagination"
+],
+"values": [
+"Flexibility",
+"Adaptability"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to apply differentiated method of lesson delivery in a class",
+"levels": {
+"Exceeds Expectation": "Comprehensively applies differentiated method of lesson delivery in a class",
+"Meets Expectation": "Applies differentiated method of lesson delivery in a class",
+"Approaches Expectation": "To a certain extent, applies differentiated method of lesson delivery in a class",
+"Below Expectation": "Only with guidance, applies differentiated method of lesson delivery in a class"
+}
+}
+]
+}
+]
+},
+{
+"strand": "7.0 Adolescent Development",
+"sub_strands": [
+{
+"name": "7.1 Physical and Cognitive Changes in Adolescence",
+"specific_learning_outcomes": [
+"Describe physical changes during adolescence",
+"Explain cognitive development in adolescence according to Piaget and Vygotsky"
+],
+"suggested_learning_experiences": [
+"Chart puberty-related changes in boys and girls.",
+"Discuss abstract thinking, metacognition, and decision-making in teens.",
+"Analyse risk-taking behaviours from a neurological perspective."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Respect",
+"Responsibility"
+],
+"assessment_rubric": []
+},
+{
+"name": "7.2 Social and Emotional Development",
+"specific_learning_outcomes": [
+"Analyse social and emotional development during adolescence",
+"Discuss identity formation, peer relationships, and emotional regulation"
+],
+"suggested_learning_experiences": [
+"Explore Erikson’s stage of Identity vs. Role Confusion.",
+"Discuss the impact of social media on teen self-esteem.",
+"Role-play conflict resolution between friends or family members."
+],
+"core_competencies": [
+"Empathy and compassion",
+"Communication and collaboration"
+],
+"values": [
+"Self-awareness",
+"Respect"
+],
+"assessment_rubric": []
+},
+{
+"name": "7.3 Challenges Facing Adolescents",
+"specific_learning_outcomes": [
+"Identify common challenges facing adolescents: substance abuse, teenage pregnancy, bullying, depression",
+"Suggest intervention strategies for supporting adolescents"
+],
+"suggested_learning_experiences": [
+"Conduct surveys or focus groups on adolescent issues.",
+"Develop anti-bullying campaigns or peer mentoring programs.",
+"Invite health educators to discuss sexual and mental health."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Social responsibility"
+],
+"values": [
+"Care",
+"Protection"
+],
+"assessment_rubric": []
+}
+]
+},
+{
+"strand": "8.0 Play and Learning",
+"sub_strands": [
+{
+"name": "8.1 Importance of Play",
+"specific_learning_outcomes": [
+"Explain the importance of play in child development",
+"Analyse how play contributes to cognitive, social, emotional, and physical development"
+],
+"suggested_learning_experiences": [
+"Observe children at play and document developmental benefits.",
+"Compare structured vs. unstructured play.",
+"Design play-based learning activities for early years."
+],
+"core_competencies": [
+"Creativity and imagination",
+"Observation and analysis"
+],
+"values": [
+"Joy",
+"Freedom"
+],
+"assessment_rubric": []
+},
+{
+"name": "8.2 Types of Play",
+"specific_learning_outcomes": [
+"Identify types of play: solitary, parallel, associative, cooperative, pretend/dramatic play",
+"Demonstrate facilitation of different types of play in early childhood settings"
+],
+"suggested_learning_experiences": [
+"Classify observed play behaviours into categories.",
+"Set up play corners (e.g., home corner, block area) and facilitate play.",
+"Discuss teacher roles in supporting but not dominating play."
+],
+"core_competencies": [
+"Communication and collaboration",
+"Facilitation"
+],
+"values": [
+"Imagination",
+"Cooperation"
+],
+"assessment_rubric": []
+},
+{
+"name": "8.3 Play Materials and Environment",
+"specific_learning_outcomes": [
+"Select appropriate play materials and equipment",
+"Create a safe and stimulating play environment"
+],
+"suggested_learning_experiences": [
+"Audit a classroom or playground for safety and developmental appropriateness.",
+"Design a play space layout using recycled or low-cost materials.",
+"Evaluate commercial toys for educational value."
+],
+"core_competencies": [
+"Creativity and imagination",
+"Environmental stewardship"
+],
+"values": [
+"Safety",
+"Resourcefulness"
+],
+"assessment_rubric": []
+}
+]
+}
+],
+"course_structure": {
+"total_hours": 3000,
+"content_and_pedagogy_hours": 1680,
+"practicum_hours": 600,
+"microteaching_hours": 414,
+"subjects": [
+{
+"name": "Child Development and Psychology",
+"total_hours": 60,
+"terms": [10, 10, 10, 10, 10, 10]
+},
+{
+"name": "Curriculum Studies",
+"total_hours": 90,
+"terms": [30, 20, 20, 20, 0, 0]
+},
+{
+"name": "Educational Resources",
+"total_hours": 30,
+"terms": [10, 10, 10, 0, 0, 0]
+},
+{
+"name": "ICT Integration in Education",
+"total_hours": 30,
+"terms": [10, 10, 10, 0, 0, 0]
+},
+{
+"name": "Educational Assessment",
+"total_hours": 30,
+"terms": [10, 10, 10, 0, 0, 0]
+},
+{
+"name": "Research Skills",
+"total_hours": 24,
+"terms": [10, 10, 4, 0, 0, 0]
+},
+{
+"name": "Inclusive Education",
+"total_hours": 30,
+"terms": [10, 10, 10, 0, 0, 0]
+},
+{
+"name": "Educational Leadership and Management",
+"total_hours": 30,
+"terms": [0, 0, 0, 10, 10, 10]
+},
+{
+"name": "Sociological and Philosophical Foundations of Education",
+"total_hours": 30,
+"terms": [0, 0, 0, 10, 10, 10]
+},
+{
+"name": "Historical and Comparative Foundations of Education",
+"total_hours": 30,
+"terms": [0, 0, 0, 10, 10, 10]
+},
+{
+"name": "Micro Teaching",
+"total_hours": 30,
+"terms": [30, 0, 0, 0, 0, 0]
+}
+],
+"term_totals": [120, 80, 80, 60, 40, 40],
+"practicum_distribution": [300, 300, 300]
+},
+"national_goals_of_education": [
+"Foster national unity, patriotism, and promote national cohesion.",
+"Increase the level of knowledge of all people to enhance national capacity and strengthen the economy.",
+"Affirm and promote the culture of all Kenyan people.",
+"Provide education and training that enables learners to become self-reliant and contribute to national development.",
+"Promote holistic well-being—physical, emotional, spiritual—for self-reliance.",
+"Enable learners to recognize values, ethics, and morals from religious and cultural perspectives and integrate them with their environment.",
+"Enable learners to use language efficiently as a communication, thinking, and learning tool.",
+"Develop learners’ ability to seek, use, and disseminate information using communication technology.",
+"Develop learners’ ability to solve problems using knowledge, skills, and attitudes.",
+"Enable learners to recognize their potential and harness it for the benefit of family and society."
+],
+"essence_statement": "Education is a critical instrument for economic growth, national unity, and cultural affirmation. It aims to produce citizens capable of contributing to national development through knowledge, skills, and attitudes, while instilling values, ethics, and morals derived from religious and cultural heritage."
 }
