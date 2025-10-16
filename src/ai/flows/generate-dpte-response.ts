@@ -10,7 +10,6 @@
 
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
-import { StreamableValue } from 'ai/rsc';
 
 const GenerateDPTEResponseInputSchema = z.object({
   query: z.string().describe('The question from the DPTE teacher trainee.'),
