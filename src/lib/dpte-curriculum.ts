@@ -3,6 +3,8 @@
 // like Firestore with a vector search extension, Pinecone, or similar.
 import microteachingGuide from './dpte-curriculum-guide.json';
 import childDevelopmentGuide from './dpte-child-development-guide.json';
+import homeScienceGuide from './dpte-home-science-guide.json';
+import learningTechniquesGuide from './learning-techniques-guide.json';
 
 // Function to recursively extract text from a JSON object
 function extractText(obj: any): string[] {
@@ -34,9 +36,11 @@ function extractText(obj: any): string[] {
 // Convert the JSON guides into flat arrays of strings
 const microteachingKnowledgeBase: string[] = extractText(microteachingGuide);
 const childDevelopmentKnowledgeBase: string[] = extractText(childDevelopmentGuide);
+const homeScienceKnowledgeBase: string[] = extractText(homeScienceGuide);
+const learningTechniquesKnowledgeBase: string[] = extractText(learningTechniquesGuide);
 
 // Combine knowledge bases
-export const dpteKnowledgeBase: string[] = [...new Set([...microteachingKnowledgeBase, ...childDevelopmentKnowledgeBase])];
+export const dpteKnowledgeBase: string[] = [...new Set([...microteachingKnowledgeBase, ...childDevelopmentKnowledgeBase, ...homeScienceKnowledgeBase, ...learningTechniquesKnowledgeBase])];
 
 
 /**
