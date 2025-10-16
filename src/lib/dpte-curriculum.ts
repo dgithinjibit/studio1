@@ -1,9 +1,10 @@
 // This file simulates a vector database retrieval for the RAG model.
 // In a real-world application, this would be replaced by a call to a vector store
 // like Firestore with a vector search extension, Pinecone, or similar.
-import guide from './dpte-curriculum-guide.json';
+import microteachingGuide from './dpte-curriculum-guide.json';
+import childDevelopmentGuide from './dpte-child-development-guide.json';
 
-// Function to recursively extract text from the JSON object
+// Function to recursively extract text from a JSON object
 function extractText(obj: any): string[] {
   let texts: string[] = [];
   if (obj === null || typeof obj !== 'object') {
@@ -15,7 +16,7 @@ function extractText(obj: any): string[] {
       const value = obj[key];
       if (typeof value === 'string') {
         // Create meaningful sentences from key-value pairs
-        if (key !== 'document_title' && key !== 'name' && key !== 'strand') {
+        if (key !== 'document_title' && key !== 'name' && key !== 'strand' && !key.includes('_id') && !key.includes('reference')) {
            texts.push(`${key.replace(/_/g, ' ')}: ${value}`);
         } else {
             texts.push(value);
@@ -30,8 +31,12 @@ function extractText(obj: any): string[] {
   return texts;
 }
 
-// Convert the JSON guide into a flat array of strings
-export const dpteKnowledgeBase: string[] = extractText(guide);
+// Convert the JSON guides into flat arrays of strings
+const microteachingKnowledgeBase: string[] = extractText(microteachingGuide);
+const childDevelopmentKnowledgeBase: string[] = extractText(childDevelopmentGuide);
+
+// Combine knowledge bases
+export const dpteKnowledgeBase: string[] = [...new Set([...microteachingKnowledgeBase, ...childDevelopmentKnowledgeBase])];
 
 
 /**
@@ -41,12 +46,12 @@ export const dpteKnowledgeBase: string[] = extractText(guide);
  * @param k The number of top chunks to return.
  * @returns A single string containing the concatenated relevant context.
  */
-export function retrieveContext(query: string, k: number = 5): string {
+export function retrieveContext(query: string, k: number = 10): string {
   const queryWords = new Set(query.toLowerCase().split(/\s+/).filter(word => word.length > 3));
 
   if (queryWords.size === 0) {
     // If query is empty or has no meaningful words, return a summary or top-level info.
-    const summary = `The document is the "Diploma in Teacher Education (DTE) - Microteaching Guide". It covers Strands like "The Practice of Microteaching", "Curriculum Design Interpretation", and "Professional Documents".`;
+    const summary = `The available documents are the "Diploma in Teacher Education (DTE) - Microteaching Guide" and the "Child Development and Psychology Curriculum Design". They cover Strands like "The Practice of Microteaching", "Curriculum Design Interpretation", "Theories of Learning", and "Guidance and Counselling".`;
     return summary;
   }
 
@@ -54,11 +59,11 @@ export function retrieveContext(query: string, k: number = 5): string {
     const chunkWords = new Set(chunk.toLowerCase().split(/\s+/));
     let score = 0;
     for (const word of queryWords) {
-      if (chunkWords.has(word)) {
+      if (chunk.toLowerCase().includes(word)) { // Use 'includes' for partial matches
         score++;
       }
     }
-    // Boost score for chunks that are more 'complete' sentences.
+    // Boost score for chunks that are more 'complete' sentences or definitions.
     if(chunk.includes(':')) score += 0.5;
 
     return { chunk, score };
@@ -71,7 +76,7 @@ export function retrieveContext(query: string, k: number = 5): string {
   
   // If no relevant chunks are found, provide a generic message.
   if(relevantChunks.length === 0){
-      return "The provided curriculum guide does not seem to contain specific information on that topic. Please try rephrasing your question or ask about microteaching, curriculum design, or professional documents."
+      return "The provided curriculum guides do not seem to contain specific information on that topic. Please try rephrasing your question or ask about microteaching, child development, curriculum design, or professional documents."
   }
 
   const topChunks = relevantChunks.slice(0, k).map(item => item.chunk);
