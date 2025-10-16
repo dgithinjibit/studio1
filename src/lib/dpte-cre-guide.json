@@ -1,0 +1,730 @@
+{
+"document_title": "Diploma in Teacher Education - Christian Religious Education (CRE) Curriculum",
+"modules": [
+{
+"strand": "1.0 Introduction to Christianity",
+"sub_strands": [
+{
+"name": "1.1 Meaning of Christianity",
+"specific_learning_outcomes": [
+"Explain the meaning of Christianity",
+"Identify key beliefs and practices of Christianity",
+"Appreciate the role of Christianity in personal and societal development"
+],
+"suggested_learning_experiences": [
+"Discussion on the definition and origin of Christianity.",
+"Compare core doctrines across major Christian denominations (Catholic, Protestant, Orthodox).",
+"Reflective writing on how Christian values influence moral decision-making."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Communication and collaboration"
+],
+"values": [
+"Respect",
+"Integrity"
+],
+"assessment_rubric": []
+},
+{
+"name": "1.2 The Bible as a Sacred Text",
+"specific_learning_outcomes": [
+"Describe the structure and composition of the Bible",
+"Explain the importance of the Bible in Christian life",
+"Demonstrate skills in locating passages and using reference tools"
+],
+"suggested_learning_experiences": [
+"Map out the books of the Old and New Testaments.",
+"Practice using concordances, commentaries, and digital Bibles.",
+"Discuss the inspiration, authority, and relevance of Scripture."
+],
+"core_competencies": [
+"Digital literacy",
+"Learning to learn and reflective practice"
+],
+"values": [
+"Respect",
+"Responsibility"
+],
+"assessment_rubric": []
+},
+{
+"name": "1.3 God the Creator",
+"specific_learning_outcomes": [
+"Explain the concept of God as Creator according to Genesis 1 and 2",
+"Compare the two creation accounts",
+"Appreciate the environment as God’s creation"
+],
+"suggested_learning_experiences": [
+"Read and compare Genesis 1 and 2, identifying similarities and differences.",
+"Debate the relationship between science and biblical creation narratives.",
+"Plan a lesson on stewardship of creation for primary learners."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Environmental stewardship",
+"Respect"
+],
+"assessment_rubric": []
+}
+]
+},
+{
+"strand": "2.0 The Life and Ministry of Jesus Christ",
+"sub_strands": [
+{
+"name": "2.1 Birth and Early Life of Jesus",
+"specific_learning_outcomes": [
+"Narrate the events surrounding the birth of Jesus",
+"Analyse the significance of Jesus’ early life",
+"Demonstrate how to teach the nativity story to children"
+],
+"suggested_learning_experiences": [
+"Read Luke 1–2 and Matthew 1–2; identify key figures (Mary, Joseph, angels, shepherds, Magi).",
+"Create dramatizations or storytelling scripts for young learners.",
+"Design Christmas-themed lessons integrating art and music."
+],
+"core_competencies": [
+"Creativity and imagination",
+"Communication and collaboration"
+],
+"values": [
+"Love",
+"Hope"
+],
+"assessment_rubric": []
+},
+{
+"name": "2.2 Teachings of Jesus",
+"specific_learning_outcomes": [
+"Summarize the main teachings of Jesus (e.g., Sermon on the Mount, parables)",
+"Interpret selected parables and miracles",
+"Apply Jesus' teachings to contemporary moral issues"
+],
+"suggested_learning_experiences": [
+"Study parables such as the Good Samaritan, Prodigal Son, and Mustard Seed.",
+"Role-play applications of Jesus’ teachings in modern school and family contexts.",
+"Facilitate group discussions on forgiveness, love of enemies, and humility."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Empathy and compassion"
+],
+"values": [
+"Love",
+"Forgiveness",
+"Humility"
+],
+"assessment_rubric": []
+},
+{
+"name": "2.3 Miracles of Jesus",
+"specific_learning_outcomes": [
+"Narrate selected miracles performed by Jesus",
+"Explain the purpose and significance of the miracles",
+"Develop strategies for teaching miracle stories to learners"
+],
+"suggested_learning_experiences": [
+"List and categorize miracles (healings, nature, exorcisms, resurrections).",
+"Analyse the theological meaning behind specific miracles (e.g., calming the storm, feeding the 5000).",
+"Design illustrated story cards or digital presentations for classroom use."
+],
+"core_competencies": [
+"Creativity and imagination",
+"Communication and collaboration"
+],
+"values": [
+"Faith",
+"Trust in God"
+],
+"assessment_rubric": []
+},
+{
+"name": "2.4 Suffering, Death, and Resurrection of Jesus",
+"specific_learning_outcomes": [
+"Describe the events of Jesus’ passion, death, and resurrection",
+"Explain the meaning of salvation through Christ’s sacrifice",
+"Appreciate the suffering of Jesus and respond to the call of salvation"
+],
+"suggested_learning_experiences": [
+"Read the passion narrative from one Gospel account.",
+"Create a Holy Week calendar with daily reflections.",
+"Lead a simulated Lenten devotion or Easter service."
+],
+"core_competencies": [
+"Self-efficacy",
+"Spiritual awareness"
+],
+"values": [
+"Sacrifice",
+"Redemption",
+"Hope"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to describe the passion, death and resurrection of Jesus Christ",
+"levels": {
+"Exceeds Expectation": "Describes in detail the passion, death and resurrection of Jesus Christ",
+"Meets Expectation": "Describes the passion, death and resurrection of Jesus Christ",
+"Approaches Expectation": "Describes the passion, death and resurrection of Jesus Christ but omits minor details",
+"Below Expectation": "Describes the passion, death and resurrection of Jesus Christ but omits major details"
+}
+},
+{
+"ability": "Ability to appreciate the suffering of Jesus on the cross by responding to the call of salvation",
+"levels": {
+"Exceeds Expectation": "Deeply appreciates the suffering of Jesus on the cross and actively responds to the call of salvation",
+"Meets Expectation": "Appreciates the suffering of Jesus on the cross and responds to the call of salvation",
+"Approaches Expectation": "Partially appreciates the suffering of Jesus on the cross and shows limited response to the call of salvation",
+"Below Expectation": "Shows minimal appreciation of the suffering of Jesus on the cross and does not demonstrate a response to the call of salvation"
+}
+}
+]
+}
+]
+},
+{
+"strand": "3.0 The Holy Spirit",
+"sub_strands": [
+{
+"name": "3.1 Coming of the Holy Spirit",
+"specific_learning_outcomes": [
+"Describe the coming of the Holy Spirit on the day of Pentecost",
+"Elaborate the events that took place on the day of Pentecost",
+"Analyse the role of the Holy Spirit in the life of a believer"
+],
+"suggested_learning_experiences": [
+"Read Acts 2:1–47 and outline the sequence of events.",
+"Discuss the symbolism of wind, fire, and speaking in tongues.",
+"Invite a church leader to speak about the work of the Holy Spirit today."
+],
+"core_competencies": [
+"Communication and collaboration",
+"Spiritual awareness"
+],
+"values": [
+"Unity",
+"Worship"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to describe the coming of the Holy Spirit",
+"levels": {
+"Exceeds Expectation": "Describes the coming of the Holy Spirit in details",
+"Meets Expectation": "Describes the coming of the Holy Spirit",
+"Approaches Expectation": "Describes the coming of the Holy Spirit but omits minor details",
+"Below Expectation": "Describes the coming of the Holy Spirit but omits major details"
+}
+},
+{
+"ability": "Ability to elaborate the events on the day of Pentecost",
+"levels": {
+"Exceeds Expectation": "Elaborates the events that took place on the day of Pentecost sequentially",
+"Meets Expectation": "Elaborates the events that took place on the day of Pentecost",
+"Approaches Expectation": "Elaborates the events that took place on the day of Pentecost with some omissions",
+"Below Expectation": "Elaborates the events that took place on the day of Pentecost with major omissions"
+}
+}
+]
+},
+{
+"name": "3.2 Gifts and Fruits of the Holy Spirit",
+"specific_learning_outcomes": [
+"Identify the gifts and fruits of the Holy Spirit",
+"Explain the importance of spiritual gifts in the Church",
+"Demonstrate how to nurture the fruits of the Spirit in daily life"
+],
+"suggested_learning_experiences": [
+"Study Romans 12, 1 Corinthians 12, and Galatians 5:22–23.",
+"Match spiritual gifts to practical ministry roles.",
+"Create posters or digital infographics on the fruits of the Spirit."
+],
+"core_competencies": [
+"Self-efficacy",
+"Creativity and imagination"
+],
+"values": [
+"Love",
+"Peace",
+"Kindness",
+"Self-control"
+],
+"assessment_rubric": []
+}
+]
+},
+{
+"strand": "4.0 Christian Ethics and Moral Living",
+"sub_strands": [
+{
+"name": "4.1 Christian Values",
+"specific_learning_outcomes": [
+"Identify Christian moral values (love, honesty, humility, respect, responsibility)",
+"Explain the importance of living by Christian values",
+"Model Christian values in personal and professional conduct"
+],
+"suggested_learning_experiences": [
+"Define each value and give real-life examples.",
+"Analyse case studies involving ethical dilemmas in schools.",
+"Develop a personal code of conduct based on Christian ethics."
+],
+"core_competencies": [
+"Ethical reasoning",
+"Self-awareness"
+],
+"values": [
+"Integrity",
+"Responsibility",
+"Respect",
+"Love"
+],
+"assessment_rubric": []
+},
+{
+"name": "4.2 Sin and Repentance",
+"specific_learning_outcomes": [
+"Define sin and its consequences",
+"Explain the process of repentance and forgiveness",
+"Encourage a spirit of reconciliation among learners"
+],
+"suggested_learning_experiences": [
+"Study biblical examples of sin and restoration (e.g., Adam and Eve, David, Peter).",
+"Write personal reflections on experiences of wrongdoing and forgiveness.",
+"Role-play scenarios where students apologize and make amends."
+],
+"core_competencies": [
+"Empathy and compassion",
+"Emotional intelligence"
+],
+"values": [
+"Repentance",
+"Forgiveness",
+"Honesty"
+],
+"assessment_rubric": []
+},
+{
+"name": "4.3 Christian Stewardship",
+"specific_learning_outcomes": [
+"Explain the concept of stewardship (time, talent, treasure)",
+"Promote responsible use of resources in school and community",
+"Organize a project demonstrating Christian stewardship"
+],
+"suggested_learning_experiences": [
+"Calculate personal time usage and set improvement goals.",
+"Plan a fundraising or environmental conservation activity.",
+"Discuss tithing and offerings in both church and societal contexts."
+],
+"core_competencies": [
+"Planning and organization",
+"Social responsibility"
+],
+"values": [
+"Responsibility",
+"Generosity",
+"Accountability"
+],
+"assessment_rubric": []
+}
+]
+},
+{
+"strand": "5.0 Prayer and Worship",
+"sub_strands": [
+{
+"name": "5.1 Meaning and Importance of Prayer",
+"specific_learning_outcomes": [
+"Define prayer and its purposes",
+"Demonstrate different forms of prayer (adoration, confession, thanksgiving, supplication)",
+"Encourage regular prayer habits among learners"
+],
+"suggested_learning_experiences": [
+"Teach the ACTS model of prayer.",
+"Maintain a personal prayer journal for one week.",
+"Lead short class devotions incorporating structured prayer."
+],
+"core_competencies": [
+"Spiritual awareness",
+"Self-regulation"
+],
+"values": [
+"Devotion",
+"Humility",
+"Dependence on God"
+],
+"assessment_rubric": []
+},
+{
+"name": "5.2 Forms of Worship",
+"specific_learning_outcomes": [
+"Identify various forms of Christian worship (liturgical, charismatic, informal)",
+"Compare worship practices across denominations",
+"Plan and lead a simple worship service"
+],
+"suggested_learning_experiences": [
+"Attend different church services and report on their styles.",
+"Create orders of service for Sunday school or assembly.",
+"Incorporate music, scripture reading, prayer, and sermon in a mock service."
+],
+"core_competencies": [
+"Communication and collaboration",
+"Leadership"
+],
+"values": [
+"Reverence",
+"Unity",
+"Praise"
+],
+"assessment_rubric": []
+},
+{
+"name": "5.3 Sacraments",
+"specific_learning_outcomes": [
+"Explain the meaning and significance of baptism and the Lord's Supper",
+"Compare sacramental views across Christian traditions",
+"Prepare a lesson on sacraments for primary learners"
+],
+"suggested_learning_experiences": [
+"Study Matthew 28:19 and 1 Corinthians 11:23–26.",
+"Watch videos of baptism and communion services.",
+"Design child-friendly explanations and activities about the sacraments."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Communication and collaboration"
+],
+"values": [
+"Obedience",
+"Remembrance",
+"Covenant"
+],
+"assessment_rubric": []
+}
+]
+},
+{
+"strand": "6.0 The Church and Christian Community",
+"sub_strands": [
+{
+"name": "6.1 The Nature and Mission of the Church",
+"specific_learning_outcomes": [
+"Define the Church as the body of Christ",
+"Explain the mission of the Church (worship, fellowship, discipleship, evangelism, service)",
+"Appreciate the unity of the universal Church"
+],
+"suggested_learning_experiences": [
+"Study 1 Corinthians 12 and Ephesians 4 on the body of Christ.",
+"Map local churches and parachurch organizations in the community.",
+"Discuss ecumenism and interdenominational cooperation."
+],
+"core_competencies": [
+"Communication and collaboration",
+"Social responsibility"
+],
+"values": [
+"Unity",
+"Fellowship",
+"Service"
+],
+"assessment_rubric": []
+},
+{
+"name": "6.2 Leadership in the Church",
+"specific_learning_outcomes": [
+"Identify roles and responsibilities of church leaders (pastors, elders, deacons)",
+"Analyse biblical qualifications for leadership",
+"Demonstrate servant leadership in school and community"
+],
+"suggested_learning_experiences": [
+"Study pastoral epistles (1 & 2 Timothy, Titus).",
+"Interview a church leader about their calling and duties.",
+"Practice leading small groups with humility and care."
+],
+"core_competencies": [
+"Leadership",
+"Ethical reasoning"
+],
+"values": [
+"Servanthood",
+"Integrity",
+"Accountability"
+],
+"assessment_rubric": []
+},
+{
+"name": "6.3 Christian Family Life",
+"specific_learning_outcomes": [
+"Explain the Christian understanding of marriage and family",
+"Discuss roles and responsibilities of family members",
+"Model a lesson on how to address challenges facing families today"
+],
+"suggested_learning_experiences": [
+"Study Ephesians 5–6 and Colossians 3 on family relationships.",
+"Discuss modern family issues (divorce, single parenting, abuse).",
+"Develop guidance materials for nurturing Christian homes."
+],
+"core_competencies": [
+"Empathy and compassion",
+"Communication and collaboration"
+],
+"values": [
+"Love",
+"Respect",
+"Commitment"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to model a lesson on how to address challenges facing families today",
+"levels": {
+"Exceeds Expectation": "Effectively models a comprehensive lesson addressing multiple challenges facing families today",
+"Meets Expectation": "Models a lesson on how to address challenges facing families today",
+"Approaches Expectation": "Models a lesson on how to address challenges facing families today with minor gaps",
+"Below Expectation": "Models a lesson on how to address challenges facing families today with major gaps"
+}
+}
+]
+}
+]
+},
+{
+"strand": "7.0 Pedagogy of CRE",
+"sub_strands": [
+{
+"name": "7.1 Lesson Planning for CRE",
+"specific_learning_outcomes": [
+"Develop a lesson plan for a CRE topic",
+"Integrate biblical content, learner activities, and assessment"
+],
+"suggested_learning_experiences": [
+"Analyse sample CRE lesson plans from approved syllabi.",
+"Draft a lesson plan using the standard format including objectives, resources, introduction, development, conclusion, and evaluation.",
+"Peer-review CRE lesson plans for clarity, engagement, and doctrinal accuracy."
+],
+"core_competencies": [
+"Planning and organization",
+"Critical thinking and problem solving"
+],
+"values": [
+"Professionalism",
+"Accuracy"
+],
+"assessment_rubric": []
+},
+{
+"name": "7.2 Storytelling and Drama in CRE",
+"specific_learning_outcomes": [
+"Use storytelling techniques to teach Bible stories",
+"Incorporate drama and role play in CRE lessons"
+],
+"suggested_learning_experiences": [
+"Practice expressive reading and voice modulation for storytelling.",
+"Adapt Bible stories into short skits for performance.",
+"Deliver a micro-lesson using drama to convey a moral lesson."
+],
+"core_competencies": [
+"Creativity and imagination",
+"Communication and collaboration"
+],
+"values": [
+"Engagement",
+"Truth"
+],
+"assessment_rubric": []
+},
+{
+"name": "7.3 Use of ICT in Teaching CRE",
+"specific_learning_outcomes": [
+"Use digital devices and resources to enhance CRE teaching",
+"Apply ethical guidelines when using digital content"
+],
+"suggested_learning_experiences": [
+"Create PowerPoint presentations or videos on CRE topics.",
+"Use online Bible tools (e.g., BibleGateway, Blue Letter Bible) for research.",
+"Discuss copyright and plagiarism in digital resource use."
+],
+"core_competencies": [
+"Digital literacy",
+"Ethical reasoning"
+],
+"values": [
+"Integrity",
+"Responsibility"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to use digital devices and resources to enhance teaching of CRE",
+"levels": {
+"Exceeds Expectation": "Creatively uses digital devices and resources to enhance teaching of CRE",
+"Meets Expectation": "Uses digital devices and resources to enhance teaching of CRE",
+"Approaches Expectation": "Uses digital devices and resources to enhance teaching of CRE with minor errors",
+"Below Expectation": "Uses digital devices and resources to enhance teaching of CRE with major errors"
+}
+}
+]
+},
+{
+"name": "7.4 Assessment in CRE",
+"specific_learning_outcomes": [
+"Use varied methods to assess learners' understanding of CRE",
+"Provide feedback that encourages spiritual growth"
+],
+"suggested_learning_experiences": [
+"Design quizzes, projects, and reflective journals for assessment.",
+"Practice giving constructive verbal and written feedback.",
+"Develop rubrics for evaluating CRE assignments and presentations."
+],
+"core_competencies": [
+"Assessment literacy",
+"Communication and collaboration"
+],
+"values": [
+"Fairness",
+"Encouragement"
+],
+"assessment_rubric": []
+}
+]
+},
+{
+"strand": "8.0 Contemporary Issues in Religion",
+"sub_strands": [
+{
+"name": "8.1 Interfaith Dialogue",
+"specific_learning_outcomes": [
+"Explain the importance of interfaith dialogue",
+"Identify commonalities and differences between Christianity and other religions",
+"Promote peaceful coexistence among religious groups"
+],
+"suggested_learning_experiences": [
+"Compare core beliefs of Christianity, Islam, Hinduism, Buddhism, and African Traditional Religions.",
+"Organize a panel discussion or debate on religious tolerance.",
+"Visit places of worship of other faiths (mosque, temple, etc.)."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Communication and collaboration"
+],
+"values": [
+"Respect",
+"Peace",
+"Tolerance"
+],
+"assessment_rubric": []
+},
+{
+"name": "8.2 Religion and Social Change",
+"specific_learning_outcomes": [
+"Analyse the role of religion in promoting social justice",
+"Discuss Christian responses to poverty, corruption, and inequality",
+"Initiate community service projects inspired by faith"
+],
+"suggested_learning_experiences": [
+"Study biblical teachings on justice (Micah 6:8, Isaiah 1:17).",
+"Research historical figures like Martin Luther King Jr., Desmond Tutu, Mother Teresa.",
+"Plan a community outreach program (feeding, clean-up, tutoring)."
+],
+"core_competencies": [
+"Social responsibility",
+"Leadership"
+],
+"values": [
+"Justice",
+"Compassion",
+"Service"
+],
+"assessment_rubric": []
+}
+]
+}
+],
+"course_structure": {
+"total_hours": 3000,
+"content_and_pedagogy_hours": 1680,
+"practicum_hours": 600,
+"microteaching_hours": 414,
+"subjects": [
+{
+"name": "Christian Religious Education (CRE)",
+"total_hours": 120,
+"terms": [20, 20, 20, 20, 20, 20]
+},
+{
+"name": "English",
+"total_hours": 186,
+"terms": [30, 30, 36, 30, 30, 30]
+},
+{
+"name": "Kiswahili/KSL",
+"total_hours": 120,
+"terms": [20, 20, 20, 20, 20, 20]
+},
+{
+"name": "Mathematics",
+"total_hours": 180,
+"terms": [30, 30, 30, 30, 30, 30]
+},
+{
+"name": "Science and Technology",
+"total_hours": 120,
+"terms": [20, 20, 20, 20, 20, 20]
+},
+{
+"name": "Agriculture",
+"total_hours": 120,
+"terms": [20, 20, 20, 20, 20, 20]
+},
+{
+"name": "Home Science",
+"total_hours": 120,
+"terms": [20, 20, 20, 20, 20, 20]
+},
+{
+"name": "Social Studies",
+"total_hours": 120,
+"terms": [20, 20, 20, 20, 20, 20]
+},
+{
+"name": "Physical and Health Education",
+"total_hours": 120,
+"terms": [10, 10, 10, 30, 30, 30]
+},
+{
+"name": "Art and Craft",
+"total_hours": 120,
+"terms": [10, 30, 30, 10, 20, 20]
+},
+{
+"name": "Music",
+"total_hours": 120,
+"terms": [10, 20, 20, 20, 20, 30]
+},
+{
+"name": "Indigenous Languages",
+"total_hours": 120,
+"terms": [10, 20, 20, 20, 30, 20]
+},
+{
+"name": "Foreign Languages (French/Arabic/German/Mandarin (Chinese)/KSL)",
+"total_hours": 120,
+"terms": [10, 10, 10, 30, 30, 30]
+}
+],
+"term_totals": [350, 350, 350, 350, 350, 350],
+"practicum_distribution": [300, 300, 300]
+},
+"national_goals_of_education": [
+"Foster national unity, patriotism, and promote national cohesion.",
+"Increase the level of knowledge of all people to enhance national capacity and strengthen the economy.",
+"Affirm and promote the culture of all Kenyan people.",
+"Provide education and training that enables learners to become self-reliant and contribute to national development.",
+"Promote holistic well-being—physical, emotional, spiritual—for self-reliance.",
+"Enable learners to recognize values, ethics, and morals from religious and cultural perspectives and integrate them with their environment.",
+"Enable learners to use language efficiently as a communication, thinking, and learning tool.",
+"Develop learners’ ability to seek, use, and disseminate information using communication technology.",
+"Develop learners’ ability to solve problems using knowledge, skills, and attitudes.",
+"Enable learners to recognize their potential and harness it for the benefit of family and society."
+],
+"essence_statement": "Education is a critical instrument for economic growth, national unity, and cultural affirmation. It aims to produce citizens capable of contributing to national development through knowledge, skills, and attitudes, while instilling values, ethics, and morals derived from religious and cultural heritage."
+}

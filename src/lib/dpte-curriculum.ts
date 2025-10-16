@@ -6,6 +6,7 @@ import childDevelopmentGuide from './dpte-child-development-guide.json';
 import homeScienceGuide from './dpte-home-science-guide.json';
 import learningTechniquesGuide from './learning-techniques-guide.json';
 import artAndCraftGuide from './dpte-art-and-craft-guide.json';
+import creGuide from './dpte-cre-guide.json';
 
 // Function to recursively extract text from a JSON object
 function extractText(obj: any): string[] {
@@ -40,9 +41,11 @@ const childDevelopmentKnowledgeBase: string[] = extractText(childDevelopmentGuid
 const homeScienceKnowledgeBase: string[] = extractText(homeScienceGuide);
 const learningTechniquesKnowledgeBase: string[] = extractText(learningTechniquesGuide);
 const artAndCraftKnowledgeBase: string[] = extractText(artAndCraftGuide);
+const creKnowledgeBase: string[] = extractText(creGuide);
+
 
 // Combine knowledge bases
-export const dpteKnowledgeBase: string[] = [...new Set([...microteachingKnowledgeBase, ...childDevelopmentKnowledgeBase, ...homeScienceKnowledgeBase, ...learningTechniquesKnowledgeBase, ...artAndCraftKnowledgeBase])];
+export const dpteKnowledgeBase: string[] = [...new Set([...microteachingKnowledgeBase, ...childDevelopmentKnowledgeBase, ...homeScienceKnowledgeBase, ...learningTechniquesKnowledgeBase, ...artAndCraftKnowledgeBase, ...creKnowledgeBase])];
 
 
 /**
@@ -87,5 +90,4 @@ export function retrieveContext(query: string, k: number = 10): string {
 
   const topChunks = relevantChunks.slice(0, k).map(item => item.chunk);
   
-  return topChunks.join("\n\n");
-}
+  
