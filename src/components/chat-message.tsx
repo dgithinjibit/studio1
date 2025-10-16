@@ -6,7 +6,6 @@ import { cn } from '@/lib/utils';
 import type { Message } from '@ai-sdk/react';
 import { useToast } from '@/hooks/use-toast';
 import { Button } from './ui/button';
-import { render } from 'ai/rsc';
 
 interface ChatMessageProps {
   message: Message;
@@ -42,19 +41,6 @@ export function ChatMessage({ message, isLoading = false }: ChatMessageProps) {
   const isAssistant = role === 'assistant';
   const { toast } = useToast();
 
-  const renderedContent = render({
-    schema: {
-      code: {
-        description: 'A block of code to be displayed.',
-        parameters: z.object({
-          content: z.string().describe('The code content.'),
-        }),
-      },
-    },
-    content: content,
-    render: ({ code }) => <CodeBlock content={code.content} />,
-  });
-
   return (
     <div
       className={cn(
@@ -84,7 +70,7 @@ export function ChatMessage({ message, isLoading = false }: ChatMessageProps) {
             <span>Thinking...</span>
           </div>
         ) : (
-          <div className="whitespace-pre-wrap">{renderedContent}</div>
+          <div className="whitespace-pre-wrap">{content}</div>
         )}
       </div>
       {!isAssistant && (
