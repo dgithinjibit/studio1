@@ -1,18 +1,13 @@
 // This file simulates a vector database retrieval for the RAG model.
 // In a real-world application, this would be replaced by a call to a vector store
 // like Firestore with a vector search extension, Pinecone, or similar.
-import microteachingGuide from '@/data/dpte-curriculum-guide.json';
-import childDevelopmentGuide from '@/data/dpte-child-development-guide.json';
-import homeScienceGuide from '@/data/dpte-home-science-guide.json';
-import learningTechniquesGuide from '@/data/learning-techniques-guide.json';
-import artAndCraftGuide from '@/data/dpte-art-and-craft-guide.json';
-import creGuide from '@/data/dpte-cre-guide.json';
-// Import any other structured JSONs you have
-// For example: import kiswahiliGuide from '@/data/dpte-kiswahili-guide.json';
 
-// Note: The `process-pdfs.ts` script will generate new JSON files in /data.
-// After running the script, you would manually import them here to include them in the knowledge base.
-// This is a placeholder for dynamically loading all JSONs in a real app.
+// IMPORTANT: This file has been refactored to dynamically load all .json files
+// from the src/data/ directory. You no longer need to manually import them.
+// The `scripts/process-pdfs.ts` script will convert PDFs into new .json files
+// in this directory, and they will be automatically included in the knowledge base.
+import fs from 'fs';
+import path from 'path';
 
 // Function to recursively extract text from a JSON object
 function extractText(obj: any): string[] {
@@ -25,7 +20,6 @@ function extractText(obj: any): string[] {
     if (Object.prototype.hasOwnProperty.call(obj, key)) {
       const value = obj[key];
       if (typeof value === 'string') {
-        // Create meaningful sentences from key-value pairs
         if (key !== 'document_title' && key !== 'name' && key !== 'strand' && !key.includes('_id') && !key.includes('reference')) {
            texts.push(`${key.replace(/_/g, ' ')}: ${value}`);
         } else {
@@ -41,20 +35,37 @@ function extractText(obj: any): string[] {
   return texts;
 }
 
-const allGuides = [
-  microteachingGuide,
-  childDevelopmentGuide,
-  homeScienceGuide,
-  learningTechniquesGuide,
-  artAndCraftGuide,
-  creGuide,
-  // Add other imported guides here, e.g., kiswahiliGuide
-];
+function loadKnowledgeBase(): string[] {
+  const dataDirectory = path.join(process.cwd(), 'src', 'data');
+  let allKnowledge: string[] = [];
 
-const allKnowledgeBases = allGuides.flatMap(guide => extractText(guide));
+  try {
+    const files = fs.readdirSync(dataDirectory);
+    
+    for (const file of files) {
+      if (path.extname(file).toLowerCase() === '.json') {
+        const filePath = path.join(dataDirectory, file);
+        try {
+          const fileContent = fs.readFileSync(filePath, 'utf-8');
+          const jsonData = JSON.parse(fileContent);
+          const extracted = extractText(jsonData);
+          allKnowledge = allKnowledge.concat(extracted);
+          console.log(`Successfully loaded and processed ${file}`);
+        } catch (error) {
+          console.error(`Error processing file ${file}:`, error);
+        }
+      }
+    }
+  } catch (error) {
+    console.error(`Error reading data directory ${dataDirectory}:`, error);
+  }
+  
+  // Remove duplicates
+  return [...new Set(allKnowledge)];
+}
 
-// Combine all knowledge bases and remove duplicates
-export const dpteKnowledgeBase: string[] = [...new Set(allKnowledgeBases)];
+// Load the knowledge base dynamically on server start
+export const dpteKnowledgeBase: string[] = loadKnowledgeBase();
 
 
 /**
