@@ -7,7 +7,12 @@ import homeScienceGuide from '@/data/dpte-home-science-guide.json';
 import learningTechniquesGuide from '@/data/learning-techniques-guide.json';
 import artAndCraftGuide from '@/data/dpte-art-and-craft-guide.json';
 import creGuide from '@/data/dpte-cre-guide.json';
-import processedPdfs from '@/data/processed-pdfs.json';
+// Import any other structured JSONs you have
+// For example: import kiswahiliGuide from '@/data/dpte-kiswahili-guide.json';
+
+// Note: The `process-pdfs.ts` script will generate new JSON files in /data.
+// After running the script, you would manually import them here to include them in the knowledge base.
+// This is a placeholder for dynamically loading all JSONs in a real app.
 
 // Function to recursively extract text from a JSON object
 function extractText(obj: any): string[] {
@@ -36,25 +41,20 @@ function extractText(obj: any): string[] {
   return texts;
 }
 
-// Convert the JSON guides into flat arrays of strings
-const microteachingKnowledgeBase: string[] = extractText(microteachingGuide);
-const childDevelopmentKnowledgeBase: string[] = extractText(childDevelopmentGuide);
-const homeScienceKnowledgeBase: string[] = extractText(homeScienceGuide);
-const learningTechniquesKnowledgeBase: string[] = extractText(learningTechniquesGuide);
-const artAndCraftKnowledgeBase: string[] = extractText(artAndCraftGuide);
-const creKnowledgeBase: string[] = extractText(creGuide);
+const allGuides = [
+  microteachingGuide,
+  childDevelopmentGuide,
+  homeScienceGuide,
+  learningTechniquesGuide,
+  artAndCraftGuide,
+  creGuide,
+  // Add other imported guides here, e.g., kiswahiliGuide
+];
 
+const allKnowledgeBases = allGuides.flatMap(guide => extractText(guide));
 
-// Combine all knowledge bases
-export const dpteKnowledgeBase: string[] = [...new Set([
-    ...microteachingKnowledgeBase, 
-    ...childDevelopmentKnowledgeBase, 
-    ...homeScienceKnowledgeBase, 
-    ...learningTechniquesKnowledgeBase, 
-    ...artAndCraftKnowledgeBase, 
-    ...creKnowledgeBase,
-    ...processedPdfs // Add text from processed PDFs
-])];
+// Combine all knowledge bases and remove duplicates
+export const dpteKnowledgeBase: string[] = [...new Set(allKnowledgeBases)];
 
 
 /**
@@ -69,7 +69,7 @@ export function retrieveContext(query: string, k: number = 10): string {
 
   if (queryWords.size === 0) {
     // If query is empty or has no meaningful words, return a summary or top-level info.
-    const summary = `The available documents are the "Diploma in Teacher Education (DTE) - Microteaching Guide" and the "Child Development and Psychology Curriculum Design". They cover Strands like "The Practice of Microteaching", "Curriculum Design Interpretation", "Theories of Learning", and "Guidance and Counselling".`;
+    const summary = `The available documents cover various DPTE subjects including Microteaching, Child Development, Home Science, Art and Craft, and CRE. They cover Strands like "The Practice of Microteaching", "Curriculum Design Interpretation", "Theories of Learning", and "Guidance and Counselling".`;
     return summary;
   }
 
@@ -93,7 +93,7 @@ export function retrieveContext(query: string, k: number = 10): string {
   
   // If no relevant chunks are found, provide a generic message.
   if(relevantChunks.length === 0){
-      return "The provided curriculum guides and PDF documents do not seem to contain specific information on that topic. Please try rephrasing your question."
+      return "The provided curriculum guides do not seem to contain specific information on that topic. Please try rephrasing your question."
   }
 
   const topChunks = relevantChunks.slice(0, k).map(item => item.chunk);

@@ -1,3 +1,4 @@
+
 import fs from 'fs/promises';
 import path from 'path';
 import pdf from 'pdf-parse';
@@ -5,21 +6,32 @@ import { structureCurriculum, StructureCurriculumOutput } from '@/ai/flows/struc
 
 const pdfsDirectory = path.join(process.cwd(), 'src', 'data', 'pdfs');
 const outputDirectory = path.join(process.cwd(), 'src', 'data');
-const rawTextOutputFilePath = path.join(outputDirectory, 'processed-pdfs.json'); // Keep this for debugging/fallback
+const rawTextOutputFilePath = path.join(outputDirectory, 'processed-pdfs.json'); // This will now be mostly empty, but we'll keep it to avoid breaking things.
 
 async function processPdfs() {
-  console.log('Starting PDF processing...');
+  console.log('Starting PDF to Structured JSON conversion...');
   try {
     // Ensure the output directory exists
     await fs.mkdir(outputDirectory, { recursive: true });
 
-    const pdfFiles = await fs.readdir(pdfsDirectory);
-    const allProcessedJSONs: StructureCurriculumOutput[] = [];
+    const files = await fs.readdir(pdfsDirectory);
+    
+    for (const file of files) {
+      if (path.extname(file).toLowerCase() === '.pdf') {
+        const pdfPath = path.join(pdfsDirectory, file);
+        const outputJsonFileName = `${path.parse(file).name}.json`;
+        const outputJsonFilePath = path.join(outputDirectory, outputJsonFileName);
 
-    for (const pdfFile of pdfFiles) {
-      if (path.extname(pdfFile).toLowerCase() === '.pdf') {
-        const pdfPath = path.join(pdfsDirectory, pdfFile);
-        console.log(`Processing: ${pdfFile}`);
+        // Check if the JSON file already exists to avoid redundant processing
+        try {
+          await fs.access(outputJsonFilePath);
+          console.log(`Skipping ${file}, as structured JSON already exists at ${outputJsonFileName}`);
+          continue;
+        } catch (e) {
+          // File doesn't exist, so we process it.
+        }
+        
+        console.log(`Processing: ${file}`);
         
         try {
           const dataBuffer = await fs.readFile(pdfPath);
@@ -31,38 +43,34 @@ async function processPdfs() {
             .filter(line => line.length > 0)
             .join('\n');
             
-          console.log(`Extracted text from ${pdfFile}. Now structuring with AI...`);
+          if (cleanedText.length < 100) {
+            console.log(`Skipping ${file} due to insufficient text content.`);
+            continue;
+          }
+
+          console.log(`Extracted text from ${file}. Now structuring with AI...`);
 
           // Use the AI flow to structure the text
           const structuredData = await structureCurriculum({ rawText: cleanedText });
           
-          // Save the structured JSON to a new file
-          const outputJsonFileName = `${path.parse(pdfFile).name}.json`;
-          const outputJsonFilePath = path.join(outputDirectory, outputJsonFileName);
+          // Save the structured JSON to a new file in the /data directory
           await fs.writeFile(outputJsonFilePath, JSON.stringify(structuredData, null, 2), 'utf-8');
           console.log(`Successfully structured and saved to ${outputJsonFilePath}`);
 
-          // We will add the structured data to our knowledge base later
-          // For now, let's keep the old file for raw text as a fallback
-          allProcessedJSONs.push(structuredData);
-
         } catch (error) {
-          console.error(`Error processing file ${pdfFile}:`, error);
+          console.error(`Error processing file ${file}:`, error);
         }
       }
     }
     
-    // For now, we will save the raw text from all PDFs to processed-pdfs.json as a fallback.
-    // In a future step, we will use the individual structured JSON files directly.
-    const allPdfTexts = allProcessedJSONs.map(json => JSON.stringify(json));
-    await fs.writeFile(rawTextOutputFilePath, JSON.stringify(allPdfTexts, null, 2), 'utf-8');
-    console.log(`Successfully processed ${pdfFiles.length} PDFs. Raw text fallback saved to ${rawTextOutputFilePath}`);
-
+    // We keep this file to ensure the build doesn't break, but it's no longer the primary source.
+    await fs.writeFile(rawTextOutputFilePath, JSON.stringify([]), 'utf-8');
+    console.log('PDF processing complete. Structured JSON files have been created in src/data/.');
 
   } catch (error) {
     if ((error as NodeJS.ErrnoException).code === 'ENOENT') {
       console.warn(`PDFs directory not found at ${pdfsDirectory}. Skipping PDF processing.`);
-      await fs.writeFile(rawTextOutputFilePath, JSON.stringify([], null, 2), 'utf-8');
+      await fs.writeFile(rawTextOutputFilePath, JSON.stringify([]), 'utf-8');
     } else {
       console.error('An error occurred during PDF processing:', error);
       process.exit(1);
