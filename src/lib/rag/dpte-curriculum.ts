@@ -7,6 +7,7 @@ import homeScienceGuide from '@/data/dpte-home-science-guide.json';
 import learningTechniquesGuide from '@/data/learning-techniques-guide.json';
 import artAndCraftGuide from '@/data/dpte-art-and-craft-guide.json';
 import creGuide from '@/data/dpte-cre-guide.json';
+import processedPdfs from '@/data/processed-pdfs.json';
 
 // Function to recursively extract text from a JSON object
 function extractText(obj: any): string[] {
@@ -44,8 +45,16 @@ const artAndCraftKnowledgeBase: string[] = extractText(artAndCraftGuide);
 const creKnowledgeBase: string[] = extractText(creGuide);
 
 
-// Combine knowledge bases
-export const dpteKnowledgeBase: string[] = [...new Set([...microteachingKnowledgeBase, ...childDevelopmentKnowledgeBase, ...homeScienceKnowledgeBase, ...learningTechniquesKnowledgeBase, ...artAndCraftKnowledgeBase, ...creKnowledgeBase])];
+// Combine all knowledge bases
+export const dpteKnowledgeBase: string[] = [...new Set([
+    ...microteachingKnowledgeBase, 
+    ...childDevelopmentKnowledgeBase, 
+    ...homeScienceKnowledgeBase, 
+    ...learningTechniquesKnowledgeBase, 
+    ...artAndCraftKnowledgeBase, 
+    ...creKnowledgeBase,
+    ...processedPdfs // Add text from processed PDFs
+])];
 
 
 /**
@@ -65,7 +74,6 @@ export function retrieveContext(query: string, k: number = 10): string {
   }
 
   const scoredChunks = dpteKnowledgeBase.map(chunk => {
-    const chunkWords = new Set(chunk.toLowerCase().split(/\s+/));
     let score = 0;
     for (const word of queryWords) {
       if (chunk.toLowerCase().includes(word)) { // Use 'includes' for partial matches
@@ -85,12 +93,10 @@ export function retrieveContext(query: string, k: number = 10): string {
   
   // If no relevant chunks are found, provide a generic message.
   if(relevantChunks.length === 0){
-      return "The provided curriculum guides do not seem to contain specific information on that topic. Please try rephrasing your question or ask about microteaching, child development, curriculum design, or professional documents."
+      return "The provided curriculum guides and PDF documents do not seem to contain specific information on that topic. Please try rephrasing your question."
   }
 
   const topChunks = relevantChunks.slice(0, k).map(item => item.chunk);
   
   return topChunks.join('\n\n---\n\n');
 }
-
-    
