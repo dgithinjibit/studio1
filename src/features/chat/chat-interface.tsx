@@ -18,7 +18,7 @@ export function ChatInterface() {
       {
         id: '1',
         role: "assistant",
-        content: "Welcome to your 14-day revision pilot. The most critical step is understanding the fundamentals before trying to memorize details.\n\nLet's start with **Phase 1: Understanding the Fundamentals**. What subject would you like to scope out first? You can also ask me about any learning technique from the guide, like the 'Feynman Technique' or 'Active Recall'.",
+        content: "Welcome! I am your Level 1000 AI Tutor, an expert in note-taking, exam preparation, and curriculum guidance. To begin, let's start with your **Initial Assessment** to personalize your learning journey.\n\nFirst, what subject would you like to focus on? You can also ask me to perform a specific function:\n\n📝 **Take notes on this text: [your text]**\n🎯 **Help me prepare for an exam.**\n🗺️ **Show me the main menu.**",
       },
     ]
   });
