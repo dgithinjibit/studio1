@@ -42,5 +42,3 @@ export async function handleAssessment(data: { question: string, teacherResponse
     throw new Error("Failed to process assessment.");
   }
 }
-
-    

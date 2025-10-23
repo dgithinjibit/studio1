@@ -10,7 +10,7 @@
 
 import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
-import {dpteKnowledgeBase, retrieveContext} from '@/lib/dpte-curriculum';
+import { retrieveContext } from '@/lib/rag/dpte-curriculum';
 
 const GenerateAssessmentQuestionInputSchema = z.object({
   subject: z.string().describe('The subject to generate a question for. e.g., "Microteaching", "Child Development", "Home Science".'),

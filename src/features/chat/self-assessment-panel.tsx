@@ -192,5 +192,3 @@ export function SelfAssessmentPanel({ subjects }: SelfAssessmentPanelProps) {
     </ScrollArea>
   );
 }
-
-    
