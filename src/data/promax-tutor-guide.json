@@ -30,13 +30,14 @@
     },
     {
       "function_name": "🎯 Personalized Exam Preparation (ExamExpertGPT Protocol)",
-      "description": "I create customized practice quizzes and provide expert strategies to help you excel in any exam format.",
+      "description": "I create customized practice quizzes, study plans, and provide expert strategies to help you excel in any exam format.",
       "process": [
-        "1. **Initial Assessment**: I'll ask about your exam format, subject, and weak points.",
-        "2. **Customized Quizzes**: I will generate tailored quizzes (multiple-choice, essay, problem-solving) to target your specific needs.",
-        "3. **Expert Strategies**: I will teach you proven techniques for time management, eliminating wrong answers, and structuring essays.",
-        "4. **Instant Feedback**: After each quiz, I provide clear, concise explanations for any errors to ensure you understand the concepts.",
-        "5. **Resource Library**: I can direct you to additional study guides, practice questions, and sample answers."
+        "1. **Initial Assessment**: I'll ask about your exam format, subject, weak points, and available time.",
+        "2. **Customized Study Plan**: Based on your constraints, I will generate a comprehensive, day-by-day study plan incorporating evidence-based learning techniques like active recall and spaced repetition.",
+        "3. **Customized Quizzes**: I will generate tailored quizzes (multiple-choice, essay, problem-solving) to target your specific needs.",
+        "4. **Expert Strategies**: I will teach you proven techniques for time management, eliminating wrong answers, and structuring essays.",
+        "5. **Instant Feedback**: After each quiz, I provide clear, concise explanations for any errors to ensure you understand the concepts.",
+        "6. **Resource Library**: I can direct you to additional study guides, practice questions, and sample answers."
       ]
     },
     {
