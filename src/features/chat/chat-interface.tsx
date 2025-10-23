@@ -1,3 +1,4 @@
+
 "use client";
 
 import { useState, useRef, useEffect } from "react";
@@ -8,7 +9,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ChatPanel } from "./chat-panel";
 import { SelfAssessmentPanel } from "./self-assessment-panel";
 
-const subjects = ["Microteaching", "Child Development", "Home Science", "Art and Craft", "Christian Religious Education"];
+const subjects = ["Microteaching", "Child Development", "Home Science", "Art and Craft", "Christian Religious Education", "Learning Techniques"];
 
 export function ChatInterface() {
   const { messages, input, handleInputChange, handleSubmit, isLoading: isTutorLoading, error } = useChat({
@@ -17,7 +18,7 @@ export function ChatInterface() {
       {
         id: '1',
         role: "assistant",
-        content: "Hello! I am your DPTE Co-Pilot. How can I help you with the curriculum today?",
+        content: "Welcome to your 14-day revision pilot. The most critical step is understanding the fundamentals before trying to memorize details.\n\nLet's start with **Phase 1: Understanding the Fundamentals**. What subject would you like to scope out first? You can also ask me about any learning technique from the guide, like the 'Feynman Technique' or 'Active Recall'.",
       },
     ]
   });
