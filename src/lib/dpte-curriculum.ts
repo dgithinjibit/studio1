@@ -7,6 +7,7 @@ import homeScienceGuide from '@/data/dpte-home-science-guide.json';
 import learningTechniquesGuide from '@/data/learning-techniques-guide.json';
 import artAndCraftGuide from '@/data/dpte-art-and-craft-guide.json';
 import creGuide from '@/data/dpte-cre-guide.json';
+import scienceAndTechGuide from '@/data/dpte-science-and-tech-guide.json';
 
 // Function to recursively extract text from a JSON object
 function extractText(obj: any): string[] {
@@ -42,10 +43,11 @@ const homeScienceKnowledgeBase: string[] = extractText(homeScienceGuide);
 const learningTechniquesKnowledgeBase: string[] = extractText(learningTechniquesGuide);
 const artAndCraftKnowledgeBase: string[] = extractText(artAndCraftGuide);
 const creKnowledgeBase: string[] = extractText(creGuide);
+const scienceAndTechKnowledgeBase: string[] = extractText(scienceAndTechGuide);
 
 
 // Combine knowledge bases
-export const dpteKnowledgeBase: string[] = [...new Set([...microteachingKnowledgeBase, ...childDevelopmentKnowledgeBase, ...homeScienceKnowledgeBase, ...learningTechniquesKnowledgeBase, ...artAndCraftKnowledgeBase, ...creKnowledgeBase])];
+export const dpteKnowledgeBase: string[] = [...new Set([...microteachingKnowledgeBase, ...childDevelopmentKnowledgeBase, ...homeScienceKnowledgeBase, ...learningTechniquesKnowledgeBase, ...artAndCraftKnowledgeBase, ...creKnowledgeBase, ...scienceAndTechKnowledgeBase])];
 
 
 /**
