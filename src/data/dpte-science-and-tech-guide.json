@@ -1,0 +1,235 @@
+
+{
+"document_title": "Diploma in Teacher Education - Science and Technology Curriculum",
+"modules": [
+{
+"strand": "1.0 Introduction to Science and Technology",
+"sub_strands": [
+{
+"name": "1.1 The Nature of Science",
+"specific_learning_outcomes": [
+"Explain the meaning of science as a body of knowledge and a process",
+"Describe the scientific method",
+"Appreciate the role of science and technology in society"
+],
+"suggested_learning_experiences": [
+"Discuss different definitions of science.",
+"Design and conduct a simple experiment using the scientific method (e.g., testing which paper airplane design flies farthest).",
+"Brainstorm technological innovations that have changed daily life."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Creativity and imagination"
+],
+"values": [
+"Curiosity",
+"Integrity",
+"Responsibility"
+]
+}
+]
+},
+{
+"strand": "2.0 Living Things and Their Environment",
+"sub_strands": [
+{
+"name": "2.1 Classification of Living Things",
+"specific_learning_outcomes": [
+"Classify living things into major kingdoms (plants, animals, fungi, etc.)",
+"Differentiate between vertebrates and invertebrates",
+"Differentiate between flowering and non-flowering plants"
+],
+"suggested_learning_experiences": [
+"Create posters or digital presentations classifying local plants and animals.",
+"Go on a nature walk to identify different types of plants and animals.",
+"Use dichotomous keys to identify organisms."
+],
+"core_competencies": [
+"Learning to learn and reflective practice",
+"Communication and collaboration"
+],
+"values": [
+"Respect for nature",
+"Appreciation for biodiversity"
+]
+}
+]
+},
+{
+"strand": "3.0 Matter and Energy",
+"sub_strands": [
+{
+"name": "3.1 Properties of Matter",
+"specific_learning_outcomes": [
+"Define matter",
+"Describe the three states of matter: solid, liquid, gas",
+"Explain changes of state (melting, freezing, evaporation, condensation)"
+],
+"suggested_learning_experiences": [
+"Observe the melting of ice and the boiling of water.",
+"Draw particle models for solids, liquids, and gases.",
+"Conduct an experiment to show that air has mass."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Curiosity",
+"Accuracy"
+]
+},
+{
+"name": "3.2 Forms of Energy",
+"specific_learning_outcomes": [
+"Identify different forms of energy (heat, light, sound, electrical, kinetic, potential)",
+"Describe energy transformations from one form to another"
+],
+"suggested_learning_experiences": [
+"Build a simple circuit to demonstrate electrical energy transforming into light and heat.",
+"Identify energy transformations in everyday objects (e.g., a flashlight, a bouncing ball).",
+"Create an 'energy chain' diagram."
+],
+"core_competencies": [
+"Creativity and imagination"
+],
+"values": [
+"Resourcefulness",
+"Innovation"
+]
+}
+]
+},
+{
+"strand": "4.0 Force and Motion",
+"sub_strands": [
+{
+"name": "4.1 Concept of Force",
+"specific_learning_outcomes": [
+"Define force as a push or a pull",
+"Identify effects of force on an object (start/stop motion, change direction, change shape)",
+"Differentiate between contact forces (e.g., friction) and non-contact forces (e.g., gravity, magnetism)"
+],
+"suggested_learning_experiences": [
+"Push and pull objects in the classroom to experience force.",
+"Drop objects to observe the effect of gravity.",
+"Use magnets to demonstrate non-contact force.",
+"Investigate how friction affects the movement of a toy car on different surfaces."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Curiosity",
+"Exploration"
+],
+"assessment_rubric": [
+{
+"ability": "Ability to define force and identify its effects",
+"levels": {
+"Exceeds Expectation": "Comprehensively defines force with varied examples and clearly explains all its effects.",
+"Meets Expectation": "Correctly defines force as a push or a pull and identifies its main effects on an object.",
+"Approaches Expectation": "Can define force but only identifies some of its effects.",
+"Below Expectation": "Requires assistance to define force and its effects."
+}
+}
+]
+},
+{
+"name": "4.2 Simple Machines",
+"specific_learning_outcomes": [
+"Identify the six types of simple machines (lever, wheel and axle, pulley, inclined plane, wedge, screw)",
+"Explain how simple machines make work easier",
+"Construct a simple machine using locally available materials"
+],
+"suggested_learning_experiences": [
+"Identify simple machines in the school environment.",
+"Build a lever using a ruler and a fulcrum to lift an object.",
+"Design and create a pulley system to lift a small weight.",
+"Discuss the concept of mechanical advantage."
+],
+"core_competencies": [
+"Creativity and imagination",
+"Problem solving"
+],
+"values": [
+"Innovation",
+"Resourcefulness"
+]
+},
+{
+"name": "4.3 Magnetism",
+"specific_learning_outcomes": [
+"Identify materials that are attracted by a magnet (magnetic materials)",
+"Describe the properties of a magnet (poles, attraction/repulsion)",
+"Make a temporary magnet"
+],
+"suggested_learning_experiences": [
+"Test various classroom objects to see if they are magnetic.",
+"Experiment with bar magnets to identify North and South poles and observe attraction and repulsion.",
+"Make a temporary magnet by stroking a nail with a permanent magnet.",
+"Plot the magnetic field of a bar magnet using iron filings or a compass."
+],
+"core_competencies": [
+"Learning to learn and reflective practice"
+],
+"values": [
+"Curiosity",
+"Systematic inquiry"
+]
+}
+]
+},
+{
+"strand": "5.0 Earth and Space Science",
+"sub_strands": [
+{
+"name": "5.1 The Solar System",
+"specific_learning_outcomes": [
+"Name the components of the solar system (Sun, planets, moons, asteroids)",
+"Describe the relative positions and movements of the Earth, Sun, and Moon",
+"Explain the causes of day and night, and seasons"
+],
+"suggested_learning_experiences": [
+"Build a physical or digital model of the solar system.",
+"Use a globe and a light source to demonstrate how the Earth's rotation causes day and night.",
+"Dramatize the orbit of the Earth around the Sun and the Moon around the Earth."
+],
+"core_competencies": [
+"Communication and collaboration",
+"Digital literacy"
+],
+"values": [
+"Appreciation of the universe",
+"Wonder"
+]
+}
+]
+},
+{
+"strand": "6.0 Pedagogy of Science and Technology",
+"sub_strands": [
+{
+"name": "6.1 Inquiry-Based Science Education",
+"specific_learning_outcomes": [
+"Explain the principles of inquiry-based learning in a science context",
+"Facilitate a science lesson using the 5E Instructional Model (Engage, Explore, Explain, Elaborate, Evaluate)",
+"Develop inquiry questions to guide scientific investigation"
+],
+"suggested_learning_experiences": [
+"Analyse a lesson plan that uses the 5E model.",
+"Deliver a micro-lesson for a science topic using an inquiry-based approach.",
+"Peer-review inquiry questions for clarity and investigability."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Communication and collaboration"
+],
+"values": [
+"Curiosity",
+"Open-mindedness"
+]
+}
+]
+}
+]
+}
