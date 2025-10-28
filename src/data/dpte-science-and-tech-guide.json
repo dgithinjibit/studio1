@@ -59,23 +59,33 @@
 "strand": "3.0 Matter and Energy",
 "sub_strands": [
 {
-"name": "3.1 Properties of Matter",
+"name": "3.1 Properties and Changes of Matter",
 "specific_learning_outcomes": [
-"Define matter",
-"Describe the three states of matter: solid, liquid, gas",
-"Explain changes of state (melting, freezing, evaporation, condensation)"
+"Define matter and its properties (mass, volume, density)",
+"Describe the three states of matter: solid, liquid, gas, in terms of particle arrangement and movement",
+"Explain the processes of change of state: melting, freezing, evaporation, boiling, condensation, and sublimation",
+"Differentiate between physical and chemical changes"
 ],
 "suggested_learning_experiences": [
-"Observe the melting of ice and the boiling of water.",
-"Draw particle models for solids, liquids, and gases.",
-"Conduct an experiment to show that air has mass."
+"Measure the mass and volume of regular and irregular objects to calculate density.",
+"Draw and animate particle models for solids, liquids, and gases to show energy changes.",
+"Conduct an experiment to show that air has mass and occupies space.",
+"Observe melting ice, boiling water, and condensation on a cold surface.",
+"Investigate sublimation by observing dry ice (with safety precautions).",
+"Compare burning a piece of paper (chemical change) with tearing it (physical change)."
 ],
+"key_concepts": {
+ "particle_theory": "All matter is made of tiny particles that are in constant motion. The speed and spacing of these particles determine the state of matter.",
+ "energy_transfer": "Changes of state involve the absorption or release of heat energy, which changes the kinetic energy of the particles without changing the temperature of the substance itself (latent heat)."
+},
 "core_competencies": [
-"Critical thinking and problem solving"
+"Critical thinking and problem solving",
+"Scientific inquiry"
 ],
 "values": [
 "Curiosity",
-"Accuracy"
+"Accuracy",
+"Safety"
 ]
 },
 {
