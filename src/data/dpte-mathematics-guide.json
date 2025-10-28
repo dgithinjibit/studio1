@@ -1,0 +1,296 @@
+
+{
+"document_title": "Diploma in Teacher Education - Mathematics Curriculum",
+"modules": [
+{
+"strand": "1.0 Numbers",
+"sub_strands": [
+{
+"name": "1.1 Whole Numbers",
+"specific_learning_outcomes": [
+"Read and write whole numbers up to billions",
+"Identify the place value of digits in whole numbers",
+"Perform the four basic operations (addition, subtraction, multiplication, division) on whole numbers",
+"Apply the order of operations (BODMAS/PEMDAS)"
+],
+"suggested_learning_experiences": [
+"Use place value charts and abacuses to represent large numbers.",
+"Practice multi-digit multiplication and long division.",
+"Solve real-world problems involving whole numbers."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Accuracy",
+"Diligence"
+]
+},
+{
+"name": "1.2 Fractions",
+"specific_learning_outcomes": [
+"Define different types of fractions (proper, improper, mixed)",
+"Find equivalent fractions and simplify fractions",
+"Compare and order fractions",
+"Perform addition, subtraction, multiplication, and division of fractions"
+],
+"suggested_learning_experiences": [
+"Use fraction bars and circles to visualize and compare fractions.",
+"Find common denominators to add and subtract fractions.",
+"Solve practical problems involving fractions, such as in recipes."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Respect",
+"Understanding"
+]
+},
+{
+"name": "1.3 Decimals",
+"specific_learning_outcomes": [
+"Read and write decimals up to thousandths",
+"Convert fractions to decimals and vice versa",
+"Perform the four basic operations on decimals",
+"Round decimals to a given number of decimal places"
+],
+"suggested_learning_experiences": [
+"Use decimal grids to represent decimal numbers.",
+"Practice aligning decimal points when adding and subtracting.",
+"Solve problems involving money and measurements."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Precision",
+"Responsibility"
+]
+}
+]
+},
+{
+"strand": "2.0 Measurement",
+"sub_strands": [
+{
+"name": "2.1 Length",
+"specific_learning_outcomes": [
+"Identify standard units of length (mm, cm, m, km)",
+"Convert between units of length",
+"Calculate the perimeter of regular and irregular shapes"
+],
+"suggested_learning_experiences": [
+"Measure various objects in the classroom using rulers and tape measures.",
+"Solve problems involving distance and perimeter.",
+"Estimate lengths and then measure to check accuracy."
+],
+"core_competencies": [
+"Learning to learn and reflective practice"
+],
+"values": [
+"Accuracy",
+"Practicality"
+]
+},
+{
+"name": "2.2 Area",
+"specific_learning_outcomes": [
+"Define area",
+"Calculate the area of squares, rectangles, and triangles",
+"Find the area of composite shapes"
+],
+"suggested_learning_experiences": [
+"Use grid paper to count squares and find the area of shapes.",
+"Apply formulas to calculate the area of different polygons.",
+"Solve real-world problems, such as finding the area of a room to be carpeted."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Application",
+"Diligence"
+]
+},
+{
+"name": "2.3 Volume and Capacity",
+"specific_learning_outcomes": [
+"Define volume and capacity",
+"Calculate the volume of cubes and cuboids",
+"Convert between units of capacity (ml, l)"
+],
+"suggested_learning_experiences": [
+"Build cubes and cuboids using unit blocks to understand volume.",
+"Use measuring jugs and cylinders to measure the capacity of different containers.",
+"Solve problems comparing volume and capacity."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Accuracy",
+"Understanding"
+]
+},
+{
+"name": "2.4 Time",
+"specific_learning_outcomes": [
+"Read and write time in 12-hour and 24-hour formats",
+"Convert between units of time (seconds, minutes, hours)",
+"Solve problems involving time, speed, and distance"
+],
+"suggested_learning_experiences": [
+"Use analog and digital clocks to practice telling time.",
+"Calculate durations of events and create timetables.",
+"Solve word problems involving travel time and speed."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Punctuality",
+"Responsibility"
+]
+}
+]
+},
+{
+"strand": "3.0 Geometry",
+"sub_strands": [
+{
+"name": "3.1 Angles",
+"specific_learning_outcomes": [
+"Identify different types of angles (acute, obtuse, right, reflex)",
+"Measure and draw angles using a protractor",
+"Calculate angles on a straight line, at a point, and in a triangle"
+],
+"suggested_learning_experiences": [
+"Use a protractor to measure angles in the classroom environment.",
+"Draw shapes with specified angles.",
+"Solve problems to find unknown angles in diagrams."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Precision",
+"Logic"
+]
+},
+{
+"name": "3.2 2D and 3D Shapes",
+"specific_learning_outcomes": [
+"Identify and name common 2D shapes (polygons) and 3D shapes (polyhedra)",
+"Describe the properties of shapes (sides, vertices, faces, edges)",
+"Construct nets of 3D shapes"
+],
+"suggested_learning_experiences": [
+"Sort and classify a collection of 2D and 3D shapes.",
+"Build skeletons of 3D shapes using straws and connectors.",
+"Open up boxes to see their nets and then construct 3D shapes from paper nets."
+],
+"core_competencies": [
+"Creativity and imagination",
+"Spatial reasoning"
+],
+"values": [
+"Observation",
+"Curiosity"
+]
+}
+]
+},
+{
+"strand": "4.0 Algebra",
+"sub_strands": [
+{
+"name": "4.1 Algebraic Expressions",
+"specific_learning_outcomes": [
+"Use letters to represent unknown numbers",
+"Form and simplify simple algebraic expressions",
+"Substitute values into expressions and evaluate them"
+],
+"suggested_learning_experiences": [
+"Translate word problems into algebraic expressions.",
+"Practice collecting like terms to simplify expressions.",
+"Play 'function machine' games to practice substitution."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Abstract thinking"
+],
+"values": [
+"Logic",
+"Systematic thinking"
+]
+},
+{
+"name": "4.2 Equations",
+"specific_learning_outcomes": [
+"Form and solve simple linear equations",
+"Use equations to solve word problems"
+],
+"suggested_learning_experiences": [
+"Use the balancing method to solve equations.",
+"Check solutions by substituting them back into the original equation.",
+"Create and solve equations based on real-life scenarios."
+],
+"core_competencies": [
+"Critical thinking and problem solving"
+],
+"values": [
+"Perseverance",
+"Problem solving"
+]
+}
+]
+},
+{
+"strand": "5.0 Pedagogy of Mathematics",
+"sub_strands": [
+{
+"name": "5.1 Concrete-Pictorial-Abstract (CPA) Approach",
+"specific_learning_outcomes": [
+"Explain the principles of the CPA approach in teaching mathematics",
+"Design a lesson that moves from concrete manipulatives to pictorial representations to abstract symbols"
+],
+"suggested_learning_experiences": [
+"Teach addition using blocks (concrete), then drawing blocks (pictorial), then the number sentence (abstract).",
+"Analyse lesson plans that effectively use the CPA model.",
+"Deliver a micro-lesson using the CPA approach for a chosen math topic."
+],
+"core_competencies": [
+"Communication and collaboration",
+"Pedagogical content knowledge"
+],
+"values": [
+"Understanding",
+"Inclusivity"
+]
+},
+{
+"name": "5.2 Problem-Solving in Mathematics",
+"specific_learning_outcomes": [
+"Teach problem-solving heuristics (e.g., draw a diagram, look for a pattern, work backwards)",
+"Facilitate a problem-based learning environment",
+"Encourage perseverance and mathematical reasoning"
+],
+"suggested_learning_experiences": [
+"Present non-routine problems for students to tackle in groups.",
+"Model different problem-solving strategies.",
+"Encourage students to explain their thinking and justify their answers."
+],
+"core_competencies": [
+"Critical thinking and problem solving",
+"Resilience"
+],
+"values": [
+"Collaboration",
+"Creativity"
+]
+}
+]
+}
+]
+}

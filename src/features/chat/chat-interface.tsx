@@ -9,7 +9,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { ChatPanel } from "./chat-panel";
 import { SelfAssessmentPanel } from "./self-assessment-panel";
 
-const subjects = ["Microteaching", "Child Development", "Home Science", "Art and Craft", "Christian Religious Education", "Learning Techniques", "Science and Technology"];
+const subjects = ["Microteaching", "Child Development", "Home Science", "Art and Craft", "Christian Religious Education", "Learning Techniques", "Science and Technology", "Mathematics"];
 
 export function ChatInterface() {
   const { messages, input, handleInputChange, handleSubmit, isLoading: isTutorLoading, error } = useChat({

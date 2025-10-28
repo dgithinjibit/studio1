@@ -6,3 +6,4 @@ import '@/ai/flows/generate-dpte-response.ts';
 import '@/ai/flows/generate-assessment-question.ts';
 import '@/ai/flows/structure-curriculum-flow.ts';
 import '@/ai/flows/generate-study-plan.ts';
+import '@/data/dpte-mathematics-guide.json';
