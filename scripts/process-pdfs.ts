@@ -21,15 +21,6 @@ async function processPdfs() {
         const pdfPath = path.join(pdfsDirectory, file);
         const outputJsonFileName = `${path.parse(file).name}.json`;
         const outputJsonFilePath = path.join(outputDirectory, outputJsonFileName);
-
-        // Check if the JSON file already exists to avoid redundant processing
-        try {
-          await fs.access(outputJsonFilePath);
-          console.log(`Skipping ${file}, as structured JSON already exists at ${outputJsonFileName}`);
-          continue;
-        } catch (e) {
-          // File doesn't exist, so we process it.
-        }
         
         console.log(`Processing: ${file}`);
         
