@@ -1,15 +1,24 @@
-import { Home } from "lucide-react";
-import Link from "next/link";
 
-export default function Page() {
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { ThemeToggle } from "@/components/theme-toggle";
+import { ChatInterface } from "@/features/chat/chat-interface";
+
+
+export default function Home() {
   return (
-    <div className="flex flex-col gap-4 items-center justify-center h-full">
-      <h1 className="text-4xl font-bold">Welcome to CurriculumAI</h1>
-      <p className="text-muted-foreground">Your AI-Powered DPTE Co-Pilot</p>
-      <Link href="/dashboard" className="flex items-center gap-2 bg-primary text-primary-foreground p-3 rounded-lg">
-        <Home />
-        <span>Go to Dashboard</span>
-      </Link>
-    </div>
-  )
+    <main className="flex min-h-screen flex-col items-center justify-center p-4 md:p-8 bg-background">
+      <Card className="w-full max-w-3xl h-[85vh] flex flex-col shadow-2xl">
+        <CardHeader className="text-center relative">
+          <CardTitle className="font-headline text-3xl tracking-tight">CurriculumAI</CardTitle>
+          <CardDescription className="font-body">Your AI-Powered DPTE Co-Pilot</CardDescription>
+          <div className="absolute top-4 right-4">
+            <ThemeToggle />
+          </div>
+        </CardHeader>
+        <CardContent className="flex-1 flex flex-col overflow-hidden p-0">
+          <ChatInterface />
+        </CardContent>
+      </Card>
+    </main>
+  );
 }
