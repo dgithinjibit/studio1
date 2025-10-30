@@ -105,8 +105,7 @@ export function SelfAssessmentPanel({ subjects }: SelfAssessmentPanelProps) {
   }
 
   return (
-    <ScrollArea className="h-full">
-      <div className="p-6 space-y-6">
+      <div className="space-y-6">
         <div className="flex flex-col items-center text-center gap-4">
           <p className="text-sm text-muted-foreground">
             Ready to test your knowledge? Select a subject, and the AI will generate a question for you based on the DPTE curriculum.
@@ -190,6 +189,5 @@ export function SelfAssessmentPanel({ subjects }: SelfAssessmentPanelProps) {
           </div>
         )}
       </div>
-    </ScrollArea>
   );
 }
