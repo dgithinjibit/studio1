@@ -15,7 +15,8 @@ export async function handleGenerateQuestion(subject: string): Promise<string> {
     return result.question;
   } catch (error) {
     console.error("Error in handleGenerateQuestion:", error);
-    throw new Error("Failed to generate a new question.");
+    // Re-throw the original error to get more specific details on the client.
+    throw error;
   }
 }
 
