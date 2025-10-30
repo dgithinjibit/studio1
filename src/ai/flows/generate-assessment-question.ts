@@ -19,7 +19,7 @@ export type GenerateAssessmentQuestionInput = z.infer<typeof GenerateAssessmentQ
 
 
 const GenerateAssessmentQuestionOutputSchema = z.object({
-  question: z.string().describe('A challenging, open-ended question based on the provided curriculum context, suitable for assessing a teacher trainee\'s understanding.'),
+  question: z.string().describe('A clear, direct question based on the provided curriculum context, suitable for assessing a teacher trainee\'s knowledge of a specific learning outcome. The question should test recall and understanding of the material.'),
 });
 export type GenerateAssessmentQuestionOutput = z.infer<typeof GenerateAssessmentQuestionOutputSchema>;
 
@@ -31,14 +31,14 @@ const prompt = ai.definePrompt({
   name: 'generateAssessmentQuestionPrompt',
   input: {schema: z.object({ curriculumContext: z.string() })},
   output: {schema: GenerateAssessmentQuestionOutputSchema},
-  prompt: `You are a DPTE Master Teacher and Curriculum Specialist. Your task is to generate one thought-provoking assessment question for a teacher trainee.
+  prompt: `You are a DPTE Examiner. Your task is to generate one clear and direct assessment question for a teacher trainee.
 
-The question should be based on the provided DPTE curriculum context. It must be open-ended and require the trainee to apply their knowledge, not just recall facts.
+The question must be based *strictly* on the provided curriculum context. It should be a "remembering" or "understanding" question that tests knowledge of a specific learning outcome, not a complex pedagogical scenario. For example, "List three methods of cooking" is a better question than "Design a lesson plan about cooking."
 
 Curriculum Context:
 {{{curriculumContext}}}
 
-Generate a single, clear, and concise question that is directly related to the provided context.
+Generate a single, precise question that is directly related to the provided context and suitable for a written exam.
 `,
 });
 
