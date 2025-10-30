@@ -1,7 +1,8 @@
+
 'use server';
 
 /**
- * @fileOverview An AI agent for generating assessment questions for teacher trainees based on a selected subject.
+ * @fileOverview An AI agent for generating assessment questions for teacher trainees based on a selected subject and topic.
  *
  * - generateAssessmentQuestion - A function that generates a curriculum-based question.
  * - GenerateAssessmentQuestionInput - The input type for the generateAssessmentQuestion function.
@@ -13,7 +14,8 @@ import {z} from 'genkit';
 import { retrieveContext } from '@/lib/rag/dpte-curriculum';
 
 const GenerateAssessmentQuestionInputSchema = z.object({
-  subject: z.string().describe('The subject to generate a question for. e.g., "Microteaching", "Child Development", "Home Science".'),
+  subject: z.string().describe('The subject area to generate a question for. e.g., "Home Science".'),
+  topic: z.string().describe('The specific topic (strand) within the subject. e.g., "2.0 Food and Nutrition".'),
 });
 export type GenerateAssessmentQuestionInput = z.infer<typeof GenerateAssessmentQuestionInputSchema>;
 
@@ -29,16 +31,16 @@ export async function generateAssessmentQuestion(input: GenerateAssessmentQuesti
 
 const prompt = ai.definePrompt({
   name: 'generateAssessmentQuestionPrompt',
-  input: {schema: z.object({ curriculumContext: z.string() })},
+  input: {schema: z.object({ curriculumContext: z.string(), topic: z.string() })},
   output: {schema: GenerateAssessmentQuestionOutputSchema},
-  prompt: `You are a DPTE Examiner. Your task is to generate one clear and direct assessment question for a teacher trainee.
+  prompt: `You are a DPTE Examiner. Your task is to generate one clear and direct assessment question for a teacher trainee about the topic of {{{topic}}}.
 
-The question must be based *strictly* on the provided curriculum context. It should be a "remembering" or "understanding" question that tests knowledge of a specific learning outcome, not a complex pedagogical scenario. For example, "List three methods of cooking" is a better question than "Design a lesson plan about cooking."
+The question must be based *strictly* on the provided curriculum context. It should be a "remembering" or "understanding" question that tests knowledge of a specific learning outcome from the given topic, not a complex pedagogical scenario. For example, "List three methods of cooking" is a better question than "Design a lesson plan about cooking."
 
 Curriculum Context:
 {{{curriculumContext}}}
 
-Generate a single, precise question that is directly related to the provided context and suitable for a written exam.
+Generate a single, precise question about the topic of {{{topic}}} that is directly related to the provided context and suitable for a written exam.
 `,
 });
 
@@ -48,11 +50,12 @@ const generateAssessmentQuestionFlow = ai.defineFlow(
     inputSchema: GenerateAssessmentQuestionInputSchema,
     outputSchema: GenerateAssessmentQuestionOutputSchema,
   },
-  async ({ subject }) => {
-    // Retrieve a broad context for the selected subject.
-    const curriculumContext = retrieveContext(subject, 20);
+  async ({ subject, topic }) => {
+    // Retrieve context specifically for the selected topic within the subject.
+    const query = `${subject} ${topic}`;
+    const curriculumContext = retrieveContext(query, 20);
     
-    const {output} = await prompt({ curriculumContext });
+    const {output} = await prompt({ curriculumContext, topic });
     return output!;
   }
 );

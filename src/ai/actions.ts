@@ -1,17 +1,18 @@
+
 "use server";
 
 import { assessTeacherResponse, type AssessTeacherResponseOutput } from "@/ai/flows/assess-teacher-response";
-import { generateAssessmentQuestion } from "@/ai/flows/generate-assessment-question";
+import { generateAssessmentQuestion, type GenerateAssessmentQuestionInput } from "@/ai/flows/generate-assessment-question";
 import { retrieveContext } from "@/lib/rag/dpte-curriculum";
 
 /**
- * Generates a new assessment question for the user based on a subject.
- * @param subject The subject to generate a question for.
+ * Generates a new assessment question for the user based on a subject and topic.
+ * @param input An object containing the subject and topic.
  * @returns The AI-generated question.
  */
-export async function handleGenerateQuestion(subject: string): Promise<string> {
+export async function handleGenerateQuestion(input: GenerateAssessmentQuestionInput): Promise<string> {
   try {
-    const result = await generateAssessmentQuestion({ subject });
+    const result = await generateAssessmentQuestion(input);
     return result.question;
   } catch (error) {
     console.error("Error in handleGenerateQuestion:", error);

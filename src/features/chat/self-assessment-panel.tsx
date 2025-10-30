@@ -1,7 +1,7 @@
 
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -13,7 +13,6 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { useToast } from "@/hooks/use-toast";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import { AssessmentResult } from "@/components/assessment-result";
 import { handleAssessment, handleGenerateQuestion } from "@/ai/actions";
 import type { AssessTeacherResponseOutput } from "@/ai/flows/assess-teacher-response";
@@ -22,12 +21,19 @@ const assessmentSchema = z.object({
   teacherResponse: z.string().min(20, "Please provide a comprehensive response for assessment."),
 });
 
+type CurriculumData = {
+  [subject: string]: string[];
+};
+
 interface SelfAssessmentPanelProps {
-  subjects: string[];
+  curriculumData: CurriculumData;
 }
 
-export function SelfAssessmentPanel({ subjects }: SelfAssessmentPanelProps) {
+export function SelfAssessmentPanel({ curriculumData }: SelfAssessmentPanelProps) {
   const [selectedSubject, setSelectedSubject] = useState<string | null>(null);
+  const [selectedTopic, setSelectedTopic] = useState<string | null>(null);
+  const [topicsForSubject, setTopicsForSubject] = useState<string[]>([]);
+  
   const [assessmentQuestion, setAssessmentQuestion] = useState<string | null>(null);
   const [assessmentResult, setAssessmentResult] = useState<AssessTeacherResponseOutput | null>(null);
   const [isGeneratingQuestion, setIsGeneratingQuestion] = useState(false);
@@ -35,6 +41,8 @@ export function SelfAssessmentPanel({ subjects }: SelfAssessmentPanelProps) {
   const isAssessmentLoading = isGeneratingQuestion || isAssessing;
   
   const { toast } = useToast();
+
+  const subjects = useMemo(() => Object.keys(curriculumData), [curriculumData]);
 
   const form = useForm<z.infer<typeof assessmentSchema>>({
     resolver: zodResolver(assessmentSchema),
@@ -44,11 +52,11 @@ export function SelfAssessmentPanel({ subjects }: SelfAssessmentPanelProps) {
   });
 
   const onGenerateQuestion = async () => {
-    if (!selectedSubject) {
+    if (!selectedSubject || !selectedTopic) {
        toast({
         variant: "destructive",
-        title: "No Subject Selected",
-        description: "Please select a subject before generating a question.",
+        title: "Missing Information",
+        description: "Please select both a subject and a topic before generating a question.",
       });
       return;
     }
@@ -59,7 +67,7 @@ export function SelfAssessmentPanel({ subjects }: SelfAssessmentPanelProps) {
     setIsGeneratingQuestion(true);
 
     try {
-      const question = await handleGenerateQuestion(selectedSubject);
+      const question = await handleGenerateQuestion({ subject: selectedSubject, topic: selectedTopic });
       setAssessmentQuestion(question);
     } catch (error) {
        toast({
@@ -99,18 +107,27 @@ export function SelfAssessmentPanel({ subjects }: SelfAssessmentPanelProps) {
   
   const handleSubjectChange = (subject: string) => {
     setSelectedSubject(subject);
+    setSelectedTopic(null); // Reset topic when subject changes
+    setTopicsForSubject(curriculumData[subject] || []);
     setAssessmentQuestion(null);
     setAssessmentResult(null);
     form.reset();
-  }
+  };
+
+  const handleTopicChange = (topic: string) => {
+    setSelectedTopic(topic);
+    setAssessmentQuestion(null);
+    setAssessmentResult(null);
+    form.reset();
+  };
 
   return (
       <div className="space-y-6">
         <div className="flex flex-col items-center text-center gap-4">
           <p className="text-sm text-muted-foreground">
-            Ready to test your knowledge? Select a subject, and the AI will generate a question for you based on the DPTE curriculum.
+            Ready to test your knowledge? Select a subject and topic, and the AI will generate a question for you based on the DPTE curriculum.
           </p>
-          <div className="w-full max-w-sm">
+          <div className="w-full max-w-sm space-y-4">
              <Select onValueChange={handleSubjectChange} value={selectedSubject ?? ""}>
               <SelectTrigger className="w-full">
                 <SelectValue placeholder="Select a subject..." />
@@ -121,8 +138,21 @@ export function SelfAssessmentPanel({ subjects }: SelfAssessmentPanelProps) {
                 ))}
               </SelectContent>
             </Select>
+
+            {selectedSubject && (
+               <Select onValueChange={handleTopicChange} value={selectedTopic ?? ""}>
+                <SelectTrigger className="w-full">
+                  <SelectValue placeholder="Select a topic..." />
+                </SelectTrigger>
+                <SelectContent>
+                  {topicsForSubject.map(topic => (
+                    <SelectItem key={topic} value={topic}>{topic}</SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            )}
           </div>
-          <Button onClick={onGenerateQuestion} disabled={isAssessmentLoading || !selectedSubject}>
+          <Button onClick={onGenerateQuestion} disabled={isAssessmentLoading || !selectedSubject || !selectedTopic}>
             {isGeneratingQuestion ? (
               <Loader2 className="mr-2 h-4 w-4 animate-spin" />
             ) : (
@@ -135,14 +165,14 @@ export function SelfAssessmentPanel({ subjects }: SelfAssessmentPanelProps) {
         {isGeneratingQuestion && (
           <div className="flex items-center justify-center pt-8">
             <Loader2 className="h-8 w-8 animate-spin text-primary" />
-            <p className="ml-4 text-muted-foreground">Generating question for {selectedSubject}...</p>
+            <p className="ml-4 text-muted-foreground">Generating question for {selectedTopic}...</p>
           </div>
         )}
         
         {assessmentQuestion && (
           <div className="space-y-6 pt-4">
             <Alert>
-              <AlertTitle className="font-semibold">Your Question for {selectedSubject}:</AlertTitle>
+              <AlertTitle className="font-semibold">Your Question for {selectedTopic}:</AlertTitle>
               <AlertDescription className="text-foreground">
                 {assessmentQuestion}
               </AlertDescription>
