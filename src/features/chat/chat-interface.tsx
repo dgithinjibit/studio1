@@ -21,7 +21,7 @@ export function ChatInterface() {
       {
         id: '1',
         role: "assistant",
-        content: "Welcome to your revision pilot. The 14-day countdown has begun, and our mission is to master the fundamentals. Let's not waste a second on passive learning.\n\nTo start, which core subject are we focusing on today? We can immediately apply high-efficiency techniques like Active Recall.\n\nOr, choose a specific function:\n\n📝 **Take notes on this text: [your text]**\n🎯 **Help me prepare for an exam.**\n🗺️ **Show me the main menu.**",
+        content: "Hey, I am CurriculumAI. Let's proceed with your revision.",
       },
     ]
   });
