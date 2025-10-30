@@ -10,10 +10,10 @@ export async function POST(req: Request) {
   const lastMessage = messages[messages.length - 1];
   const context = retrieveContext(lastMessage.content as string);
   
-  const result = await generateDPTEResponse({
+  const stream = await generateDPTEResponse({
     query: lastMessage.content as string,
     context,
   });
 
-  return new StreamingTextResponse(result.stream);
+  return new StreamingTextResponse(stream);
 }
