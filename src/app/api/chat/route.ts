@@ -1,6 +1,6 @@
 import { generateDPTEResponse } from '@/ai/flows/generate-dpte-response';
 import { retrieveContext } from '@/lib/rag/dpte-curriculum';
-import { CoreMessage, StreamingTextResponse } from '@ai-sdk/core';
+import { CoreMessage, StreamingTextResponse } from 'ai';
 
 export const dynamic = 'force-dynamic';
 
