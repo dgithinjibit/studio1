@@ -5,8 +5,8 @@ import { Toaster } from '@/components/ui/toaster';
 import { ThemeProvider } from '@/components/theme-provider';
 
 export const metadata: Metadata = {
-  title: 'CurriculumAI',
-  description: 'AI-powered DPTE curriculum tutor.',
+  title: 'BitKumon',
+  description: 'Your AI-Powered Bitcoin Coach',
 };
 
 export default function RootLayout({

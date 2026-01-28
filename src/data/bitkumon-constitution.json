@@ -1,0 +1,52 @@
+{
+  "document_title": "BitKumon WebApp: Beyond LMS → Full Learning Ecosystem",
+  "validation": {
+    "market_validation": [
+      "78% of crypto newcomers abandon learning within 2 weeks due to fragmented resources (CoinGecko 2025 Edu Report)",
+      "63% of Bitcoin-related losses stem from *knowledge gaps* (not hacks) - Chainalysis 2025",
+      "Global Bitcoin education market projected to hit $4.2B by 2028 (Bloomberg Intelligence)"
+    ],
+    "unique_edge": "Kumon’s *mastery-based progression* applied to Bitcoin’s high-stakes learning curve = **reduced risk through competence**",
+    "thesis": "People don't need *more* Bitcoin information. They need *trusted pathways* to competence without losing funds."
+  },
+  "ai_core_engine": {
+    "title": "Core AI Tutor Engine (The 'Prompt Foundation')",
+    "system_prompt": "You are BITKUMON AI, a Kumon-method Bitcoin educator. Your philosophy: 'Mastery before progression.' BEFORE TEACHING: 1. Diagnose: Assess user's background (dev/investor/newbie), goals (self-custody? mining?), knowledge gaps via 3 adaptive questions. 2. Safety-First Protocol: Flag all exercises involving keys/wallets with ⚠️ 'NEVER USE REAL FUNDS' warnings. 3. Cognitive Load Management: Break concepts into micro-steps (e.g., 'Today: ONLY understand public vs private keys - no transactions yet'). TEACHING RULES: - Use analogies matched to user profile (e.g., 'For developers: Think of UTXOs like database pointers...'). - After each concept: Generate 1 interactive exercise + 1 real-world scenario ('What would you do if a 'support agent' DMs you?'). - Detect confusion cues: If user hesitates >2x on a concept, auto-regress to foundational layer. - NEVER give financial advice. Always append: 'This is educational. Consult professionals.' PROGRESS TRACKING: - Visualize mastery via 'Security Confidence Score' (not just completion %). - Unlock next module ONLY after 90% exercise accuracy + conceptual quiz pass. - Generate personalized 'Knowledge Gap Report' weekly. SAFETY MANDATE: - If user mentions seed phrases/private keys: IMMEDIATELY trigger security protocol + redirect to trusted resources. - Flag phishing/scam patterns in user-submitted screenshots (via integrated CV)."
+  },
+  "webapp_features": {
+    "security_layer": [
+      "Testnet Sandbox: Integrated Bitcoin Testnet wallet simulator (send/receive fake BTC)",
+      "Phishing Simulator: AI-generated scam emails/messages to train识别",
+      "Wallet Setup Wizard: Step-by-step guided setup with QR code validation checks"
+    ],
+    "adaptive_engine": [
+      "Knowledge Graph: Maps 200+ Bitcoin concepts; dynamically rebuilds path when gaps detected",
+      "Cognitive Style Profiler: Adjusts content (visual/code/analogies) based on learning patterns",
+      "'Explain Like I'm...' Slider: Toggle complexity from '5-year-old' to 'Core Dev'"
+    ],
+    "real_world_bridge": [
+      "News Decoder: Paste any Bitcoin article → AI breaks down concepts + flags misinformation",
+      "Transaction Decoder: Upload TXID → AI explains inputs/outputs/fees in plain English",
+      "Local Meetup Finder: Geo-matched study groups with verified educators"
+    ],
+    "behavioral_design": [
+      "Streak Shields: Protect learning streaks during holidays (reduces guilt-driven dropout)",
+      "Security Badges: 'Seed Phrase Guardian', 'Fee Optimizer' (shareable on LinkedIn)",
+      "Family Mode: Parent-child modules teaching digital inheritance planning"
+    ],
+    "institutional_tools": [
+      "Corporate Dashboard: For companies onboarding treasury teams (compliance tracking)",
+      "Educator Portal: Teachers create custom paths + monitor class vulnerability hotspots",
+      "API for Exchanges: White-label module for user education (reduce support tickets 40%+)"
+    ]
+  },
+  "monetization": {
+    "b2c": "Freemium (basic path free; advanced modules $8/mo)",
+    "b2b": "White-label for exchanges/wallets ($15k/yr license)",
+    "certifications": "'BitKumon Security Verified' badge ($49 exam)"
+  },
+  "mvp": {
+    "focus": "Testnet Sandbox + Adaptive Path for Absolute Beginners",
+    "north_star_metric": "Time to First Secure Transaction"
+  }
+}

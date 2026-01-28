@@ -1,11 +1,4 @@
 // This file simulates a vector database retrieval for the RAG model.
-// In a real-world application, this would be replaced by a call to a vector store
-// like Firestore with a vector search extension, Pinecone, or similar.
-
-// IMPORTANT: This file has been refactored to dynamically load all .json files
-// from the src/data/ directory. You no longer need to manually import them.
-// The `scripts/process-pdfs.ts` script will convert PDFs into new .json files
-// in this directory, and they will be automatically included in the knowledge base.
 import fs from 'fs';
 import path from 'path';
 
@@ -20,7 +13,8 @@ function extractText(obj: any): string[] {
     if (Object.prototype.hasOwnProperty.call(obj, key)) {
       const value = obj[key];
       if (typeof value === 'string') {
-        if (key !== 'document_title' && key !== 'name' && key !== 'strand' && !key.includes('_id') && !key.includes('reference')) {
+        // Exclude keys that are just for structure
+        if (key !== 'document_title' && key !== 'title' && key !== 'unique_edge' && key !== 'thesis') {
            texts.push(`${key.replace(/_/g, ' ')}: ${value}`);
         } else {
             texts.push(value);
@@ -37,35 +31,49 @@ function extractText(obj: any): string[] {
 
 function loadKnowledgeBase(): string[] {
   const dataDirectory = path.join(process.cwd(), 'src', 'data');
+  const constitutionPath = path.join(dataDirectory, 'bitkumon-constitution.json');
   let allKnowledge: string[] = [];
 
   try {
-    const files = fs.readdirSync(dataDirectory);
-    
-    for (const file of files) {
-      if (path.extname(file).toLowerCase() === '.json') {
-        const filePath = path.join(dataDirectory, file);
-        try {
-          const fileContent = fs.readFileSync(filePath, 'utf-8');
-          const jsonData = JSON.parse(fileContent);
-          const extracted = extractText(jsonData);
-          allKnowledge = allKnowledge.concat(extracted);
-          console.log(`Successfully loaded and processed ${file}`);
-        } catch (error) {
-          console.error(`Error processing file ${file}:`, error);
-        }
-      }
-    }
+    const fileContent = fs.readFileSync(constitutionPath, 'utf-8');
+    const jsonData = JSON.parse(fileContent);
+    // Exclude the raw system prompt itself from the general RAG context
+    const { system_prompt, ...restOfCoreEngine } = jsonData.ai_core_engine;
+    const contextData = {
+        ...jsonData.validation,
+        ...restOfCoreEngine,
+        ...jsonData.webapp_features,
+        ...jsonData.monetization,
+        ...jsonData.mvp
+    };
+    allKnowledge = extractText(contextData);
+    console.log(`Successfully loaded and processed bitkumon-constitution.json`);
   } catch (error) {
-    console.error(`Error reading data directory ${dataDirectory}:`, error);
+    console.error(`Error loading or processing bitkumon-constitution.json:`, error);
   }
   
-  // Remove duplicates
-  return [...new Set(allKnowledge)];
+  // Remove duplicates and filter out very short, non-descriptive lines
+  return [...new Set(allKnowledge)].filter(line => line.length > 10);
 }
 
-// Load the knowledge base dynamically on server start
-export const dpteKnowledgeBase: string[] = loadKnowledgeBase();
+
+function getSystemPrompt(): string {
+  const dataDirectory = path.join(process.cwd(), 'src', 'data');
+  const constitutionPath = path.join(dataDirectory, 'bitkumon-constitution.json');
+  try {
+    const fileContent = fs.readFileSync(constitutionPath, 'utf-8');
+    const jsonData = JSON.parse(fileContent);
+    return jsonData.ai_core_engine.system_prompt;
+  } catch (error) {
+    console.error('Failed to load system prompt:', error);
+    // Fallback prompt
+    return "You are a helpful AI assistant.";
+  }
+}
+
+// Load the knowledge base and system prompt dynamically on server start
+export const knowledgeBase: string[] = loadKnowledgeBase();
+export const systemPrompt = getSystemPrompt();
 
 
 /**
@@ -75,36 +83,30 @@ export const dpteKnowledgeBase: string[] = loadKnowledgeBase();
  * @param k The number of top chunks to return.
  * @returns A single string containing the concatenated relevant context.
  */
-export function retrieveContext(query: string, k: number = 10): string {
-  const queryWords = new Set(query.toLowerCase().split(/\s+/).filter(word => word.length > 3));
+export function retrieveContext(query: string, k: number = 15): string {
+  const queryWords = new Set(query.toLowerCase().split(/\s+/).filter(word => word.length > 2));
 
   if (queryWords.size === 0) {
-    // If query is empty or has no meaningful words, return a summary or top-level info.
-    const summary = `The available documents cover various DPTE subjects including Microteaching, Child Development, Home Science, Art and Craft, and CRE. They cover Strands like "The Practice of Microteaching", "Curriculum Design Interpretation", "Theories of Learning", and "Guidance and Counselling".`;
-    return summary;
+    return "Welcome to BitKumon! I am here to guide you on your Bitcoin journey. Ask me anything to get started, or tell me about your learning goals.";
   }
 
-  const scoredChunks = dpteKnowledgeBase.map(chunk => {
+  const scoredChunks = knowledgeBase.map(chunk => {
     let score = 0;
+    const chunkLower = chunk.toLowerCase();
     for (const word of queryWords) {
-      if (chunk.toLowerCase().includes(word)) { // Use 'includes' for partial matches
+      if (chunkLower.includes(word)) {
         score++;
       }
     }
-    // Boost score for chunks that are more 'complete' sentences or definitions.
-    if(chunk.includes(':')) score += 0.5;
-
     return { chunk, score };
   });
 
   scoredChunks.sort((a, b) => b.score - a.score);
 
-  // Filter out chunks with a score of 0
   const relevantChunks = scoredChunks.filter(item => item.score > 0);
   
-  // If no relevant chunks are found, provide a generic message.
   if(relevantChunks.length === 0){
-      return "The provided curriculum guides do not seem to contain specific information on that topic. Please try rephrasing your question."
+      return "I could not find specific information on that in my constitution. Please ask another question about Bitcoin or your learning path."
   }
 
   const topChunks = relevantChunks.slice(0, k).map(item => item.chunk);
