@@ -53,7 +53,7 @@ const generateAssessmentQuestionFlow = ai.defineFlow(
   async ({ subject, topic }) => {
     // Retrieve context specifically for the selected topic within the subject.
     const query = `${subject} ${topic}`;
-    const curriculumContext = retrieveContext(query, 20);
+    const curriculumContext = await retrieveContext(query, 20);
     
     const {output} = await prompt({ curriculumContext, topic });
     return output!;

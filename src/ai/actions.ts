@@ -29,7 +29,7 @@ export async function handleGenerateQuestion(input: GenerateAssessmentQuestionIn
  */
 export async function handleAssessment(data: { question: string, teacherResponse: string }): Promise<AssessTeacherResponseOutput> {
   const { question, teacherResponse } = data;
-  const relevantContext = retrieveContext(question);
+  const relevantContext = await retrieveContext(question);
 
   try {
     const result = await assessTeacherResponse({
