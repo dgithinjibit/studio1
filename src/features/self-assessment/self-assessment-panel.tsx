@@ -1,6 +1,6 @@
 'use client';
 import * as React from 'react';
-import { useForm, Controller } from 'react-hook-form';
+import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import {
@@ -21,18 +21,24 @@ import {
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { handleGenerateQuestion, handleAssessment } from '@/ai/actions';
+import { 
+  handleGenerateQuestion, 
+  handleAssessment, 
+  handleGeneratePeerWork, 
+  handlePeerAssessment 
+} from '@/ai/actions';
 import { useToast } from '@/hooks/use-toast';
 import { AssessmentResult } from '@/components/assessment-result';
 import type { AssessTeacherResponseOutput } from "@/ai/flows/assess-teacher-response";
 import { CurriculumData } from '@/app/page';
 import { Separator } from '@/components/ui/separator';
-import { Loader2 } from 'lucide-react';
+import { Loader2, User, Users } from 'lucide-react';
 
 const FormSchema = z.object({
+  mode: z.enum(['self', 'peer'], { required_error: 'Please select an assessment mode.' }),
   subject: z.string({ required_error: 'Please select a learning area.' }),
   topic: z.string({ required_error: 'Please select a topic.' }),
-  teacherResponse: z.string().optional(),
+  userResponse: z.string().optional(),
 });
 
 interface SelfAssessmentPanelProps {
@@ -41,66 +47,92 @@ interface SelfAssessmentPanelProps {
 
 export function SelfAssessmentPanel({ curriculumData }: SelfAssessmentPanelProps) {
   const [question, setQuestion] = React.useState<string | null>(null);
+  const [peerResponse, setPeerResponse] = React.useState<string | null>(null);
   const [assessmentResult, setAssessmentResult] = React.useState<AssessTeacherResponseOutput | null>(null);
-  const [isGeneratingQuestion, setIsGeneratingQuestion] = React.useState(false);
+  const [isGenerating, setIsGenerating] = React.useState(false);
   const [isAssessing, setIsAssessing] = React.useState(false);
   const { toast } = useToast();
 
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
+    defaultValues: {
+      mode: 'self',
+    }
   });
 
   const selectedSubject = form.watch('subject');
+  const selectedMode = form.watch('mode');
+  
   const topicsForSelectedSubject = React.useMemo(() => {
     return curriculumData.find((data) => data.subject === selectedSubject)?.topics || [];
   }, [selectedSubject, curriculumData]);
 
   React.useEffect(() => {
-    // Reset topic when subject changes
     form.setValue('topic', '');
-  }, [selectedSubject, form]);
-
-
-  async function onGenerateQuestion(data: z.infer<typeof FormSchema>) {
-    setIsGeneratingQuestion(true);
     setQuestion(null);
+    setPeerResponse(null);
     setAssessmentResult(null);
-    form.setValue('teacherResponse', '');
+  }, [selectedSubject, selectedMode, form]);
+
+  async function onGenerate(data: z.infer<typeof FormSchema>) {
+    setIsGenerating(true);
+    setQuestion(null);
+    setPeerResponse(null);
+    setAssessmentResult(null);
+    form.setValue('userResponse', '');
     try {
-      const generatedQuestion = await handleGenerateQuestion({
-        subject: data.subject,
-        topic: data.topic,
-      });
-      setQuestion(generatedQuestion);
+      if (data.mode === 'self') {
+        const generatedQuestion = await handleGenerateQuestion({
+          subject: data.subject,
+          topic: data.topic,
+        });
+        setQuestion(generatedQuestion);
+      } else {
+        const result = await handleGeneratePeerWork({
+          subject: data.subject,
+          topic: data.topic,
+        });
+        setQuestion(result.question);
+        setPeerResponse(result.peerResponse);
+      }
     } catch (error) {
       console.error(error);
       toast({
         variant: "destructive",
         title: "Error",
-        description: "Failed to generate a new question. Please try again.",
+        description: "Failed to generate content. Please try again.",
       });
     } finally {
-      setIsGeneratingQuestion(false);
+      setIsGenerating(false);
     }
   }
 
-  async function onAssessResponse(data: z.infer<typeof FormSchema>) {
-    if (!question || !data.teacherResponse) {
+  async function onAssess(data: z.infer<typeof FormSchema>) {
+    if (!question || !data.userResponse) {
         toast({
             variant: "destructive",
             title: "Missing Information",
-            description: "Please provide a response to the question.",
+            description: "Please provide a response/review.",
         });
       return;
     }
     setIsAssessing(true);
     setAssessmentResult(null);
     try {
-      const result = await handleAssessment({
-        question,
-        teacherResponse: data.teacherResponse,
-      });
-      setAssessmentResult(result);
+      if (data.mode === 'self') {
+        const result = await handleAssessment({
+          question,
+          teacherResponse: data.userResponse,
+        });
+        setAssessmentResult(result);
+      } else {
+        const result = await handlePeerAssessment({
+          question,
+          peerResponse: peerResponse!,
+          userReview: data.userResponse,
+        });
+        setAssessmentResult(result);
+      }
     } catch (error) {
       console.error(error);
       toast({
@@ -116,23 +148,52 @@ export function SelfAssessmentPanel({ curriculumData }: SelfAssessmentPanelProps
   return (
     <Card className="border-none shadow-none">
         <CardHeader className="text-left p-0 mb-6">
-            <CardTitle className="text-xl">Self Assessment</CardTitle>
-            <CardDescription>Select a learning area and topic to get a practice question.</CardDescription>
+            <CardTitle className="text-xl">Interactive Assessment</CardTitle>
+            <CardDescription>Practice by answering questions yourself or critiquing peer work.</CardDescription>
         </CardHeader>
         <CardContent className="p-0">
             <Form {...form}>
                 <form className="space-y-6">
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                        <FormField
+                            control={form.control}
+                            name="mode"
+                            render={({ field }) => (
+                                <FormItem>
+                                    <FormLabel>Assessment Mode</FormLabel>
+                                    <Select onValueChange={field.onChange} defaultValue={field.value}>
+                                        <FormControl>
+                                            <SelectTrigger>
+                                                <SelectValue placeholder="Select mode" />
+                                            </SelectTrigger>
+                                        </FormControl>
+                                        <SelectContent>
+                                            <SelectItem value="self">
+                                                <div className="flex items-center gap-2">
+                                                    <User size={16} /> Self Assessment
+                                                </div>
+                                            </SelectItem>
+                                            <SelectItem value="peer">
+                                                <div className="flex items-center gap-2">
+                                                    <Users size={16} /> Peer Assessment
+                                                </div>
+                                            </SelectItem>
+                                        </SelectContent>
+                                    </Select>
+                                    <FormMessage />
+                                </FormItem>
+                            )}
+                        />
                         <FormField
                             control={form.control}
                             name="subject"
                             render={({ field }) => (
                                 <FormItem>
                                     <FormLabel>Learning Area</FormLabel>
-                                    <Select onValueChange={field.onChange} defaultValue={field.value}>
+                                    <Select onValueChange={field.onChange} value={field.value}>
                                         <FormControl>
                                             <SelectTrigger>
-                                                <SelectValue placeholder="Select a learning area" />
+                                                <SelectValue placeholder="Select area" />
                                             </SelectTrigger>
                                         </FormControl>
                                         <SelectContent>
@@ -156,7 +217,7 @@ export function SelfAssessmentPanel({ curriculumData }: SelfAssessmentPanelProps
                                     <Select onValueChange={field.onChange} value={field.value} disabled={!selectedSubject}>
                                         <FormControl>
                                             <SelectTrigger>
-                                                <SelectValue placeholder="Select a topic" />
+                                                <SelectValue placeholder="Select topic" />
                                             </SelectTrigger>
                                         </FormControl>
                                         <SelectContent>
@@ -175,42 +236,51 @@ export function SelfAssessmentPanel({ curriculumData }: SelfAssessmentPanelProps
 
                     <Button 
                         type="button" 
-                        onClick={form.handleSubmit(onGenerateQuestion)}
-                        disabled={isGeneratingQuestion || !form.getValues('subject') || !form.getValues('topic')}
+                        onClick={form.handleSubmit(onGenerate)}
+                        disabled={isGenerating || !form.getValues('subject') || !form.getValues('topic')}
                         className="w-full sm:w-auto"
                     >
-                        {isGeneratingQuestion && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-                        Generate New Question
+                        {isGenerating && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+                        {selectedMode === 'self' ? 'Generate Question' : 'Generate Peer Work'}
                     </Button>
 
-                    {isGeneratingQuestion && (
-                         <div className="flex items-center justify-center p-4 text-muted-foreground">
-                            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                            <span>Generating question...</span>
-                        </div>
-                    )}
-
                     {question && (
-                        <div className="space-y-6 pt-4">
+                        <div className="space-y-6 pt-4 animate-in fade-in slide-in-from-top-4 duration-500">
                             <Separator />
-                            <Card className="bg-secondary/30">
-                                <CardHeader>
-                                    <CardTitle className="text-lg font-semibold">Your Question:</CardTitle>
-                                </CardHeader>
-                                <CardContent>
-                                    <p className="text-sm text-muted-foreground">{question}</p>
-                                </CardContent>
-                            </Card>
+                            <div className="grid gap-4">
+                                <Card className="bg-secondary/30">
+                                    <CardHeader className="py-3 px-4">
+                                        <CardTitle className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">Question</CardTitle>
+                                    </CardHeader>
+                                    <CardContent className="py-2 px-4">
+                                        <p className="text-base font-medium">{question}</p>
+                                    </CardContent>
+                                </Card>
+
+                                {peerResponse && (
+                                    <Card className="border-orange-200 bg-orange-50/30 dark:bg-orange-900/10">
+                                        <CardHeader className="py-3 px-4">
+                                            <CardTitle className="text-sm font-semibold uppercase tracking-wider text-orange-600 dark:text-orange-400">Peer Response (To Critique)</CardTitle>
+                                        </CardHeader>
+                                        <CardContent className="py-2 px-4">
+                                            <p className="text-sm italic text-muted-foreground">"{peerResponse}"</p>
+                                        </CardContent>
+                                    </Card>
+                                )}
+                            </div>
+
                             <FormField
                                 control={form.control}
-                                name="teacherResponse"
+                                name="userResponse"
                                 render={({ field }) => (
                                     <FormItem>
-                                        <FormLabel>Your Response</FormLabel>
+                                        <FormLabel>
+                                            {selectedMode === 'self' ? 'Your Response' : 'Your Assessment of the Peer'}
+                                        </FormLabel>
                                         <FormControl>
                                             <Textarea
-                                                placeholder="Type your response to the question here..."
-                                                rows={8}
+                                                placeholder={selectedMode === 'self' ? "Type your answer here..." : "Critique the peer's response. What is correct? What is missing? How can they improve?"}
+                                                rows={6}
                                                 {...field}
                                             />
                                         </FormControl>
@@ -220,25 +290,25 @@ export function SelfAssessmentPanel({ curriculumData }: SelfAssessmentPanelProps
                             />
                             <Button 
                                 type="button"
-                                onClick={form.handleSubmit(onAssessResponse)}
+                                onClick={form.handleSubmit(onAssess)}
                                 disabled={isAssessing}
                                 className="w-full sm:w-auto"
                             >
                                 {isAssessing && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-                                Submit for Assessment
+                                Submit for AI Review
                             </Button>
                         </div>
                     )}
 
                     {isAssessing && (
-                        <div className="flex items-center justify-center p-4 text-muted-foreground">
-                            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                            <span>Assessing your response...</span>
+                        <div className="flex items-center justify-center p-8 text-muted-foreground">
+                            <Loader2 className="mr-2 h-8 w-8 animate-spin" />
+                            <span className="text-lg">AI is evaluating...</span>
                         </div>
                     )}
 
                     {assessmentResult && (
-                        <div className="pt-4">
+                        <div className="pt-4 animate-in zoom-in-95 duration-500">
                            <Separator />
                            <div className="mt-6">
                             <AssessmentResult result={assessmentResult} />
