@@ -1,5 +1,3 @@
-'use server';
-
 /**
  * @fileOverview An AI agent for assessing teacher trainee responses to curriculum-based questions.
  *

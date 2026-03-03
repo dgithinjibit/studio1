@@ -1,7 +1,14 @@
-'use server';
 // This file simulates a vector database retrieval for the RAG model.
 import fs from 'fs';
 import path from 'path';
+
+/**
+ * System prompt for the DPTE Assistant.
+ */
+export const systemPrompt = `You are an expert DPTE (Diploma in Teacher Education) Assistant and Curriculum Specialist. 
+Your goal is to help teacher trainees understand the curriculum, prepare for assessments, and improve their pedagogical skills. 
+Always refer to the provided curriculum context documents to provide authoritative and accurate answers.
+If the context does not contain the answer, politely state that the information is not available in the current curriculum guides.`;
 
 // Function to recursively extract text from a JSON object
 function extractTextFromObject(obj: any): string[] {
@@ -30,9 +37,14 @@ function extractTextFromObject(obj: any): string[] {
   return texts;
 }
 
-
 function loadKnowledgeBase(): string[] {
   const dataDirectory = path.join(process.cwd(), 'src', 'data');
+  
+  if (!fs.existsSync(dataDirectory)) {
+    console.warn(`Data directory not found at ${dataDirectory}`);
+    return [];
+  }
+
   const allFiles = fs.readdirSync(dataDirectory);
   const curriculumFiles = allFiles.filter(
     (file) => (file.startsWith('dpte-') && file.endsWith('.json'))
@@ -46,7 +58,6 @@ function loadKnowledgeBase(): string[] {
       const fileContent = fs.readFileSync(filePath, 'utf-8');
       const jsonData = JSON.parse(fileContent);
       allKnowledge.push(...extractTextFromObject(jsonData));
-      console.log(`Successfully loaded and processed ${file}`);
     } catch (error) {
       console.error(`Error loading or processing ${file}:`, error);
     }
@@ -57,7 +68,6 @@ function loadKnowledgeBase(): string[] {
 }
 
 const dpteKnowledgeBase: string[] = loadKnowledgeBase();
-
 
 /**
  * A simple keyword-based retrieval function to simulate finding relevant context.

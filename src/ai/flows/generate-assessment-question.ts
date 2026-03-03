@@ -1,6 +1,3 @@
-
-'use server';
-
 /**
  * @fileOverview An AI agent for generating assessment questions for teacher trainees based on a selected subject and topic.
  *

@@ -1,5 +1,3 @@
-'use server';
-
 /**
  * @fileOverview An AI agent for generating a question and a simulated "peer" response for teacher trainees to critique.
  */

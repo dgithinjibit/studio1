@@ -1,5 +1,3 @@
-'use server';
-
 /**
  * @fileOverview An AI agent for assessing a teacher trainee's review of a peer's response.
  */

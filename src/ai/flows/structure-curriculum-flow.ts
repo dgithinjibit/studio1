@@ -1,4 +1,3 @@
-'use server';
 /**
  * @fileOverview An AI agent for structuring raw curriculum text into a JSON format.
  *
