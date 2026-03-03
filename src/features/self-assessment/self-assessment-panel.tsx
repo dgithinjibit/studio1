@@ -32,10 +32,11 @@ import { AssessmentResult } from '@/components/assessment-result';
 import type { AssessTeacherResponseOutput } from "@/ai/flows/assess-teacher-response";
 import { CurriculumData } from '@/app/page';
 import { Separator } from '@/components/ui/separator';
-import { Loader2, User, Users } from 'lucide-react';
+import { Loader2, User, Users, ClipboardCheck, LayoutGrid } from 'lucide-react';
 
 const FormSchema = z.object({
   mode: z.enum(['self', 'peer'], { required_error: 'Please select an assessment mode.' }),
+  assessmentType: z.enum(['formative', 'summative', 'diagnostic', 'authentic'], { required_error: 'Please select an assessment type.' }),
   subject: z.string({ required_error: 'Please select a learning area.' }),
   topic: z.string({ required_error: 'Please select a topic.' }),
   userResponse: z.string().optional(),
@@ -57,6 +58,7 @@ export function SelfAssessmentPanel({ curriculumData }: SelfAssessmentPanelProps
     resolver: zodResolver(FormSchema),
     defaultValues: {
       mode: 'self',
+      assessmentType: 'formative',
     }
   });
 
@@ -85,12 +87,14 @@ export function SelfAssessmentPanel({ curriculumData }: SelfAssessmentPanelProps
         const generatedQuestion = await handleGenerateQuestion({
           subject: data.subject,
           topic: data.topic,
+          assessmentType: data.assessmentType,
         });
         setQuestion(generatedQuestion);
       } else {
         const result = await handleGeneratePeerWork({
           subject: data.subject,
           topic: data.topic,
+          assessmentType: data.assessmentType,
         });
         setQuestion(result.question);
         setPeerResponse(result.peerResponse);
@@ -149,12 +153,12 @@ export function SelfAssessmentPanel({ curriculumData }: SelfAssessmentPanelProps
     <Card className="border-none shadow-none">
         <CardHeader className="text-left p-0 mb-6">
             <CardTitle className="text-xl">Interactive Assessment</CardTitle>
-            <CardDescription>Practice by answering questions yourself or critiquing peer work.</CardDescription>
+            <CardDescription>Practice by answering questions or critiquing peer work using specific pedagogical methods.</CardDescription>
         </CardHeader>
         <CardContent className="p-0">
             <Form {...form}>
                 <form className="space-y-6">
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                         <FormField
                             control={form.control}
                             name="mode"
@@ -176,6 +180,45 @@ export function SelfAssessmentPanel({ curriculumData }: SelfAssessmentPanelProps
                                             <SelectItem value="peer">
                                                 <div className="flex items-center gap-2">
                                                     <Users size={16} /> Peer Assessment
+                                                </div>
+                                            </SelectItem>
+                                        </SelectContent>
+                                    </Select>
+                                    <FormMessage />
+                                </FormItem>
+                            )}
+                        />
+                        <FormField
+                            control={form.control}
+                            name="assessmentType"
+                            render={({ field }) => (
+                                <FormItem>
+                                    <FormLabel>Assessment Type</FormLabel>
+                                    <Select onValueChange={field.onChange} defaultValue={field.value}>
+                                        <FormControl>
+                                            <SelectTrigger>
+                                                <SelectValue placeholder="Select type" />
+                                            </SelectTrigger>
+                                        </FormControl>
+                                        <SelectContent>
+                                            <SelectItem value="formative">
+                                                <div className="flex items-center gap-2">
+                                                    <ClipboardCheck size={16} className="text-blue-500" /> Formative
+                                                </div>
+                                            </SelectItem>
+                                            <SelectItem value="summative">
+                                                <div className="flex items-center gap-2">
+                                                    <ClipboardCheck size={16} className="text-red-500" /> Summative
+                                                </div>
+                                            </SelectItem>
+                                            <SelectItem value="diagnostic">
+                                                <div className="flex items-center gap-2">
+                                                    <ClipboardCheck size={16} className="text-green-500" /> Diagnostic
+                                                </div>
+                                            </SelectItem>
+                                            <SelectItem value="authentic">
+                                                <div className="flex items-center gap-2">
+                                                    <ClipboardCheck size={16} className="text-purple-500" /> Authentic
                                                 </div>
                                             </SelectItem>
                                         </SelectContent>
@@ -250,7 +293,9 @@ export function SelfAssessmentPanel({ curriculumData }: SelfAssessmentPanelProps
                             <div className="grid gap-4">
                                 <Card className="bg-secondary/30">
                                     <CardHeader className="py-3 px-4">
-                                        <CardTitle className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">Question</CardTitle>
+                                        <CardTitle className="text-sm font-semibold uppercase tracking-wider text-muted-foreground">
+                                            Question ({form.getValues('assessmentType')})
+                                        </CardTitle>
                                     </CardHeader>
                                     <CardContent className="py-2 px-4">
                                         <p className="text-base font-medium">{question}</p>

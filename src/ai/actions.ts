@@ -7,7 +7,7 @@ import { assessPeerReview, type AssessPeerReviewInput, type AssessPeerReviewOutp
 import { retrieveContext } from "@/lib/rag/dpte-curriculum";
 
 /**
- * Generates a new assessment question for the user based on a subject and topic.
+ * Generates a new assessment question for the user based on a subject, topic and type.
  */
 export async function handleGenerateQuestion(input: GenerateAssessmentQuestionInput): Promise<string> {
   try {
