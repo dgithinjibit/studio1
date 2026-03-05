@@ -32,7 +32,7 @@ import { AssessmentResult } from '@/components/assessment-result';
 import type { AssessTeacherResponseOutput } from "@/ai/flows/assess-teacher-response";
 import { CurriculumData } from '@/app/page';
 import { Separator } from '@/components/ui/separator';
-import { Loader2, User, Users, ClipboardCheck, LayoutGrid } from 'lucide-react';
+import { Loader2, User, Users, ClipboardCheck, RotateCcw } from 'lucide-react';
 
 const FormSchema = z.object({
   mode: z.enum(['self', 'peer'], { required_error: 'Please select an assessment mode.' }),
@@ -69,12 +69,22 @@ export function SelfAssessmentPanel({ curriculumData }: SelfAssessmentPanelProps
     return curriculumData.find((data) => data.subject === selectedSubject)?.topics || [];
   }, [selectedSubject, curriculumData]);
 
+  // Reset topic and results when subject or mode changes
   React.useEffect(() => {
     form.setValue('topic', '');
     setQuestion(null);
     setPeerResponse(null);
     setAssessmentResult(null);
   }, [selectedSubject, selectedMode, form]);
+
+  const handleReset = () => {
+    setQuestion(null);
+    setPeerResponse(null);
+    setAssessmentResult(null);
+    form.setValue('userResponse', '');
+    form.setValue('topic', '');
+    form.setValue('subject', '');
+  };
 
   async function onGenerate(data: z.infer<typeof FormSchema>) {
     setIsGenerating(true);
@@ -277,15 +287,27 @@ export function SelfAssessmentPanel({ curriculumData }: SelfAssessmentPanelProps
                         />
                     </div>
 
-                    <Button 
-                        type="button" 
-                        onClick={form.handleSubmit(onGenerate)}
-                        disabled={isGenerating || !form.getValues('subject') || !form.getValues('topic')}
-                        className="w-full sm:w-auto"
-                    >
-                        {isGenerating && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-                        {selectedMode === 'self' ? 'Generate Question' : 'Generate Peer Work'}
-                    </Button>
+                    {!question && (
+                      <div className="flex gap-2">
+                        <Button 
+                            type="button" 
+                            onClick={form.handleSubmit(onGenerate)}
+                            disabled={isGenerating || !form.getValues('subject') || !form.getValues('topic')}
+                            className="w-full sm:w-auto"
+                        >
+                            {isGenerating && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+                            {selectedMode === 'self' ? 'Generate Question' : 'Generate Peer Work'}
+                        </Button>
+                        <Button 
+                          type="button" 
+                          variant="ghost" 
+                          onClick={handleReset}
+                          className="w-full sm:w-auto"
+                        >
+                          Reset
+                        </Button>
+                      </div>
+                    )}
 
                     {question && (
                         <div className="space-y-6 pt-4 animate-in fade-in slide-in-from-top-4 duration-500">
@@ -314,34 +336,48 @@ export function SelfAssessmentPanel({ curriculumData }: SelfAssessmentPanelProps
                                 )}
                             </div>
 
-                            <FormField
-                                control={form.control}
-                                name="userResponse"
-                                render={({ field }) => (
-                                    <FormItem>
-                                        <FormLabel>
-                                            {selectedMode === 'self' ? 'Your Response' : 'Your Assessment of the Peer'}
-                                        </FormLabel>
-                                        <FormControl>
-                                            <Textarea
-                                                placeholder={selectedMode === 'self' ? "Type your answer here..." : "Critique the peer's response. What is correct? What is missing? How can they improve?"}
-                                                rows={6}
-                                                {...field}
-                                            />
-                                        </FormControl>
-                                        <FormMessage />
-                                    </FormItem>
-                                )}
-                            />
-                            <Button 
-                                type="button"
-                                onClick={form.handleSubmit(onAssess)}
-                                disabled={isAssessing}
-                                className="w-full sm:w-auto"
-                            >
-                                {isAssessing && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-                                Submit for AI Review
-                            </Button>
+                            {!assessmentResult && (
+                              <>
+                                <FormField
+                                    control={form.control}
+                                    name="userResponse"
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel>
+                                                {selectedMode === 'self' ? 'Your Response' : 'Your Assessment of the Peer'}
+                                            </FormLabel>
+                                            <FormControl>
+                                                <Textarea
+                                                    placeholder={selectedMode === 'self' ? "Type your answer here..." : "Critique the peer's response. What is correct? What is missing? How can they improve?"}
+                                                    rows={6}
+                                                    {...field}
+                                                />
+                                            </FormControl>
+                                            <FormMessage />
+                                        </FormItem>
+                                    )}
+                                />
+                                <div className="flex gap-2">
+                                  <Button 
+                                      type="button"
+                                      onClick={form.handleSubmit(onAssess)}
+                                      disabled={isAssessing}
+                                      className="w-full sm:w-auto"
+                                  >
+                                      {isAssessing && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+                                      Submit for AI Review
+                                  </Button>
+                                  <Button 
+                                    type="button" 
+                                    variant="outline" 
+                                    onClick={() => setQuestion(null)}
+                                    disabled={isAssessing}
+                                  >
+                                    Back to Topic Selection
+                                  </Button>
+                                </div>
+                              </>
+                            )}
                         </div>
                     )}
 
@@ -355,8 +391,19 @@ export function SelfAssessmentPanel({ curriculumData }: SelfAssessmentPanelProps
                     {assessmentResult && (
                         <div className="pt-4 animate-in zoom-in-95 duration-500">
                            <Separator />
-                           <div className="mt-6">
+                           <div className="mt-6 space-y-4">
                             <AssessmentResult result={assessmentResult} />
+                            <div className="flex justify-center">
+                              <Button 
+                                onClick={handleReset} 
+                                variant="default"
+                                size="lg"
+                                className="gap-2"
+                              >
+                                <RotateCcw size={18} />
+                                Start New Assessment
+                              </Button>
+                            </div>
                            </div>
                         </div>
                     )}
